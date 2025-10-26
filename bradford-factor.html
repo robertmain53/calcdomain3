@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en"><head> 
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Bradford Factor Calculator | Finance & Money → Taxes | CalcDomain</title>
+<meta name="description" content="Bradford Factor Calculator: fast, accurate calculator." />
+<meta content="Ugo Candido" name="author"/>
+<link rel="canonical" href="https://calcdomain.com/bradford-factor.html" />
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f7f8fa;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        h1, h2 {
+            color: #005a9c;
+        }
+        .calculator-container {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-top: 2rem;
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        .form-control {
+            width: 100%;
+            padding: 0.75rem;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            color: #fff;
+            background-color: #005a9c;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #004080;
+        }
+        .results-container {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .content-section {
+            margin-top: 3rem;
+        }
+        .formula-box {
+            background-color: #e9ecef;
+            padding: 1rem;
+            border-radius: 4px;
+            margin-top: 1rem;
+        }
+    </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Bradford Factor Calculator",
+  "description": "Calculate the Bradford Factor to manage employee absenteeism efficiently.",
+  "url": "https://calcdomain.com/bradford-factor.html",
+  "author": {
+    "@type": "Person",
+    "name": "Ugo Candido"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Bradford Factor Experts"
+  },
+  "mainEntity": {
+    "@type": "WebPageElement",
+    "name": "How It Works: A Step-by-Step Example",
+    "description": "Detailed example on how to use the Bradford Factor Calculator.",
+    "step": [
+      {
+        "@type": "HowToStep",
+        "name": "Input Data",
+        "text": "Enter the number of absences and total number of days absent."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Calculate Bradford Factor",
+        "text": "Click the calculate button to get the Bradford Factor."
+      }
+    ]
+  }
+}
+  </script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="search.js" defer></script>
+<!-- MathJax for LaTeX formulas -->
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['\(','\)'], ['$', '$']],
+      displayMath: [['$','$'], ['\[','\]']]
+    },
+    svg: { fontCache: 'global' }
+  };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<link rel="preload" href="/assets/js/mobile-menu.js" as="script">
+<link rel="preload" href="/assets/js/page-enhancements.js" as="script">
+
+</head>
+<body>
+<div class="container mx-auto px-4 py-4"><nav class="text-sm mb-4 text-gray-600" aria-label="Breadcrumb">
+  <ol class="flex flex-wrap gap-1 items-center"><li><a href="https://calcdomain.com/index.html" class="hover:text-blue-600">Home</a></li><li aria-hidden="true">»</li><li><a href="https://calcdomain.com/finance.html" class="hover:text-blue-600">Finance & Money</a></li><li aria-hidden="true">»</li><li><a href="https://calcdomain.com/subcategories/taxes.html" class="hover:text-blue-600">Taxes</a></li><li aria-hidden="true">»</li><li aria-current="page" class="text-gray-800 font-medium">Bradford Factor Calculator</li></ol>
+</nav></div>
+
+<div class="container">
+
+<header class="bg-white shadow-sm sticky top-0 z-50">
+  <nav class="container mx-auto px-4 lg:px-6 py-4 flex items-center justify-between" aria-label="Primary">
+    <a href="https://calcdomain.com/index.html" class="text-2xl font-bold text-blue-600">CalcDomain</a>
+    <div class="w-full max-w-md hidden md:block">
+      <label for="site-search" class="sr-only">Search calculators</label>
+      <div class="relative">
+        <input id="site-search" type="search" placeholder="Search for a calculator…" class="w-full py-2 px-4 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      </div>
+    </div>
+  </nav>
+</header>
+
+<section class="calculator-container">
+<p>Use this Bradford Factor Calculator to quickly assess the impact of employee absences on your organization. This tool is designed for HR professionals and managers to efficiently manage absenteeism.</p>
+<div class="form-group">
+<label for="totalDays">Total Number of Absences *</label>
+<input aria-describedby="totalDaysError" aria-required="true" class="form-control" id="totalDays" type="number"/>
+<div aria-live="polite" class="error-message" id="totalDaysError" role="alert"></div>
+</div>
+<div class="form-group">
+<label for="absenceIncidents">Total Number of Absence Incidents *</label>
+<input aria-describedby="absenceIncidentsError" aria-required="true" class="form-control" id="absenceIncidents" type="number"/>
+<div aria-live="polite" class="error-message" id="absenceIncidentsError" role="alert"></div>
+</div>
+<button class="btn" onclick="calculateBradfordFactor()">Calculate</button>
+<div aria-live="polite" class="results-container" id="results"></div>
+</section>
+<section class="content-section">
+<h2>Data Source and Methodology</h2>
+<p>All calculations are based strictly on the Bradford Factor formula, widely recognized in HR management for evaluating the impact of employee absences.</p>
+<h2>The Formula Explained</h2>
+<div class="formula-box">
+<p><strong>Bradford Factor Formula:</strong> <code>B = S² × D</code></p>
+</div>
+<h2>Glossary of Terms</h2>
+<ul>
+<li><strong>S:</strong> Total number of absence incidents.</li>
+<li><strong>D:</strong> Total number of days absent.</li>
+<li><strong>B:</strong> Bradford Factor score.</li>
+</ul>
+<h2>How It Works: A Step-by-Step Example</h2>
+<p>Consider an employee who has been absent 3 times for a total of 12 days. The Bradford Factor score is calculated as follows:</p>
+<p><code>B = 3² × 12 = 108</code></p>
+<h2>Frequently Asked Questions (FAQ)</h2>
+<div>
+<h3>What is the Bradford Factor?</h3>
+<p>The Bradford Factor is a formula that quantifies employee absenteeism and its impact on a business.</p>
+<h3>Why is the Bradford Factor important?</h3>
+<p>It helps organizations identify absenteeism patterns and manage them effectively.</p>
+<h3>How do I interpret the Bradford Factor score?</h3>
+<p>Higher scores indicate frequent short-term absences, which are often more disruptive than occasional long-term absences.</p>
+<h3>What is a good Bradford Factor score?</h3>
+<p>Scores under 50 are generally considered low, while scores over 200 might require HR intervention.</p>
+<h3>Can the Bradford Factor be used for all types of absences?</h3>
+<p>It is best used for unplanned short-term absences, not long-term or planned leave.</p>
+</div>
+</section>
+
+</div>
+<script>
+        function calculateBradfordFactor() {
+            const totalDays = document.getElementById('totalDays').value;
+            const absenceIncidents = document.getElementById('absenceIncidents').value;
+            const results = document.getElementById('results');
+            if (totalDays && absenceIncidents) {
+                const bradfordFactor = Math.pow(absenceIncidents, 2) * totalDays;
+                results.innerHTML = `<div class="result-item"><span class="result-label">Bradford Factor Score</span><span class="result-value">${bradfordFactor}</span></div>`;
+            } else {
+                results.innerHTML = `<div class="error-message">Please fill in all fields.</div>`;
+            }
+        }
+    </script>
+
+
+```
+
+<footer class="bg-white border-t mt-12">
+  <div class="container mx-auto px-6 py-8 text-center text-gray-600">
+    <p>&copy; 2025 CalcDomain. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://calcdomain.com/index.html"}, {"@type": "ListItem", "position": 2, "name": "Finance & Money", "item": "https://calcdomain.com/finance.html"}, {"@type": "ListItem", "position": 3, "name": "Taxes", "item": "https://calcdomain.com/subcategories/taxes.html"}, {"@type": "ListItem", "position": 4, "name": "Bradford Factor Calculator", "item": "https://calcdomain.com/bradford-factor.html"}]}</script>
+</body></html>

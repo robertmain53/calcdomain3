@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en"><head> 
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<link rel="canonical" href="https://calcdomain.com/qr-code-generator.html" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>QR Code Generator | Finance & Money | CalcDomain</title>
+<meta name="description" content="QR Code Generator: fast, accurate calculator." />
+<meta content="Ugo Candido" name="author"/>
+<link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="/manifest.json" rel="manifest"/>
+<meta content="#333333" name="theme-color"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<style>
+        /* Basic Styles */
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #212529;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        h1, h2 {
+            color: #005A9C;
+        }
+        a {
+            color: #005A9C;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .calculator-container, .content-container {
+            background-color: #ffffff;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-top: 1rem;
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        .form-control {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            font-size: 1rem;
+            border: 1px solid #dee2e6;
+            border-radius: 6px;
+            transition: border-color .2s ease, box-shadow .2s ease;
+        }
+        .form-control:focus {
+            outline: 3px solid #005A9C;
+            border-color: #005A9C;
+            box-shadow: 0 0 0 3px rgba(0, 90, 156, .25);
+        }
+        .results-container {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+            min-height: 220px;
+        }
+        .result-item {
+            display: flex;
+            justify-content: space-between;
+            padding: .75rem 0;
+            border-bottom: 1px solid #dee2e6;
+        }
+        .result-item:last-child {
+            border-bottom: none;
+        }
+        .result-label {
+            color: #6c757d;
+        }
+        .result-value {
+            font-weight: 700;
+            font-size: 1.25rem;
+            color: #28a745;
+        }
+    </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "QR Code Generator",
+  "description": "Generate QR codes instantly and effortlessly with our advanced QR Code Generator.",
+  "url": "https://calcdomain.com/qr-code-generator.html",
+  "author": {
+    "@type": "Person",
+    "name": "Ugo Candido"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "CalcDomain"
+  },
+  "mainEntity": {
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is a QR Code?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A QR code is a type of matrix barcode that contains information about the item to which it is attached."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I use a QR Code?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "To use a QR code, you simply need to scan it with a smartphone or QR code reader application."
+        }
+      }
+    ]
+  }
+}
+  </script>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="search.js" defer></script>
+<!-- MathJax for LaTeX formulas -->
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['\(','\)'], ['$', '$']],
+      displayMath: [['$','$'], ['\[','\]']]
+    },
+    svg: { fontCache: 'global' }
+  };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<link rel="preload" href="/assets/js/mobile-menu.js" as="script">
+<link rel="preload" href="/assets/js/page-enhancements.js" as="script">
+
+</head>
+<body>
+
+
+<header class="bg-white shadow-sm sticky top-0 z-50">
+  <nav class="container mx-auto px-4 lg:px-6 py-4 flex items-center justify-between" aria-label="Primary">
+    <a href="https://calcdomain.com/index.html" class="text-2xl font-bold text-blue-600">CalcDomain</a>
+    <div class="w-full max-w-md hidden md:block">
+      <label for="site-search" class="sr-only">Search calculators</label>
+      <div class="relative">
+        <input id="site-search" type="search" placeholder="Search for a calculator…" class="w-full py-2 px-4 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main class="container">
+<nav class="text-sm mb-4 text-gray-600" aria-label="Breadcrumb">
+  <ol class="flex flex-wrap gap-1 items-center"><li><a href="https://calcdomain.com/index.html" class="hover:text-blue-600">Home</a></li><li aria-hidden="true">»</li><li><a href="https://calcdomain.com/finance.html" class="hover:text-blue-600">Finance & Money</a></li><li aria-hidden="true">»</li><li aria-current="page" class="text-gray-800 font-medium">QR Code Generator</li></ol>
+</nav>
+<section aria-labelledby="calculator-heading" class="calculator-container">
+<h2 id="calculator-heading">Generate Your QR Code</h2>
+<p>This tool allows you to generate QR codes for URLs, text, or other data quickly and easily. Simply enter the information you want to encode, and your QR code will be generated instantly.</p>
+<form id="qrForm">
+<div class="form-group">
+<label for="dataInput">Data to Encode *</label>
+<input aria-describedby="dataInputError" aria-required="true" class="form-control" id="dataInput" placeholder="Enter URL or text" type="text"/>
+<div aria-live="polite" class="error-message" id="dataInputError" role="alert"></div>
+</div>
+<button class="btn btn-primary" onclick="generateQRCode()" type="button">Generate QR Code</button>
+</form>
+<div class="results-container" id="qrResult">
+<h3>QR Code Result</h3>
+<div id="qrCode"></div>
+</div>
+</section>
+<section class="content-container">
+<h2>Data Source and Methodology</h2>
+<p>All calculations and QR code generations are based on industry standards for QR code encoding.</p>
+<h2>The Formula Explained</h2>
+<div class="formula-box">
+<p><strong>QR Code Encoding:</strong> <code>[Data] -&gt; [Binary] -&gt; [QR Code Pattern]</code></p>
+</div>
+<h2>Glossary of Terms</h2>
+<ul>
+<li><strong>Data:</strong> The information you want to encode in the QR code.</li>
+<li><strong>QR Code:</strong> A type of matrix barcode that can be scanned to retrieve information.</li>
+</ul>
+<h2>Example: How It Works</h2>
+<p>For example, if you enter a URL like "https://example.com", our generator will convert this into a QR code pattern that can be scanned to open the URL in a web browser.</p>
+<h2>Frequently Asked Questions (FAQ)</h2>
+<div>
+<h3>What is a QR Code?</h3>
+<p>A QR code is a type of matrix barcode that contains information about the item to which it is attached.</p>
+<h3>How do I use a QR Code?</h3>
+<p>To use a QR code, you simply need to scan it with a smartphone or QR code reader application.</p>
+</div>
+</section>
+</main>
+
+<script defer="">
+        function generateQRCode() {
+            var dataInput = document.getElementById('dataInput').value;
+            var qrCodeContainer = document.getElementById('qrCode');
+            qrCodeContainer.innerHTML = '';
+            if (dataInput.trim() === '') {
+                document.getElementById('dataInputError').innerText = 'Please enter data to encode.';
+                return;
+            } else {
+                document.getElementById('dataInputError').innerText = '';
+                var qrCode = new QRCode(qrCodeContainer, {
+                    text: dataInput,
+                    width: 128,
+                    height: 128
+                });
+            }
+        }
+    </script>
+<script defer="" src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+
+<footer class="bg-white border-t mt-12">
+  <div class="container mx-auto px-6 py-8 text-center text-gray-600">
+    <p>&copy; 2025 CalcDomain. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://calcdomain.com/index.html"}, {"@type": "ListItem", "position": 2, "name": "Finance & Money", "item": "https://calcdomain.com/finance.html"}, {"@type": "ListItem", "position": 3, "name": "QR Code Generator", "item": "https://calcdomain.com/qr-code-generator.html"}]}</script>
+</body></html>

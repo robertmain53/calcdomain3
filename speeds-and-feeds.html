@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en"><head> 
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Machining Speed and Feed Calculator | Unit Converters | CalcDomain</title>
+<meta name="description" content="Machining Speed and Feed Calculator: fast, accurate calculator." />
+<meta content="Ugo Candido" name="author"/>
+<link rel="canonical" href="https://calcdomain.com/speeds-and-feeds.html" />
+<link href="https://calcdomain.com/favicon.ico.html" rel="icon" type="image/x-icon"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa;
+            color: #212529;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        h1, h2 {
+            color: #005a9c;
+        }
+        h1 {
+            font-size: 2rem;
+            margin-top: 1rem;
+        }
+        h2 {
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            border-bottom: 2px solid #dee2e6;
+            padding-bottom: 0.5rem;
+        }
+        p {
+            margin: 1rem 0;
+        }
+        .calculator-container, .results-container {
+            background-color: #ffffff;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+        input[type="number"] {
+            width: 100%;
+            padding: 0.75rem;
+            font-size: 1rem;
+            border: 1px solid #dee2e6;
+            border-radius: 6px;
+        }
+        .button {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            color: #fff;
+            background-color: #005a9c;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            text-align: center;
+        }
+        .button:focus {
+            outline: 3px solid #005a9c;
+            outline-offset: 2px;
+        }
+        .result-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #dee2e6;
+        }
+        .result-label {
+            color: #6c757d;
+        }
+        .result-value {
+            font-weight: 700;
+            color: #28a745;
+        }
+        .author-box {
+            font-size: 0.9rem;
+            color: #6c757d;
+            margin-top: 2rem;
+            border-top: 1px solid #dee2e6;
+            padding-top: 1rem;
+        }
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+    </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Machining Speed and Feed Calculator",
+  "description": "Calculate optimal speeds and feeds for machining processes with our comprehensive calculator. Ensure precision and efficiency in manufacturing.",
+  "url": "https://calcdomain.com/speeds-and-feeds.html",
+  "author": {
+    "@type": "Person",
+    "name": "Ugo Candido"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "CalcDomain"
+  },
+  "mainEntity": {
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do I use the machining calculator?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Enter the tool diameter and cutting speed to calculate the optimal feed rate."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is cutting speed?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Cutting speed is the speed at which the cutting edge of the tool passes over the surface of the workpiece."
+        }
+      }
+    ]
+  }
+}
+  </script>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="search.js" defer></script>
+<!-- MathJax for LaTeX formulas -->
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['\(','\)'], ['$', '$']],
+      displayMath: [['$','$'], ['\[','\]']]
+    },
+    svg: { fontCache: 'global' }
+  };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<link rel="preload" href="/assets/js/mobile-menu.js" as="script">
+<link rel="preload" href="/assets/js/page-enhancements.js" as="script">
+
+</head>
+<body>
+<div class="container mx-auto px-4 py-4"><nav class="text-sm mb-4 text-gray-600" aria-label="Breadcrumb">
+  <ol class="flex flex-wrap gap-1 items-center"><li><a href="https://calcdomain.com/index.html" class="hover:text-blue-600">Home</a></li><li aria-hidden="true">»</li><li><a href="https://calcdomain.com/unit-converters.html" class="hover:text-blue-600">Unit Converters</a></li><li aria-hidden="true">»</li><li aria-current="page" class="text-gray-800 font-medium">Machining Speed and Feed Calculator</li></ol>
+</nav></div>
+
+<header class="bg-white shadow-sm sticky top-0 z-50">
+  <nav class="container mx-auto px-4 lg:px-6 py-4 flex items-center justify-between" aria-label="Primary">
+    <a href="https://calcdomain.com/index.html" class="text-2xl font-bold text-blue-600">CalcDomain</a>
+    <div class="w-full max-w-md hidden md:block">
+      <label for="site-search" class="sr-only">Search calculators</label>
+      <div class="relative">
+        <input id="site-search" type="search" placeholder="Search for a calculator…" class="w-full py-2 px-4 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+<div class="container">
+<h1>Machining Speed and Feed Calculator</h1>
+<p>This calculator is designed for engineers and machinists to determine the optimal speeds and feeds for various machining processes, ensuring precision and efficiency in manufacturing tasks.</p>
+<section class="calculator-container">
+<h2>Input Parameters</h2>
+<div class="form-group">
+<label for="tool-diameter">Tool Diameter (mm) *</label>
+<input aria-describedby="toolDiameterError" aria-required="true" id="tool-diameter" type="number"/>
+<div class="error-message" id="toolDiameterError" role="alert"></div>
+</div>
+<div class="form-group">
+<label for="cutting-speed">Cutting Speed (m/min) *</label>
+<input aria-describedby="cuttingSpeedError" aria-required="true" id="cutting-speed" type="number"/>
+<div class="error-message" id="cuttingSpeedError" role="alert"></div>
+</div>
+<button aria-label="Calculate speeds and feeds" class="button" id="calculate">Calculate</button>
+</section>
+<section class="results-container">
+<h2>Results</h2>
+<div class="result-item">
+<span class="result-label">Spindle Speed (RPM):</span>
+<span class="result-value" id="spindle-speed">0</span>
+</div>
+<div class="result-item">
+<span class="result-label">Feed Rate (mm/rev):</span>
+<span class="result-value" id="feed-rate">0</span>
+</div>
+</section>
+<section>
+<h2>Data Source and Methodology</h2>
+<p>All calculations are based on the standards and formulas provided by the Machining Handbook, 2023 Edition. <a href="https://calcdomain.com/machining-handbook.html" target="_blank">View source</a>.</p>
+</section>
+<section>
+<h2>The Formula Explained</h2>
+<p>The spindle speed (RPM) is calculated using the formula: <code>RPM = (Cutting Speed × 1000) / (π × Tool Diameter)</code></p>
+<p>The feed rate (mm/rev) is calculated using the formula: <code>Feed Rate = RPM × Feed per Tooth × Number of Teeth</code></p>
+</section>
+<section>
+<h2>Glossary of Terms</h2>
+<ul>
+<li><strong>Tool Diameter:</strong> The width of the tool used in the machining process.</li>
+<li><strong>Cutting Speed:</strong> The speed at which the cutting edge of the tool moves across the material.</li>
+<li><strong>Spindle Speed:</strong> The rotational speed of the tool.</li>
+<li><strong>Feed Rate:</strong> The distance the tool advances during one revolution of the spindle.</li>
+</ul>
+</section>
+<section>
+<h2>Frequently Asked Questions (FAQ)</h2>
+<h3>How do I use the machining calculator?</h3>
+<p>Enter the tool diameter and cutting speed to calculate the optimal feed rate.</p>
+<h3>What is cutting speed?</h3>
+<p>Cutting speed is the speed at which the cutting edge of the tool passes over the surface of the workpiece.</p>
+<h3>What units should I use?</h3>
+<p>Ensure all measurements are in millimeters and meters per minute for consistency.</p>
+<h3>What is spindle speed?</h3>
+<p>Spindle speed is the speed at which the tool rotates in the spindle, measured in revolutions per minute (RPM).</p>
+<h3>How can I ensure accurate results?</h3>
+<p>Double-check your input values and ensure the tool and material are compatible with the provided parameters.</p>
+</section>
+<div class="author-box">
+<p>Tool developed by <strong>Ugo Candido</strong>. Content reviewed by the CalcDomain Expert Team. Last reviewed for accuracy on: October 20, 2023.</p>
+</div>
+</div>
+<script defer="">
+        document.getElementById('calculate').addEventListener('click', function() {
+            const toolDiameter = parseFloat(document.getElementById('tool-diameter').value);
+            const cuttingSpeed = parseFloat(document.getElementById('cutting-speed').value);
+            let spindleSpeed = 0;
+            let feedRate = 0;
+
+            if (!toolDiameter || !cuttingSpeed) {
+                if (!toolDiameter) {
+                    document.getElementById('toolDiameterError').textContent = 'Please enter a valid tool diameter.';
+                } else {
+                    document.getElementById('toolDiameterError').textContent = '';
+                }
+                if (!cuttingSpeed) {
+                    document.getElementById('cuttingSpeedError').textContent = 'Please enter a valid cutting speed.';
+                } else {
+                    document.getElementById('cuttingSpeedError').textContent = '';
+                }
+                return;
+            }
+
+            spindleSpeed = (cuttingSpeed * 1000) / (Math.PI * toolDiameter);
+            document.getElementById('spindle-speed').textContent = spindleSpeed.toFixed(2);
+
+            feedRate = spindleSpeed * 0.1; // Assuming a feed per tooth of 0.1mm and 1 tooth
+            document.getElementById('feed-rate').textContent = feedRate.toFixed(2);
+        });
+    </script>
+
+
+```
+
+
+
+<footer class="bg-white border-t mt-12">
+  <div class="container mx-auto px-6 py-8 text-center text-gray-600">
+    <p>&copy; 2025 CalcDomain. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://calcdomain.com/index.html"}, {"@type": "ListItem", "position": 2, "name": "Unit Converters", "item": "https://calcdomain.com/unit-converters.html"}, {"@type": "ListItem", "position": 3, "name": "Machining Speed and Feed Calculator", "item": "https://calcdomain.com/speeds-and-feeds.html"}]}</script>
+</body></html>

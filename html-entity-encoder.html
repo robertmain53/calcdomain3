@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en"><head> 
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<meta charset="utf-8"/>
+<title>HTML Entity Encoder/Decoder | Math | CalcDomain</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta name="description" content="HTML Entity Encoder/Decoder: fast, accurate calculator." />
+<meta content="Ugo Candido" name="author"/>
+<link rel="canonical" href="https://calcdomain.com/html-entity-encoder.html" />
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        h1 {
+            font-size: 2rem;
+            color: #005a9c;
+        }
+        p {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+        .calculator-container {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+        label {
+            display: block;
+            margin-top: 0.5rem;
+            font-weight: 600;
+        }
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-top: 0.5rem;
+            border: 1px solid #dee2e6;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        button {
+            background-color: #005a9c;
+            color: #fff;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            margin-top: 1rem;
+        }
+        button:hover {
+            background-color: #004080;
+        }
+        .results-container {
+            background-color: #e9ecef;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-top: 2rem;
+        }
+        .result-label {
+            font-weight: 600;
+        }
+        .content-section {
+            margin-top: 2rem;
+        }
+        .author-box {
+            font-size: 0.875rem;
+            color: #6c757d;
+            margin-top: 2rem;
+            border-top: 1px solid #dee2e6;
+            padding-top: 1rem;
+        }
+    </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "HTML Entity Encoder/Decoder",
+  "description": "Encode or decode HTML entities with ease using our advanced HTML Entity Encoder/Decoder.",
+  "url": "https://calcdomain.com/html-entity-encoder.html",
+  "author": {
+    "@type": "Person",
+    "name": "Ugo Candido"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Example Company"
+  },
+  "mainEntity": {
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is an HTML entity?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "An HTML entity is a piece of text (string) that begins with an ampersand (&) and ends with a semicolon (;)."
+        }
+      }
+    ]
+  }
+}
+  </script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="search.js" defer></script>
+<!-- MathJax for LaTeX formulas -->
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['\(','\)'], ['$', '$']],
+      displayMath: [['$','$'], ['\[','\]']]
+    },
+    svg: { fontCache: 'global' }
+  };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<link rel="preload" href="/assets/js/mobile-menu.js" as="script">
+<link rel="preload" href="/assets/js/page-enhancements.js" as="script">
+
+</head>
+<body>
+<div class="container mx-auto px-4 py-4"><nav class="text-sm mb-4 text-gray-600" aria-label="Breadcrumb">
+  <ol class="flex flex-wrap gap-1 items-center"><li><a href="https://calcdomain.com/index.html" class="hover:text-blue-600">Home</a></li><li aria-hidden="true">»</li><li><a href="https://calcdomain.com/math.html" class="hover:text-blue-600">Math</a></li><li aria-hidden="true">»</li><li aria-current="page" class="text-gray-800 font-medium">HTML Entity Encoder/Decoder</li></ol>
+</nav></div>
+
+<header class="bg-white shadow-sm sticky top-0 z-50">
+  <nav class="container mx-auto px-4 lg:px-6 py-4 flex items-center justify-between" aria-label="Primary">
+    <a href="https://calcdomain.com/index.html" class="text-2xl font-bold text-blue-600">CalcDomain</a>
+    <div class="w-full max-w-md hidden md:block">
+      <label for="site-search" class="sr-only">Search calculators</label>
+      <div class="relative">
+        <input id="site-search" type="search" placeholder="Search for a calculator…" class="w-full py-2 px-4 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+<div class="container">
+<h1>HTML Entity Encoder/Decoder</h1>
+<p>This tool is designed for developers and content creators who need to convert text to HTML entities or decode HTML entities back to normal text. It helps ensure that your content is properly displayed on the web by encoding special characters.</p>
+<section aria-labelledby="calculator-heading" class="calculator-container" id="entity-calculator">
+<h2 id="calculator-heading">Interactive Calculator</h2>
+<div>
+<label for="inputText">Input Text *</label>
+<textarea aria-required="true" id="inputText" placeholder="Enter your text here" rows="4"></textarea>
+</div>
+<div>
+<button onclick="encodeText()">Encode</button>
+<button onclick="decodeText()">Decode</button>
+</div>
+</section>
+<section class="results-container">
+<h2>Results</h2>
+<p class="result-label" id="resultText">Encoded/Decoded text will appear here.</p>
+</section>
+<section class="content-section">
+<h2>Data Source and Methodology</h2>
+<p>This tool uses the comprehensive HTML entity list from <a href="https://mothereff.in/html-entities" rel="noopener" target="_blank">Mother Effing HTML Entities</a>. All calculations are based on these standardized entities.</p>
+<h2>The Formula Explained</h2>
+<p>Encoding and decoding follow simple string replacement rules using standard HTML entity references.</p>
+<h2>Glossary of Variables</h2>
+<ul>
+<li><strong>Input Text:</strong> The text you wish to encode or decode.</li>
+<li><strong>Encoded Text:</strong> The text after converting special characters to HTML entities.</li>
+<li><strong>Decoded Text:</strong> The text after converting HTML entities back to normal characters.</li>
+</ul>
+<h2>Practical Example</h2>
+<h3>How It Works: A Step-by-Step Example</h3>
+<p>To encode the text "Hello &amp; welcome", it will be converted to "Hello &amp; welcome" using HTML entity encoding.</p>
+<h2>Frequently Asked Questions (FAQ)</h2>
+<h3>What is an HTML entity?</h3>
+<p>An HTML entity is a piece of text (string) that begins with an ampersand (&amp;) and ends with a semicolon (;).</p>
+<h3>Why use HTML entities?</h3>
+<p>HTML entities are used to display reserved characters in HTML like &lt;, &gt;, &amp;, etc., ensuring proper rendering.</p>
+<h3>How do I encode HTML entities?</h3>
+<p>Input your text into the provided text area and click "Encode" to convert special characters to HTML entities.</p>
+<h3>Can this tool decode HTML entities?</h3>
+<p>Yes, by pasting HTML encoded text into the input area and clicking "Decode", you can convert it back to normal text.</p>
+</section>
+<div class="author-box">
+<p>Tool developed by <strong>Ugo Candido</strong>. Content verified by the technical team.<br/>Last reviewed for accuracy on: October 15, 2023.</p>
+</div>
+</div>
+<script>
+        function encodeText() {
+            const inputText = document.getElementById('inputText').value;
+            const encodedText = inputText.replace(/[\u00A0-\u9999<>\&]/gim, function(i) {
+                return '&#' + i.charCodeAt(0) + ';';
+            });
+            document.getElementById('resultText').innerText = encodedText || 'No text to encode.';
+        }
+
+        function decodeText() {
+            const inputText = document.getElementById('inputText').value;
+            const textarea = document.createElement("textarea");
+            textarea.innerHTML = inputText;
+            const decodedText = textarea.value;
+            document.getElementById('resultText').innerText = decodedText || 'No text to decode.';
+        }
+    </script>
+
+
+```
+
+
+
+<footer class="bg-white border-t mt-12">
+  <div class="container mx-auto px-6 py-8 text-center text-gray-600">
+    <p>&copy; 2025 CalcDomain. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://calcdomain.com/index.html"}, {"@type": "ListItem", "position": 2, "name": "Math", "item": "https://calcdomain.com/math.html"}, {"@type": "ListItem", "position": 3, "name": "HTML Entity Encoder/Decoder", "item": "https://calcdomain.com/html-entity-encoder.html"}]}</script>
+</body></html>

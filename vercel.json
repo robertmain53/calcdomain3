@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    {
+      "source": "/subcategories/finance-taxes.html",
+      "destination": "/subcategories/taxes.html",
+      "permanent": true
+    },
+    {
+      "source": "/taxation.html",
+      "destination": "/subcategories/taxes.html",
+      "permanent": true
+    }
+  ]
+}

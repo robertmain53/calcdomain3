@@ -1,0 +1,2417 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Math | CalcDomain</title>
+  <meta name="description" content="Math calculators: complete hub with subcategories and full listings." />
+  <link rel="canonical" href="https://calcdomain.com/math.html" />
+  <link rel="icon" type="image/svg+xml" href="https://calcdomain.com/favicon.svg" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+</head><body class="bg-gray-50 text-gray-800">
+
+<header class="bg-white shadow-sm sticky top-0 z-50">
+  <nav class="container mx-auto px-4 lg:px-6 py-4 flex items-center justify-between" aria-label="Primary">
+    <a href="https://calcdomain.com/index.html" class="text-2xl font-bold text-blue-600">CalcDomain</a>
+    <div class="w-full max-w-md hidden md:block">
+      <label for="site-search" class="sr-only">Search calculators</label>
+      <div class="relative">
+        <input id="site-search" type="search" placeholder="Search for a calculator…" class="w-full py-2 px-4 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main class="container mx-auto px-4 py-8">
+  <nav class="text-sm mb-4 text-gray-600" aria-label="Breadcrumb">
+  <ol class="flex flex-wrap gap-1 items-center"><li><a href="https://calcdomain.com/index.html" class="hover:text-blue-600">Home</a></li><li aria-hidden="true">»</li><li aria-current="page" class="text-gray-800 font-medium">Math</li></ol>
+</nav>
+  <header class="mb-6">
+    <h1 class="text-4xl font-extrabold text-gray-900 mb-2">Math</h1>
+    <p class="text-gray-700">Browse every calculator in math — organized by subcategory.</p>
+    <div class="mt-4 flex flex-wrap gap-3 text-sm text-gray-600">
+      <span class="badge"><strong>Reviewed:</strong> Category Editor</span>
+      <span class="badge"><strong>Last updated:</strong> 2025-10-26</span>
+    </div>
+  </header>
+  
+<div class="mb-6">
+  <label for="filter" class="block text-sm font-medium text-gray-700 mb-1">Quick filter</label>
+  <input id="filter" type="text" placeholder="Type to filter (e.g., geometry, mortgage, tax…)" class="w-full md:max-w-md border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" aria-describedby="filter-help" />
+  <p id="filter-help" class="text-xs text-gray-500 mt-1">Filters tiles below in real time. Press Esc to clear.</p>
+</div>
+<script>
+(function(){
+  const input=document.getElementById('filter');
+  const tiles=Array.from(document.querySelectorAll('.cat-tiles a.link-tile'));
+  if(!input||!tiles.length) return;
+  const norm=s=>s.toLowerCase().normalize('NFKD').replace(/[^\w\s-]/g,'');
+  input.addEventListener('input',()=>{
+    const q=norm(input.value);
+    tiles.forEach(t=>{
+      const txt=norm(t.textContent||'');
+      t.parentElement.style.display = (!q||txt.includes(q)) ? '' : 'none';
+    });
+  });
+  input.addEventListener('keydown',(e)=>{ if(e.key==='Escape'){ input.value=''; input.dispatchEvent(new Event('input')); } });
+})();
+</script>
+
+  
+<section class="mb-10" aria-labelledby="general">
+  <div class="flex items-baseline justify-between gap-4 mb-2">
+    <h2 id="general" class="text-2xl font-bold">General</h2>
+    
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 cat-tiles">
+    <a href="/absi.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">A Body Shape Index (ABSI) Calculator</h3>
+</a>
+<a href="/a-search-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">A* Search Algorithm Calculator</h3>
+</a>
+<a href="/civil-aashto-lrfd.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">AASHTO LRFD Bridge Design Calculators</h3>
+</a>
+<a href="/absenteeism-rate.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Absenteeism Rate Calculator</h3>
+</a>
+<a href="/accessibility.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Accessibility Statement</h3>
+</a>
+<a href="/concrete-beam-design.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">ACI 318 Concrete Beam Flexural Strength Calculator</h3>
+</a>
+<a href="/concrete-shear-design.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">ACI 318 Concrete Beam Shear Strength Calculator</h3>
+</a>
+<a href="/concrete-column-design.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">ACI 318 Concrete Column Design Calculator</h3>
+</a>
+<a href="/civil-aci-318.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">ACI 318 Concrete Design Calculators</h3>
+</a>
+<a href="/concrete-footing-design.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">ACI 318 Concrete Footing Design Calculator</h3>
+</a>
+<a href="/retaining-wall-design.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">ACI 318 Concrete Retaining Wall Calculator</h3>
+</a>
+<a href="/punching-shear.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">ACI 318 Concrete Slab Punching Shear Calculator</h3>
+</a>
+<a href="/development-length-tension.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">ACI 318 Reinforcement Development Length Calculator (Tension)</h3>
+</a>
+<a href="/aci-concrete-mix-design.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">ACI Concrete Mix Design Calculator (Absolute Volume Method)</h3>
+</a>
+<a href="/acre-feet-to-gallons.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Acre-Feet to Gallons Converter</h3>
+</a>
+<a href="/acres-to-square-feet.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Acres to Square Feet Converter</h3>
+</a>
+<a href="/date.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Add/Subtract Days from a Date Calculator</h3>
+</a>
+<a href="/construction-advanced-construction-calculators.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Advanced Construction Calculators</h3>
+</a>
+<a href="/affine-cipher.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Affine Cipher Encoder/Decoder</h3>
+</a>
+<a href="/age.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Age Calculator</h3>
+</a>
+<a href="/agile-velocity.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Agile Velocity Calculator</h3>
+</a>
+<a href="/airbnb.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Airbnb / Vacation Rental Calculator</h3>
+</a>
+<a href="/aircraft-performance.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Aircraft Performance Calculator</h3>
+</a>
+<a href="/aircraft-range.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Aircraft Range and Endurance Calculator</h3>
+</a>
+<a href="/airfoil.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Airfoil Lift and Drag Calculator (XFOIL)</h3>
+</a>
+<a href="/civil-aisc-360.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">AISC 360 Steel Design Calculators</h3>
+</a>
+<a href="/alcohol-calorie.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Alcohol Calorie Calculator</h3>
+</a>
+<a href="/algebra.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Algebra Calculators</h3>
+</a>
+<a href="/alimony.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Alimony (Spousal Support) Calculator</h3>
+</a>
+<a href="/angle-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">angle calculator</h3>
+</a>
+<a href="/angle-converter.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Angle Unit Converter (Degrees, Radians, Gradians)</h3>
+</a>
+<a href="/angstrom-to-nm.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Angstroms to Nanometers Converter</h3>
+</a>
+<a href="/annulus-area.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Annulus (Ring) Area Calculator</h3>
+</a>
+<a href="/one-way-anova.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">ANOVA (One-Way) Calculator</h3>
+</a>
+<a href="/ansoff-matrix.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Ansoff Matrix Generator</h3>
+</a>
+<a href="/antenna-design.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Antenna Design Calculator</h3>
+</a>
+<a href="/api-latency.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">API Latency &amp; Throughput Calculator</h3>
+</a>
+<a href="/apm-test.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">APM (Actions Per Minute) Test</h3>
+</a>
+<a href="/apparent-absolute-magnitude.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Apparent &amp; Absolute Magnitude Calculator</h3>
+</a>
+<a href="/aquarium-stocking.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Aquarium Stocking Calculator</h3>
+</a>
+<a href="/conversions-area.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Area</h3>
+</a>
+<a href="/area-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">area calculator</h3>
+</a>
+<a href="/area-converter.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Area Unit Converter (Acres, Hectares, sq ft, sq m)</h3>
+</a>
+<a href="/asce-7-load-combinations.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">ASCE 7-16/22 Load Combinations — Pro Calculator</h3>
+</a>
+<a href="/dead-load.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">ASCE 7-22 Dead Load Calculator</h3>
+</a>
+<a href="/live-load.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">ASCE 7-22 Live Load Calculator</h3>
+</a>
+<a href="/civil-asce-7-22.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">ASCE 7-22 Load &amp; Hazard Calculators</h3>
+</a>
+<a href="/asce-7-22-snow-load.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">ASCE 7-22 Snow Load Calculator</h3>
+</a>
+<a href="/asce-7-22-tornado-load.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">ASCE 7-22 Tornado Load Calculator</h3>
+</a>
+<a href="/asphalt.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Asphalt Calculator</h3>
+</a>
+<a href="/asset-allocation.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Asset Allocation Calculator</h3>
+</a>
+<a href="/atbash-cipher.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Atbash Cipher Encoder/Decoder</h3>
+</a>
+<a href="/atm-to-psi.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Atmospheres to PSI Converter</h3>
+</a>
+<a href="/atterberg-limits.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Atterberg Limits Calculator</h3>
+</a>
+<a href="/automotive.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Automotive Calculators</h3>
+</a>
+<a href="/wood-beam-design.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">AWC NDS Wood Beam Design Calculator (Bending &amp; Shear)</h3>
+</a>
+<a href="/wood-column-design.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">AWC NDS Wood Column Design Calculator</h3>
+</a>
+<a href="/wood-bolt-design.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">AWC NDS Wood Connection Calculator (Bolts)</h3>
+</a>
+<a href="/wood-nail-design.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">AWC NDS Wood Connection Calculator (Nails)</h3>
+</a>
+<a href="/awg-to-mm.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">AWG to mm/mm² Converter</h3>
+</a>
+<a href="/azimuth-bearing-converter.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Azimuth and Bearing Converter</h3>
+</a>
+<a href="/baconian-cipher.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Baconian Cipher Encoder/Decoder</h3>
+</a>
+<a href="/bar-to-psi.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Bar to PSI Converter</h3>
+</a>
+<a href="/barns-to-square-meters.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Barns to Square Meters Converter</h3>
+</a>
+<a href="/barrels-to-gallons.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Barrels to Gallons Converter</h3>
+</a>
+<a href="/bathroom-layout-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Bathroom Layout Calculator</h3>
+</a>
+<a href="/bcg-matrix.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">bcg matrix</h3>
+</a>
+<a href="/bearing.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Bearing Calculator</h3>
+</a>
+<a href="/beer-bottling.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">beer bottling calculator</h3>
+</a>
+<a href="/beer-lambert-law.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Beer-Lambert Law Calculator</h3>
+</a>
+<a href="/bernoulli-equation.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Bernoulli's Equation Calculator</h3>
+</a>
+<a href="/biblical-units-converter.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Biblical Units Converter</h3>
+</a>
+<a href="/big-number.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Big Number Calculator</h3>
+</a>
+<a href="/bike-gear.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Bike Gear Calculator</h3>
+</a>
+<a href="/bike-size.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Bike Size Calculator</h3>
+</a>
+<a href="/binary.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Binary Calculator</h3>
+</a>
+<a href="/bioreactor-design.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Bioreactor Design Calculator</h3>
+</a>
+<a href="/bishop-score.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Bishop Score Calculator</h3>
+</a>
+<a href="/planck-s-law-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Blackbody Radiation Calculator (Planck's Law)</h3>
+</a>
+<a href="/blackjack-strategy.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">blackjack strategy</h3>
+</a>
+<a href="/bac.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Blood Alcohol Content (BAC) Calculator</h3>
+</a>
+<a href="/bmr.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">BMR (Basal Metabolic Rate) Calculator</h3>
+</a>
+<a href="/bod.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">BOD (Biochemical Oxygen Demand) Calculator</h3>
+</a>
+<a href="/bai.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Body Adiposity Index (BAI) Calculator</h3>
+</a>
+<a href="/body-shape.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Body Shape Calculator (Female)</h3>
+</a>
+<a href="/bsa.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Body Surface Area (BSA) Calculator</h3>
+</a>
+<a href="/bsa-dosing.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Body Surface Area (BSA) Dosing Calculator</h3>
+</a>
+<a href="/bolt-torque.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">bolt torque</h3>
+</a>
+<a href="/bpd-to-gpm.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">bpd to gpm</h3>
+</a>
+<a href="/braille-translator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Braille Translator</h3>
+</a>
+<a href="/brewster-s-angle-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Brewster's Angle Calculator</h3>
+</a>
+<a href="/adiabatic-equation.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">BS 7671 Adiabatic Equation Calculator</h3>
+</a>
+<a href="/bs-7671-cable-sizing.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">BS 7671 Cable Sizing Calculator</h3>
+</a>
+<a href="/bs-7671-voltage-drop.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">BS 7671 Voltage Drop Calculator</h3>
+</a>
+<a href="/50-30-20-budget.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Budget Calculator (50/30/20 Rule)</h3>
+</a>
+<a href="/building-energy.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Building Energy Performance Calculator</h3>
+</a>
+<a href="/bushels-to-liters.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Bushels to Liters Converter</h3>
+</a>
+<a href="/business-valuation.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Business Valuation Calculator (Multiple Methods)</h3>
+</a>
+<a href="/caching-strategy.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Caching Strategy Calculator</h3>
+</a>
+<a href="/caesar-cipher.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Caesar Cipher Encoder/Decoder</h3>
+</a>
+<a href="/cake-pan-converter.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Cake Pan Converter</h3>
+</a>
+<a href="/calculus.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Calculus Calculators</h3>
+</a>
+<a href="/cap-rate.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Cap Rate Calculator</h3>
+</a>
+<a href="/cap-theorem.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">cap theorem</h3>
+</a>
+<a href="/capm.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Capital Asset Pricing Model (CAPM) Calculator</h3>
+</a>
+<a href="/car-insurance.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">car insurance</h3>
+</a>
+<a href="/carat-to-grams.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Carat to Grams Converter</h3>
+</a>
+<a href="/carbohydrate.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Carbohydrate Intake Calculator</h3>
+</a>
+<a href="/carbon-dating.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Carbon Dating Calculator</h3>
+</a>
+<a href="/carbon-footprint.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Carbon Footprint Calculator</h3>
+</a>
+<a href="/cartesian-to-cylindrical.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Cartesian to Cylindrical Coordinate Converter</h3>
+</a>
+<a href="/cartesian-to-polar.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Cartesian to Polar Converter</h3>
+</a>
+<a href="/cartesian-to-spherical.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Cartesian to Spherical Converter</h3>
+</a>
+<a href="/template-cat.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Category Title</h3>
+</a>
+<a href="/cell-doubling-time.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Cell Doubling Time Calculator</h3>
+</a>
+<a href="/cm-to-inches.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Centimeters to Inches Converter</h3>
+</a>
+<a href="/central-angle-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">central angle calculator</h3>
+</a>
+<a href="/centripetal-force.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Centripetal Force Calculator</h3>
+</a>
+<a href="/chemical-equation-balancer.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Chemical Equation Balancer</h3>
+</a>
+<a href="/chi-square-test.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">chi square test</h3>
+</a>
+<a href="/chiller-load.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Chiller Load Calculator</h3>
+</a>
+<a href="/chord-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Chord Length Calculator</h3>
+</a>
+<a href="/churn-rate.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Churn Rate Calculator</h3>
+</a>
+<a href="/circle-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Circle Calculator</h3>
+</a>
+<a href="/circular-segment-area.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Circular Segment Area Calculator</h3>
+</a>
+<a href="/civil.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Civil Engineering Calculators</h3>
+</a>
+<a href="/coffee-cost.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Coffee Cost Calculator</h3>
+</a>
+<a href="/combination-and-permutation.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Combination and Permutation Calculator</h3>
+</a>
+<a href="/combination-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">combination calculator</h3>
+</a>
+<a href="/commercial-real-estate-pro-forma.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">commercial real estate pro forma</h3>
+</a>
+<a href="/commission.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Commission Calculator</h3>
+</a>
+<a href="/complex-number.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Complex Number Calculator</h3>
+</a>
+<a href="/concrete-admixture.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Concrete Admixture Dosage Calculator</h3>
+</a>
+<a href="/block-wall.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Concrete Block (CMU) Wall Calculator</h3>
+</a>
+<a href="/concrete-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Concrete Calculator</h3>
+</a>
+<a href="/concrete-column.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Concrete Column Calculator</h3>
+</a>
+<a href="/concrete-footing.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Concrete Footing Calculator</h3>
+</a>
+<a href="/construction-concrete-mix-design-and-quality.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Concrete Mix Design &amp; Quality</h3>
+</a>
+<a href="/construction-concrete-quantities-and-masonry.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Concrete Quantities &amp; Masonry</h3>
+</a>
+<a href="/concrete-slab.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Concrete Slab Volume Calculator</h3>
+</a>
+<a href="/water-cement-ratio.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Concrete Water-Cement Ratio Calculator</h3>
+</a>
+<a href="/cone-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">cone calculator</h3>
+</a>
+<a href="/cone-volume-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Cone Volume Calculator</h3>
+</a>
+<a href="/confidence-interval.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Confidence Interval Calculator</h3>
+</a>
+<a href="/construction.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Construction Calculators</h3>
+</a>
+<a href="/dewatering-flow-rate.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Construction Dewatering Flow Rate Calculator</h3>
+</a>
+<a href="/control-premium.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Control Premium Calculator</h3>
+</a>
+<a href="/conversions-length-and-distance.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">conversions length and distance</h3>
+</a>
+<a href="/convolution.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Convolution Calculator</h3>
+</a>
+<a href="/conversions-cooking-helpers.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Cooking Helpers</h3>
+</a>
+<a href="/cooper-test.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Cooper Test VO2 Max Calculator</h3>
+</a>
+<a href="/coordinate-calccalculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">coordinate calculator</h3>
+</a>
+<a href="/cord-to-cubic-feet.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Cords to Cubic Feet Converter</h3>
+</a>
+<a href="/core-math-algebra.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Core Math & Algebra Calculators</h3>
+</a>
+<a href="/correlation-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">correlation calculator</h3>
+</a>
+<a href="/cpm.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Cost Per Mille (CPM) Calculator</h3>
+</a>
+<a href="/covered-call.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Covered Call Calculator</h3>
+</a>
+<a href="/crane-lift-plan.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Crane Lift Plan Calculator</h3>
+</a>
+<a href="/credit-rating-model.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Credit Rating Model Calculator (Z-Score)</h3>
+</a>
+<a href="/critical-swim-speed.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Critical Swim Speed (CSS) Calculator</h3>
+</a>
+<a href="/cronbach-s-alpha-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Cronbach's Alpha Calculator</h3>
+</a>
+<a href="/cross-product.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Cross Product Calculator</h3>
+</a>
+<a href="/crystallizer-design.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Crystallizer Design Calculator</h3>
+</a>
+<a href="/cube-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">cube calculator</h3>
+</a>
+<a href="/cubic-feet-to-gallons.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Cubic Feet to Gallons Converter</h3>
+</a>
+<a href="/cbm.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Cubic Meter (CBM) Calculator</h3>
+</a>
+<a href="/cubic-meters-to-liters.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Cubic Meters to Liters Converter</h3>
+</a>
+<a href="/culvert-design.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Culvert Design Calculator</h3>
+</a>
+<a href="/cunningham-formula.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">cunningham formula</h3>
+</a>
+<a href="/cups-to-ml.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Cups to Milliliters Converter</h3>
+</a>
+<a href="/cups-to-tablespoons.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Cups to Tablespoons Converter</h3>
+</a>
+<a href="/curb-65-score.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">CURB-65 Score Calculator</h3>
+</a>
+<a href="/clv.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Customer Lifetime Value (CLV) Calculator</h3>
+</a>
+<a href="/cycling-power.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Cycling Power Calculator</h3>
+</a>
+<a href="/power-to-weight-ratio.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Cycling Power to Weight Ratio Calculator</h3>
+</a>
+<a href="/cyclomatic-complexity.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Cyclomatic Complexity Calculator</h3>
+</a>
+<a href="/cylinder-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">cylinder calculator</h3>
+</a>
+<a href="/cylinder-volume-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Cylinder Volume Calculator</h3>
+</a>
+<a href="/cylindrical-to-cartesian.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Cylindrical to Cartesian Converter</h3>
+</a>
+<a href="/dam-stability.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Dam Stability Calculator</h3>
+</a>
+<a href="/dps.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Damage Per Second (DPS) Calculator</h3>
+</a>
+<a href="/darcys-law.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Darcy's Law Groundwater Flow Calculator</h3>
+</a>
+<a href="/database-sizing.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Database Sizing Calculator</h3>
+</a>
+<a href="/days-of-inventory-on-hand.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Days of Inventory on Hand (DOH) Calculator</h3>
+</a>
+<a href="/days-payables-outstanding.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Days of Payables Outstanding (DPO) Calculator</h3>
+</a>
+<a href="/de-broglie-wavelength.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">de Broglie Wavelength Calculator</h3>
+</a>
+<a href="/decagon-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">decagon calculator</h3>
+</a>
+<a href="/decimal-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">decimal calculator</h3>
+</a>
+<a href="/dd-to-dms.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Decimal Degrees to Degrees, Minutes, Seconds Converter</h3>
+</a>
+<a href="/decision-tree.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">decision tree</h3>
+</a>
+<a href="/decking.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Decking Calculator</h3>
+</a>
+<a href="/degrees-to-radians.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Degrees to Radians Converter</h3>
+</a>
+<a href="/dms-to-dd.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Degrees, Minutes, Seconds to Decimal Degrees Converter</h3>
+</a>
+<a href="/delta-gap.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Delta Gap Calculator</h3>
+</a>
+<a href="/density.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Density Calculator</h3>
+</a>
+<a href="/dfs.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Depth-First Search (DFS) Calculator</h3>
+</a>
+<a href="/detention-pond.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Detention Pond Sizing Calculator</h3>
+</a>
+<a href="/diet-nutrition.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Diet & Nutrition Calculators</h3>
+</a>
+<a href="/differential-equation-solver.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Differential Equation Solver</h3>
+</a>
+<a href="/diffie-hellman.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Diffie-Hellman Key Exchange Calculator</h3>
+</a>
+<a href="/dijkstra-s-algorithm-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Dijkstra's Algorithm Calculator</h3>
+</a>
+<a href="/diophantine-equation.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Diophantine Equation Calculator</h3>
+</a>
+<a href="/disability-insurance.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Disability Insurance Calculator</h3>
+</a>
+<a href="/dcf-equity.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Discounted Cash Flow (DCF) Calculator (FCFE)</h3>
+</a>
+<a href="/discriminant-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">discriminant calculator</h3>
+</a>
+<a href="/distance-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Distance Calculator</h3>
+</a>
+<a href="/mccabe-thiele.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Distillation Column Calculator (McCabe-Thiele)</h3>
+</a>
+<a href="/dividend-yield.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Dividend Yield Calculator</h3>
+</a>
+<a href="/yield-on-cost.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Dividend Yield on Cost Calculator</h3>
+</a>
+<a href="/dna-concentration.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">DNA Concentration Calculator</h3>
+</a>
+<a href="/dna-to-protein-translator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">DNA to Protein Translator</h3>
+</a>
+<a href="/dodecagon-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">dodecagon calculator</h3>
+</a>
+<a href="/dot-product.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Dot Product Calculator</h3>
+</a>
+<a href="/doubling-time.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">doubling time</h3>
+</a>
+<a href="/drag-coefficient.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Drag Coefficient Calculator</h3>
+</a>
+<a href="/dream-interpretation.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Dream Interpretation Calculator</h3>
+</a>
+<a href="/drilled-shaft.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Drilled Shaft (Caisson) Capacity Calculator</h3>
+</a>
+<a href="/drug-dosage.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Drug Dosage Calculator</h3>
+</a>
+<a href="/drug-half-life.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Drug Half-Life Calculator</h3>
+</a>
+<a href="/drywall-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Drywall Calculator</h3>
+</a>
+<a href="/duct-sizing.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Duct Sizing Calculator (Equal Friction Method)</h3>
+</a>
+<a href="/due-date.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Due Date Calculator</h3>
+</a>
+<a href="/fire.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Early Retirement (FIRE) Calculator</h3>
+</a>
+<a href="/evm.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Earned Value Management (EVM) Calculator</h3>
+</a>
+<a href="/earth-dam-seepage.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Earth Dam Seepage Calculator</h3>
+</a>
+<a href="/eigenvalue-eigenvector.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Eigenvalue and Eigenvector Calculator</h3>
+</a>
+<a href="/conversions-electrical-and-wire.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Electrical &amp; Wire</h3>
+</a>
+<a href="/electronegativity-difference.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">electronegativity difference</h3>
+</a>
+<a href="/periodic-table.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Element Information Calculator</h3>
+</a>
+<a href="/ellipse-area.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Ellipse Area Calculator</h3>
+</a>
+<a href="/ellipse-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">ellipse calculator</h3>
+</a>
+<a href="/ellipsoid-volume.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Ellipsoid Volume Calculator</h3>
+</a>
+<a href="/empirical-formula.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Empirical Formula Calculator</h3>
+</a>
+<a href="/employee-stock-option.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Employee Stock Option (ESO) Valuation Calculator</h3>
+</a>
+<a href="/employee-turnover-rate.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Employee Turnover Rate Calculator</h3>
+</a>
+<a href="/engineering.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Engineering Calculators</h3>
+</a>
+<a href="/epoxy-resin.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Epoxy Resin Calculator</h3>
+</a>
+<a href="/equilateral-triangle-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">equilateral triangle calculator</h3>
+</a>
+<a href="/euclidean-algorithm.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Euclidean Algorithm Calculator</h3>
+</a>
+<a href="/euler-s-method-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Euler's Method Calculator</h3>
+</a>
+<a href="/euler-s-totient-function-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Euler's Totient Function Calculator</h3>
+</a>
+<a href="/eulers-totient-function.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Euler's Totient Function Calculator</h3>
+</a>
+<a href="/engineering-eurocode-0.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Eurocode 0 — Basis of Structural Design (EN 1990)</h3>
+</a>
+<a href="/eurocode-1-snow-load.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Eurocode 1 Snow Load Calculator</h3>
+</a>
+<a href="/eurocode-1-wind-load.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Eurocode 1 Wind Load Calculator</h3>
+</a>
+<a href="/engineering-eurocode-1.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Eurocode 1 — Actions on Structures (EC1)</h3>
+</a>
+<a href="/eurocode-2-beam-design.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Eurocode 2 Concrete Beam Flexural Design Calculator</h3>
+</a>
+<a href="/eurocode-2-shear-design.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Eurocode 2 Concrete Beam Shear Design Calculator</h3>
+</a>
+<a href="/eurocode-2-column-design.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Eurocode 2 Concrete Column Design Calculator</h3>
+</a>
+<a href="/eurocode-2-punching-shear.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Eurocode 2 Concrete Slab Punching Shear Calculator</h3>
+</a>
+<a href="/engineering-eurocode-2.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Eurocode 2 — Concrete (EC2)</h3>
+</a>
+<a href="/eurocode-3-bolted-connection.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Eurocode 3 Bolted Connection Design Calculator</h3>
+</a>
+<a href="/eurocode-3-beam-design.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Eurocode 3 Steel Beam Bending &amp; Shear Resistance Calculator</h3>
+</a>
+<a href="/engineering-eurocode-3.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Eurocode 3 — Steel (EC3)</h3>
+</a>
+<a href="/eurocode-4-composite-beam.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Eurocode 4 Composite Beam Design Calculator</h3>
+</a>
+<a href="/engineering-eurocode-4.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Eurocode 4 — Composite Steel–Concrete (EC4)</h3>
+</a>
+<a href="/eurocode-5-timber-beam.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Eurocode 5 Timber Beam Design Calculator</h3>
+</a>
+<a href="/eurocode-5-timber-column.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Eurocode 5 Timber Column Design Calculator</h3>
+</a>
+<a href="/engineering-eurocode-5.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Eurocode 5 — Timber (EC5)</h3>
+</a>
+<a href="/eurocode-6-concentrated-load.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Eurocode 6 Masonry Concentrated Load Calculator</h3>
+</a>
+<a href="/eurocode-6-shear-wall.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Eurocode 6 Masonry Shear Wall Design Calculator</h3>
+</a>
+<a href="/eurocode-6-masonry-wall.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Eurocode 6 Masonry Wall Design Calculator</h3>
+</a>
+<a href="/engineering-eurocode-6.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Eurocode 6 — Masonry (EC6)</h3>
+</a>
+<a href="/eurocode-7-retaining-wall.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">eurocode 7 retaining wall</h3>
+</a>
+<a href="/engineering-eurocode-7.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Eurocode 7 — Geotechnical (EC7)</h3>
+</a>
+<a href="/engineering-eurocode-8.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Eurocode 8 — Seismic Design (EC8)</h3>
+</a>
+<a href="/eurocode-9-aluminum-design.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Eurocode 9 Aluminum Beam Design Calculator</h3>
+</a>
+<a href="/eurocode-9-column-design.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Eurocode 9 Aluminum Column Design Calculator</h3>
+</a>
+<a href="/engineering-eurocode-9.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Eurocode 9 — Aluminium (EC9)</h3>
+</a>
+<a href="/cut-and-fill.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Excavation (Cut and Fill) Calculator</h3>
+</a>
+<a href="/exponent.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Exponent Calculator</h3>
+</a>
+<a href="/exponent-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Exponent calculator</h3>
+</a>
+<a href="/factor-of-safety.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Factor of Safety Calculator</h3>
+</a>
+<a href="/factorial.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Factorial Calculator</h3>
+</a>
+<a href="/factoring-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">factoring calculator</h3>
+</a>
+<a href="/feet-to-meters.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Feet to Meters Converter</h3>
+</a>
+<a href="/fertilizer.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Fertilizer Requirement Calculator</h3>
+</a>
+<a href="/fiber.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Fiber Intake Calculator</h3>
+</a>
+<a href="/fibonacci-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">fibonacci calculator</h3>
+</a>
+<a href="/fibonacci-number.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Fibonacci Number Calculator</h3>
+</a>
+<a href="/ficks-law.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Fick's Law of Diffusion Calculator</h3>
+</a>
+<a href="/fill-rate.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">fill rate</h3>
+</a>
+<a href="/filter-design.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Filter Design Calculator (Butterworth, Chebyshev)</h3>
+</a>
+<a href="/fin-heat-transfer.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Fin Heat Transfer Calculator</h3>
+</a>
+<a href="/fea-truss.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Finite Element Analysis (FEA) 2D Truss Calculator</h3>
+</a>
+<a href="/fitness.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Fitness Calculators</h3>
+</a>
+<a href="/floor-plan-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Floor Plan Calculator</h3>
+</a>
+<a href="/flooring-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Flooring Calculator</h3>
+</a>
+<a href="/fl-oz-to-ml.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Fluid Ounces to Milliliters Converter</h3>
+</a>
+<a href="/food-density.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Food-Specific Gravity to Weight Converter</h3>
+</a>
+<a href="/force.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Force Calculator</h3>
+</a>
+<a href="/forecasting.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Forecasting Calculator (Moving Average, Exponential Smoothing)</h3>
+</a>
+<a href="/formwork-pressure.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Formwork Pressure Calculator (ACI 347)</h3>
+</a>
+<a href="/civil-foundations.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Foundation Design Calculators</h3>
+</a>
+<a href="/fourier-series.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">fourier series</h3>
+</a>
+<a href="/construction-framing-and-carpentry.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Framing &amp; Carpentry</h3>
+</a>
+<a href="/frustum-volume.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Frustum of a Cone Volume Calculator</h3>
+</a>
+<a href="/fugacity.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Fugacity Coefficient Calculator</h3>
+</a>
+<a href="/function-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">function calculator</h3>
+</a>
+<a href="/function-point.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Function Point Analysis Calculator</h3>
+</a>
+<a href="/gabion-wall-design.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Gabion Wall Design Calculator</h3>
+</a>
+<a href="/gallons-to-liters.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Gallons to Liters Converter</h3>
+</a>
+<a href="/game-theory.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Game Theory (2x2 Matrix) Solver</h3>
+</a>
+<a href="/gas-mixture.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Gas Mixture Calculator</h3>
+</a>
+<a href="/gauss-to-tesla.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Gauss to Tesla Converter</h3>
+</a>
+<a href="/gcf-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">gcf calculator</h3>
+</a>
+<a href="/general-utility.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">General Utility Calculators</h3>
+</a>
+<a href="/geodetic-distance.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Geodetic Distance Calculator (Vincenty's Formulae)</h3>
+</a>
+<a href="/geometric-distribution.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Geometric Distribution Calculator</h3>
+</a>
+<a href="/geometry.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Geometry Calculators</h3>
+</a>
+<a href="/civil-geotechnical.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Geotechnical Design Calculators</h3>
+</a>
+<a href="/gfr.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">GFR (Glomerular Filtration Rate) Calculator</h3>
+</a>
+<a href="/glulam-beam-design.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Glulam Beam Design Calculator (AWC/NDS)</h3>
+</a>
+<a href="/goldbach-conjecture.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Goldbach Conjecture Calculator</h3>
+</a>
+<a href="/googlec8c0eedfe44345b9.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">googlec8c0eedfe44345b9</h3>
+</a>
+<a href="/grade.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Grade Calculator</h3>
+</a>
+<a href="/gram-schmidt.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Gram-Schmidt Orthonormalization Calculator</h3>
+</a>
+<a href="/grams-to-carats.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Grams to Carats Converter</h3>
+</a>
+<a href="/grams-to-cups.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Grams to Cups Calculator</h3>
+</a>
+<a href="/grams-to-moles.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Grams to Moles Calculator</h3>
+</a>
+<a href="/grams-to-ounces.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Grams to Ounces Converter</h3>
+</a>
+<a href="/grams-to-pounds.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Grams to Pounds Converter</h3>
+</a>
+<a href="/adjacency-matrix.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Graph Adjacency Matrix Calculator</h3>
+</a>
+<a href="/graphing-and-visualization.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Graphing &amp; Visualization</h3>
+</a>
+<a href="/graphing.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Graphing Calculator</h3>
+</a>
+<a href="/grass-seed.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Grass Seed Calculator</h3>
+</a>
+<a href="/gravel.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Gravel Calculator</h3>
+</a>
+<a href="/gravitational-lensing.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Gravitational Lensing Calculator</h3>
+</a>
+<a href="/gcf.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Greatest Common Factor (GCF) Calculator</h3>
+</a>
+<a href="/green-roof-load.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Green Roof Load Calculator</h3>
+</a>
+<a href="/guesstimate.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Guesstimate Calculator</h3>
+</a>
+<a href="/half-life.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Half-Life Calculator</h3>
+</a>
+<a href="/hash-generator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Hash Generator (MD5, SHA1, SHA256)</h3>
+</a>
+<a href="/health-fitness.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Health & Fitness Calculators</h3>
+</a>
+<a href="/health-and-fitness.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Health &amp; Fitness Calculators</h3>
+</a>
+<a href="/health-metrics.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Health Metrics Calculators</h3>
+</a>
+<a href="/heart-score.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">HEART Score Calculator</h3>
+</a>
+<a href="/heat-loss.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Heat Loss Calculator</h3>
+</a>
+<a href="/heat-transfer.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Heat Transfer Calculator</h3>
+</a>
+<a href="/uncertainty-principle.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Heisenberg Uncertainty Principle Calculator</h3>
+</a>
+<a href="/helical-pile.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Helical Pile Capacity Calculator</h3>
+</a>
+<a href="/hemocytometer.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Hemocytometer Cell Counting Calculator</h3>
+</a>
+<a href="/henderson-hasselbalch.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Henderson-Hasselbalch Calculator</h3>
+</a>
+<a href="/heptagon-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">heptagon calculator</h3>
+</a>
+<a href="/herons-formula-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">herons formula calculator</h3>
+</a>
+<a href="/hex.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Hexadecimal Calculator</h3>
+</a>
+<a href="/hexagon-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Hexagon Calculator</h3>
+</a>
+<a href="/hiking-time.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Hiking Time Calculator</h3>
+</a>
+<a href="/hill-cipher.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Hill Cipher Encoder/Decoder</h3>
+</a>
+<a href="/conversions-historical-and-specialized-units.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Historical &amp; Specialized Units</h3>
+</a>
+<a href="/hobbies.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Hobbies Calculators</h3>
+</a>
+<a href="/hogshead-to-gallons.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Hogsheads to Gallons Converter</h3>
+</a>
+<a href="/abv.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">homebrew abv calculator</h3>
+</a>
+<a href="/horizontal-curve.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Horizontal Curve Calculator</h3>
+</a>
+<a href="/hp-to-watts.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Horsepower to Watts Converter</h3>
+</a>
+<a href="/horsepower-to-weight-ratio.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Horsepower to Weight Ratio Calculator</h3>
+</a>
+<a href="/html-entity-encoder.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">HTML Entity Encoder/Decoder</h3>
+</a>
+<a href="/hvac-tonnage.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">HVAC Tonnage Calculator</h3>
+</a>
+<a href="/hydrostatic-pressure.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Hydrostatic Pressure Calculator</h3>
+</a>
+<a href="/hyperbolic-function.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Hyperbolic Function Calculator</h3>
+</a>
+<a href="/hyperbolic-functions.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Hyperbolic Functions Calculator (sinh, cosh, tanh)</h3>
+</a>
+<a href="/hypersonic-flow.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Hypersonic Flow Calculator</h3>
+</a>
+<a href="/ibu.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">IBU (International Bitterness Units) Calculator</h3>
+</a>
+<a href="/ibu-homebrew.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">ibu calculator homebrew</h3>
+</a>
+<a href="/ideal-gas-law.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Ideal Gas Law Calculator</h3>
+</a>
+<a href="/implied-volatility.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Implied Volatility Calculator</h3>
+</a>
+<a href="/inches-to-picas.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Inches to Picas Converter</h3>
+</a>
+<a href="/infusion-rate.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Infusion Rate Calculator</h3>
+</a>
+<a href="/inscribed-angle-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">inscribed angle calculator</h3>
+</a>
+<a href="/r-value.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Insulation R-Value Calculator</h3>
+</a>
+<a href="/integral.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Integral Calculator</h3>
+</a>
+<a href="/intercept-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">intercept calculator</h3>
+</a>
+<a href="/construction-interiors-envelope-and-finishes.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Interiors, Envelope &amp; Finishes</h3>
+</a>
+<a href="/intermittent-fasting.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Intermittent Fasting Calculator</h3>
+</a>
+<a href="/interval-notation.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Interval Notation Calculator</h3>
+</a>
+<a href="/newsvendor-model.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Inventory Control (Newsvendor) Model Calculator</h3>
+</a>
+<a href="/eoq.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Inventory Management (EOQ) Calculator</h3>
+</a>
+<a href="/inverse-hyperbolic-functions.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Inverse Hyperbolic Functions Calculator</h3>
+</a>
+<a href="/inverse-square-law-sound.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Inverse Square Law Calculator (Sound)</h3>
+</a>
+<a href="/iron-condor.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Iron Condor Calculator</h3>
+</a>
+<a href="/irregular-polygon-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Irregular Polygon Calculator</h3>
+</a>
+<a href="/island-biogeography.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Island Biogeography Calculator</h3>
+</a>
+<a href="/isosceles-triangle-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">isosceles triangle calculator</h3>
+</a>
+<a href="/isotope-abundance.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Isotope Abundance Calculator</h3>
+</a>
+<a href="/italian-pension.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Italian Pension (Pensione) Calculator</h3>
+</a>
+<a href="/pokemon-iv.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">IV Calculator for Pokémon</h3>
+</a>
+<a href="/iv-drip-rate.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">IV Drip Rate Calculator</h3>
+</a>
+<a href="/jensen-s-alpha-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Jensen's Alpha Calculator</h3>
+</a>
+<a href="/joules-to-calories.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Joules to Calories Converter</h3>
+</a>
+<a href="/journal-bearing-design.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">journal bearing design</h3>
+</a>
+<a href="/k-map-solver.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Karnaugh Map (K-Map) Solver</h3>
+</a>
+<a href="/katch-mcardle.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Katch-McArdle Formula Calculator</h3>
+</a>
+<a href="/kg-to-lbs.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Kilograms to Pounds Converter</h3>
+</a>
+<a href="/km-to-miles.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Kilometers to Miles Converter</h3>
+</a>
+<a href="/kitchen-layout-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Kitchen Layout Calculator</h3>
+</a>
+<a href="/kite-area.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Kite Area Calculator</h3>
+</a>
+<a href="/kite-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">kite calculator</h3>
+</a>
+<a href="/knitting-gauge.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Knitting Gauge Calculator</h3>
+</a>
+<a href="/kph-to-mph.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">KPH to MPH Converter</h3>
+</a>
+<a href="/kwh-to-joules.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">kWh to Joules Converter</h3>
+</a>
+<a href="/ldl.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">LDL Cholesterol Calculator (Friedewald Equation)</h3>
+</a>
+<a href="/learning-curve.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Learning Curve Calculator</h3>
+</a>
+<a href="/length-contraction.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Length Contraction Calculator</h3>
+</a>
+<a href="/life-and-earth-sciences.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Life &amp; Earth Sciences Calculators</h3>
+</a>
+<a href="/life-table.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Life Table Calculator</h3>
+</a>
+<a href="/lift-coefficient.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Lift Coefficient Calculator</h3>
+</a>
+<a href="/light-gauge-steel-design.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Light Gauge Steel Framing Calculator</h3>
+</a>
+<a href="/linear-algebra.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Linear Algebra Calculators</h3>
+</a>
+<a href="/linear-programming.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Linear Programming Solver</h3>
+</a>
+<a href="/linear-transformation.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Linear Transformation Calculator</h3>
+</a>
+<a href="/liters-to-gallons.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Liters to Gallons Converter</h3>
+</a>
+<a href="/littles-law.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Little's Law Calculator</h3>
+</a>
+<a href="/load-balancing-simulator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Load Balancing Algorithm Simulator</h3>
+</a>
+<a href="/loading-dose.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Loading Dose Calculator</h3>
+</a>
+<a href="/log.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Logarithm (Log) Calculator</h3>
+</a>
+<a href="/logarithm-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">logarithm calculator</h3>
+</a>
+<a href="/logistic-regression.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Logistic Regression Calculator</h3>
+</a>
+<a href="/long-term-care-cost.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Long-Term Care Cost Calculator</h3>
+</a>
+<a href="/lorem-ipsum-generator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Lorem Ipsum Generator</h3>
+</a>
+<a href="/lumber-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Lumber Calculator</h3>
+</a>
+<a href="/luminosity.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Luminosity Calculator</h3>
+</a>
+<a href="/macd.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">MACD (Moving Average Convergence Divergence) Calculator</h3>
+</a>
+<a href="/magnetic-declination.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Magnetic Declination Calculator</h3>
+</a>
+<a href="/magnification.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Magnification Calculator</h3>
+</a>
+<a href="/maintenance-dose.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Maintenance Dose Calculator</h3>
+</a>
+<a href="/manning-s-equation-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Manning's Equation Calculator</h3>
+</a>
+<a href="/mark-recapture.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Mark-Recapture (Lincoln-Petersen) Calculator</h3>
+</a>
+<a href="/markov-chain-simulator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Markov Chain Simulator</h3>
+</a>
+<a href="/masonry-lintel-design.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">masonry lintel design</h3>
+</a>
+<a href="/masonry-shear-wall-design.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Masonry Shear Wall Design Calculator</h3>
+</a>
+<a href="/masonry-wall-design.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Masonry Wall Design Calculator (ASD)</h3>
+</a>
+<a href="/e-mc2.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Mass-Energy Equivalence Calculator (E=mc²)</h3>
+</a>
+<a href="/materials.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Materials Calculators</h3>
+</a>
+<a href="/materials-estimation.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Materials Estimation Calculators</h3>
+</a>
+<a href="/math-conversions.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Math & Conversion Calculators</h3>
+</a>
+<a href="/math.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Math Calculators</h3>
+</a>
+<a href="/math-conversions-core-math-algebra.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">math conversions core math algebra</h3>
+</a>
+<a href="/math-conversions-geometry.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">math conversions geometry</h3>
+</a>
+<a href="/math-conversions-measurement-unit-conversions.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">math conversions measurement unit conversions</h3>
+</a>
+<a href="/matrix-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Matrix Calculator</h3>
+</a>
+<a href="/matrix-determinant.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Matrix Determinant Calculator</h3>
+</a>
+<a href="/matrix-inverse.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Matrix Inverse Calculator</h3>
+</a>
+<a href="/matrix-rank.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Matrix Rank Calculator</h3>
+</a>
+<a href="/matrix-transpose.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Matrix Transpose Calculator</h3>
+</a>
+<a href="/mean-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">mean calculator</h3>
+</a>
+<a href="/measurement-unit-conversions.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Measurement Unit Conversions Calculators</h3>
+</a>
+<a href="/median-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">median calculator</h3>
+</a>
+<a href="/membrane-separation.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Membrane Separation Calculator</h3>
+</a>
+<a href="/m-a-model-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Merger &amp; Acquisition (M&amp;A) Model Calculator</h3>
+</a>
+<a href="/meters-to-feet.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Meters to Feet Converter</h3>
+</a>
+<a href="/micropile-design.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Micropile Design Calculator</h3>
+</a>
+<a href="/miles-to-km.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Miles to Kilometers Converter</h3>
+</a>
+<a href="/ml-to-cups.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Milliliters to Cups Converter</h3>
+</a>
+<a href="/kruskal-s-algorithm-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Minimum Spanning Tree (Kruskal's Algorithm) Calculator</h3>
+</a>
+<a href="/prim-s-algorithm-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Minimum Spanning Tree (Prim's Algorithm) Calculator</h3>
+</a>
+<a href="/lifestyle-everyday-miscellaneous.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Miscellaneous Everyday Calculators</h3>
+</a>
+<a href="/mode-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">mode calculator</h3>
+</a>
+<a href="/modular-arithmetic.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Modular Arithmetic Calculator</h3>
+</a>
+<a href="/modular-exponentiation.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Modular Exponentiation Calculator</h3>
+</a>
+<a href="/modular-inverse.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Modular Inverse Calculator</h3>
+</a>
+<a href="/modulo.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Modulo Calculator</h3>
+</a>
+<a href="/molarity.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Molarity Calculator</h3>
+</a>
+<a href="/molecular-formula.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Molecular Formula Calculator</h3>
+</a>
+<a href="/monte-carlo-simulation.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Monte Carlo Simulation Calculator</h3>
+</a>
+<a href="/morse-code-translator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Morse Code Translator</h3>
+</a>
+<a href="/mortar-mix.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Mortar Mix Calculator</h3>
+</a>
+<a href="/mph-to-kph.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">MPH to KPH Converter</h3>
+</a>
+<a href="/mulch.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Mulch Calculator</h3>
+</a>
+<a href="/naive-bayes.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Naive Bayes Classifier Calculator</h3>
+</a>
+<a href="/phonetic-alphabet-translator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">NATO Phonetic Alphabet Translator</h3>
+</a>
+<a href="/navy-prt.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Navy Physical Readiness Test (PRT) Score Calculator</h3>
+</a>
+<a href="/nec-box-fill.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">NEC Box Fill Calculator</h3>
+</a>
+<a href="/nec-conduit-fill.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">NEC Conduit Fill Calculator</h3>
+</a>
+<a href="/egc-sizing.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">NEC Equipment Grounding Conductor (EGC) Sizing Calculator</h3>
+</a>
+<a href="/gec-sizing.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">NEC Grounding Electrode Conductor (GEC) Sizing Calculator</h3>
+</a>
+<a href="/motor-fla.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">NEC Motor FLA/FLC Calculator</h3>
+</a>
+<a href="/nec-dwelling-load-calculation.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">NEC Service Load Calculator (Dwelling)</h3>
+</a>
+<a href="/nec-commercial-load-calculation.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">NEC Service Load Calculator (Non-Dwelling)</h3>
+</a>
+<a href="/nec-voltage-drop.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">NEC Voltage Drop Calculator</h3>
+</a>
+<a href="/net-carbs.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Net Carbs Calculator</h3>
+</a>
+<a href="/nfl-draft-value-chart.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">nfl draft value chart</h3>
+</a>
+<a href="/passer-rating.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">NFL Passer Rating Calculator</h3>
+</a>
+<a href="/nfl-passer-rating.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">NFL Passer Rating Calculator</h3>
+</a>
+<a href="/niche-breadth.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Niche Breadth Calculator</h3>
+</a>
+<a href="/nihss.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">NIH Stroke Scale (NIHSS) Calculator</h3>
+</a>
+<a href="/nitrogen-balance.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Nitrogen Balance Calculator</h3>
+</a>
+<a href="/nonagon-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">nonagon calculator</h3>
+</a>
+<a href="/nnt.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Number Needed to Treat (NNT) Calculator</h3>
+</a>
+<a href="/number-sequence.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Number Sequence Calculator</h3>
+</a>
+<a href="/number-theory.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Number Theory Calculators</h3>
+</a>
+<a href="/ocean-acidification.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Ocean Acidification (pH) Calculator</h3>
+</a>
+<a href="/octagon-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">octagon calculator</h3>
+</a>
+<a href="/octahedron-volume.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">octahedron volume</h3>
+</a>
+<a href="/op-amp.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Op-Amp Calculator</h3>
+</a>
+<a href="/ops.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">OPS (On-Base Plus Slugging) Calculator</h3>
+</a>
+<a href="/orifice-plate.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">orifice plate</h3>
+</a>
+<a href="/orifice-plate-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">orifice plate calculator</h3>
+</a>
+<a href="/ounces-to-grams.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Ounces to Grams Converter</h3>
+</a>
+<a href="/ounces-to-tablespoons.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Ounces to Tablespoons Converter</h3>
+</a>
+<a href="/oee.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Overall Equipment Effectiveness (OEE) Calculator</h3>
+</a>
+<a href="/ovulation.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Ovulation Calculator</h3>
+</a>
+<a href="/ergun-equation.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Packed Bed Pressure Drop Calculator (Ergun Equation)</h3>
+</a>
+<a href="/paint.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Paint Calculator</h3>
+</a>
+<a href="/paint-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Paint Calculator</h3>
+</a>
+<a href="/paint-mixing.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Paint Mixing Calculator</h3>
+</a>
+<a href="/parallelogram-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">parallelogram calculator</h3>
+</a>
+<a href="/parking-lot-layout.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Parking Lot Layout Calculator</h3>
+</a>
+<a href="/parkland-formula.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Parkland Formula Calculator (Burns)</h3>
+</a>
+<a href="/partial-fraction-decomposition.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Partial Fraction Decomposition Calculator</h3>
+</a>
+<a href="/pascals-to-psi.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Pascals to PSI Converter</h3>
+</a>
+<a href="/password-generator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Password Generator</h3>
+</a>
+<a href="/aashto-1993-pavement-design.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Pavement Design (AASHTO 1993) Calculator</h3>
+</a>
+<a href="/pediatric-bsa-dosing.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Pediatric Dosage Calculator (by BSA)</h3>
+</a>
+<a href="/pediatric-dosage.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Pediatric Dosage Calculator (by Weight)</h3>
+</a>
+<a href="/peld-score.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">PELD (Pediatric End-Stage Liver Disease) Score Calculator</h3>
+</a>
+<a href="/penn-state-equation.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Penn State Equation Calculator</h3>
+</a>
+<a href="/pentagon-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">pentagon calculator</h3>
+</a>
+<a href="/percent-error.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Percent Error Calculator</h3>
+</a>
+<a href="/percent-error-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Percent Error Calculator</h3>
+</a>
+<a href="/percent-yield.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Percent Yield Calculator</h3>
+</a>
+<a href="/perfect-number.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Perfect Number Calculator</h3>
+</a>
+<a href="/perimeter-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">perimeter calculator</h3>
+</a>
+<a href="/period.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Period Calculator</h3>
+</a>
+<a href="/permutation-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">permutation calculator</h3>
+</a>
+<a href="/pesticide.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Pesticide Application Rate Calculator</h3>
+</a>
+<a href="/ph.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">pH Calculator</h3>
+</a>
+<a href="/depth-of-field.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Photography Depth of Field (DoF) Calculator</h3>
+</a>
+<a href="/pig-latin-translator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Pig Latin Translator</h3>
+</a>
+<a href="/pile-capacity.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Pile Capacity Calculator</h3>
+</a>
+<a href="/pile-group-efficiency.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">pile group efficiency</h3>
+</a>
+<a href="/pints-to-cups.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Pints to Cups Converter</h3>
+</a>
+<a href="/pints-to-liters.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Pints to Liters Converter</h3>
+</a>
+<a href="/darcy-weisbach.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Pipe Flow Calculator (Darcy-Weisbach)</h3>
+</a>
+<a href="/hazen-williams.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Pipe Flow Calculator (Hazen-Williams)</h3>
+</a>
+<a href="/pirate-name-generator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Pirate Name Generator</h3>
+</a>
+<a href="/pixels-to-ems.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Pixels to Ems Converter</h3>
+</a>
+<a href="/pizza.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Pizza Calculator</h3>
+</a>
+<a href="/plagiarism-checker.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Plagiarism Checker</h3>
+</a>
+<a href="/plate-loading.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Plate Loading Calculator</h3>
+</a>
+<a href="/plate-tectonics.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Plate Tectonics Velocity Calculator</h3>
+</a>
+<a href="/points-to-pixels.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Points to Pixels Converter</h3>
+</a>
+<a href="/polar-to-cartesian.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Polar to Cartesian Converter</h3>
+</a>
+<a href="/polygon-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">polygon calculator</h3>
+</a>
+<a href="/polygon-interior-angles.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Polygon Interior Angles Calculator</h3>
+</a>
+<a href="/pool-volume.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Pool Volume Calculator</h3>
+</a>
+<a href="/population-pyramid-generator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Population Pyramid Generator</h3>
+</a>
+<a href="/porosity.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Porosity Calculator</h3>
+</a>
+<a href="/position-size.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Position Size Calculator</h3>
+</a>
+<a href="/pounds-to-grams.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Pounds to Grams Converter</h3>
+</a>
+<a href="/lbs-to-kg.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Pounds to Kilograms Converter</h3>
+</a>
+<a href="/power.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Power Calculator</h3>
+</a>
+<a href="/power-factor-correction.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Power Factor Correction Calculator</h3>
+</a>
+<a href="/precedent-transaction-analysis.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Precedent Transaction Analysis Calculator</h3>
+</a>
+<a href="/pressure.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Pressure Calculator</h3>
+</a>
+<a href="/primer-tm.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Primer Design Calculator (Tm)</h3>
+</a>
+<a href="/priming-sugar-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Priming Sugar Calculator</h3>
+</a>
+<a href="/priming-sugar.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Priming Sugar Calculator</h3>
+</a>
+<a href="/priming-sugar-5-gallons.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">priming sugar calculator 5 gallons</h3>
+</a>
+<a href="/pca.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Principal Component Analysis (PCA) Calculator</h3>
+</a>
+<a href="/prism-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">prism calculator</h3>
+</a>
+<a href="/project-layout-design.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Project Layout & Design Calculators</h3>
+</a>
+<a href="/protein.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Protein Intake Calculator</h3>
+</a>
+<a href="/isoelectric-point.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Protein Isoelectric Point (pI) Calculator</h3>
+</a>
+<a href="/psi-to-atm.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">PSI to Atmospheres Converter</h3>
+</a>
+<a href="/psi-to-bar.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">PSI to Bar Converter</h3>
+</a>
+<a href="/psi-to-pascals.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">PSI to Pascals Converter</h3>
+</a>
+<a href="/psychrometric-chart.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Psychrometric Chart Calculator</h3>
+</a>
+<a href="/pulley-speed.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Pulley Speed Calculator</h3>
+</a>
+<a href="/pump-power.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">pump power</h3>
+</a>
+<a href="/purchasing-power-parity.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Purchasing Power Parity (PPP) Calculator</h3>
+</a>
+<a href="/push-up-test.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Push-Up Test Calculator</h3>
+</a>
+<a href="/pyramid-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">pyramid calculator</h3>
+</a>
+<a href="/pythagorean-theorem-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Pythagorean Theorem Calculator</h3>
+</a>
+<a href="/pythagorean-theorem.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Pythagorean Theorem Calculator</h3>
+</a>
+<a href="/q-value.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Q-Value of a Nuclear Reaction Calculator</h3>
+</a>
+<a href="/qsofa.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">qSOFA (Quick SOFA) Score Calculator</h3>
+</a>
+<a href="/quadratic-formula.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Quadratic Formula Calculator</h3>
+</a>
+<a href="/quarts-to-cups.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Quarts to Cups Converter</h3>
+</a>
+<a href="/quarts-to-liters.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Quarts to Liters Converter</h3>
+</a>
+<a href="/quaternion.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Quaternion Calculator</h3>
+</a>
+<a href="/radians-to-degrees.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Radians to Degrees Converter</h3>
+</a>
+<a href="/radiation-shielding.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Radiation Shielding Calculator (Half-Value Layer)</h3>
+</a>
+<a href="/root.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Radical (Root) Calculator</h3>
+</a>
+<a href="/radioactive-decay.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Radioactive Decay Calculator</h3>
+</a>
+<a href="/rafter.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Rafter Length Calculator</h3>
+</a>
+<a href="/random-number-generator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Random Number Generator</h3>
+</a>
+<a href="/range-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">range calculator</h3>
+</a>
+<a href="/ranson-s-criteria-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Ranson's Criteria Calculator</h3>
+</a>
+<a href="/raoult-s-law-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Raoult's Law Calculator</h3>
+</a>
+<a href="/ratio.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Ratio Calculator</h3>
+</a>
+<a href="/rational-method.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Rational Method Runoff Calculator</h3>
+</a>
+<a href="/reactor-design.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Reactor Design Calculator (CSTR &amp; PFR)</h3>
+</a>
+<a href="/real-options-valuation.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Real Options Valuation Calculator</h3>
+</a>
+<a href="/rebar-weight.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Rebar Weight Calculator</h3>
+</a>
+<a href="/receivables-turnover.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Receivables Turnover Calculator</h3>
+</a>
+<a href="/rectangle-area-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Rectanglimit-calculatorle Area Calculator</h3>
+</a>
+<a href="/rectangular-prism-volume.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">rectangular prism volume</h3>
+</a>
+<a href="/regression-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">regression calculator</h3>
+</a>
+<a href="/dodecahedron-volume.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Regular Dodecahedron Volume Calculator</h3>
+</a>
+<a href="/regular-ngon-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">regular ngon calculator</h3>
+</a>
+<a href="/regular-polygon-area.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Regular Polygon Area Calculator</h3>
+</a>
+<a href="/regular-polygon-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Regular Polygon Calculator</h3>
+</a>
+<a href="/tetrahedron-volume.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Regular Tetrahedron Volume Calculator</h3>
+</a>
+<a href="/rems-to-pixels.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Rems to Pixels Converter</h3>
+</a>
+<a href="/resistor-color-code.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Resistor Color Code Calculator</h3>
+</a>
+<a href="/retaining-wall-stability.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Retaining Wall Stability Calculator</h3>
+</a>
+<a href="/reverberation-time.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Reverberation Time Calculator (Sabine Formula)</h3>
+</a>
+<a href="/reynolds-number.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Reynolds Number Calculator</h3>
+</a>
+<a href="/rhombus-area.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Rhombus Area Calculator</h3>
+</a>
+<a href="/rhombus-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">rhombus calculator</h3>
+</a>
+<a href="/right-triangle.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Right Triangle Calculator</h3>
+</a>
+<a href="/right-triangle-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">right triangle calculator</h3>
+</a>
+<a href="/risk-assessment-matrix.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Risk Assessment Matrix Calculator</h3>
+</a>
+<a href="/rock-paper-scissors-simulator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Rock Paper Scissors Simulator</h3>
+</a>
+<a href="/rqd.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Rock Quality Designation (RQD) Calculator</h3>
+</a>
+<a href="/rocket-engine-performance.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Rocket Engine Performance Calculator</h3>
+</a>
+<a href="/rood-to-acres.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Roods to Acres Converter</h3>
+</a>
+<a href="/roof-pitch.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Roof Pitch Calculator</h3>
+</a>
+<a href="/construction-roofing.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Roofing</h3>
+</a>
+<a href="/roofing.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Roofing Calculator</h3>
+</a>
+<a href="/room-layout-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Room Layout Calculator</h3>
+</a>
+<a href="/5-whys.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Root Cause Analysis (5 Whys) Generator</h3>
+</a>
+<a href="/root-locus.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Root Locus Calculator</h3>
+</a>
+<a href="/roots-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">roots calculator</h3>
+</a>
+<a href="/rot13.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">ROT13 Cipher Encoder/Decoder</h3>
+</a>
+<a href="/roulette-odds.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Roulette Odds Calculator</h3>
+</a>
+<a href="/rsa.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">RSA Encryption/Decryption Calculator</h3>
+</a>
+<a href="/running-time-predictor.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Running Time Predictor</h3>
+</a>
+<a href="/safety-stock.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Safety Stock Calculator</h3>
+</a>
+<a href="/sag-and-tension.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">sag and tension</h3>
+</a>
+<a href="/sand.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Sand Calculator</h3>
+</a>
+<a href="/link-budget.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Satellite Link Budget Calculator</h3>
+</a>
+<a href="/save-percentage.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Save Percentage Calculator</h3>
+</a>
+<a href="/scale-conversion.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Scale Conversion Calculator</h3>
+</a>
+<a href="/scalene-triangle-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">scalene triangle calculator</h3>
+</a>
+<a href="/scientific-notation.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Scientific Notation Calculator</h3>
+</a>
+<a href="/sector-area-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Sector Area Calculator</h3>
+</a>
+<a href="/segment-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">segment calculator</h3>
+</a>
+<a href="/asce-7-16-seismic.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Seismic Load Calculator (ASCE 7-16)</h3>
+</a>
+<a href="/semaphore-translator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Semaphore Flag Translator</h3>
+</a>
+<a href="/sequence-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">sequence calculator</h3>
+</a>
+<a href="/series-parallel-resistor.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Series and Parallel Resistor Calculator</h3>
+</a>
+<a href="/series-and-sequences.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">series and sequences</h3>
+</a>
+<a href="/series-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">series calculator</h3>
+</a>
+<a href="/set-theory.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Set Theory Calculator</h3>
+</a>
+<a href="/consolidation-settlement.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Settlement Calculator (Consolidation)</h3>
+</a>
+<a href="/siding.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Siding Calculator</h3>
+</a>
+<a href="/substitution-cipher-solver.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Simple Substitution Cipher Solver</h3>
+</a>
+<a href="/simpsons-diversity-index.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Simpson's Diversity Index Calculator</h3>
+</a>
+<a href="/sohcahtoa.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Sine, Cosine, Tangent (SOHCAHTOA) Calculator</h3>
+</a>
+<a href="/construction-sitework-aggregates-and-asphalt.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Sitework, Aggregates &amp; Asphalt</h3>
+</a>
+<a href="/kevin-bacon.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Six Degrees of Kevin Bacon Calculator</h3>
+</a>
+<a href="/slope-stability.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Slope Stability Calculator (Method of Slices)</h3>
+</a>
+<a href="/slugging-percentage.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Slugging Percentage Calculator</h3>
+</a>
+<a href="/social-security.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Social Security Calculator</h3>
+</a>
+<a href="/bearing-capacity.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Soil Bearing Capacity Calculator</h3>
+</a>
+<a href="/solid-geometry-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Solid Geometry Calculator (All Shapes)</h3>
+</a>
+<a href="/dilution.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Solution Dilution Calculator</h3>
+</a>
+<a href="/sortino-ratio.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Sortino Ratio Calculator</h3>
+</a>
+<a href="/sound-intensity-level.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Sound Intensity Level Calculator</h3>
+</a>
+<a href="/sound-transmission-loss.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Sound Transmission Loss (STL) Calculator</h3>
+</a>
+<a href="/space-planning-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Space Planning Calculator</h3>
+</a>
+<a href="/spacecraft-trajectory-planner.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Spacecraft Trajectory Planner</h3>
+</a>
+<a href="/sphere-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">sphere calculator</h3>
+</a>
+<a href="/sphere-volume-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Sphere Volume Calculator</h3>
+</a>
+<a href="/spherical-to-cartesian.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Spherical to Cartesian Converter</h3>
+</a>
+<a href="/sports-timer.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">sports timer</h3>
+</a>
+<a href="/spring-rate.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Spring Rate Calculator</h3>
+</a>
+<a href="/square-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">square calculator</h3>
+</a>
+<a href="/square-feet-to-acres.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Square Feet to Acres Converter</h3>
+</a>
+<a href="/square-feet-to-square-meters.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Square Feet to Square Meters Converter</h3>
+</a>
+<a href="/sq-in-to-sq-ft.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Square Inches to Square Feet Converter</h3>
+</a>
+<a href="/square-meters-to-square-feet.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Square Meters to Square Feet Converter</h3>
+</a>
+<a href="/square-miles-to-square-kilometers.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Square Miles to Square Kilometers Converter</h3>
+</a>
+<a href="/square-root-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Square Root Calculator</h3>
+</a>
+<a href="/sq-yd-to-sq-ft.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Square Yards to Square Feet Converter</h3>
+</a>
+<a href="/srm.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">SRM (Beer Color) Calculator</h3>
+</a>
+<a href="/stableford.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Stableford Score Calculator</h3>
+</a>
+<a href="/stair.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Stair Calculator</h3>
+</a>
+<a href="/standard-atmosphere.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Standard Atmosphere Calculator</h3>
+</a>
+<a href="/standard-deviation.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Standard Deviation Calculator</h3>
+</a>
+<a href="/portfolio-standard-deviation.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Standard Deviation of a Portfolio Calculator</h3>
+</a>
+<a href="/steel-base-plate-design.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Steel Base Plate Design Calculator (AISC)</h3>
+</a>
+<a href="/aisc-bolted-connection.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Steel Bolted Connection Calculator (AISC)</h3>
+</a>
+<a href="/steel-grating.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Steel Grating Calculator</h3>
+</a>
+<a href="/steel-joist-design.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Steel Joist (K, LH, DLH) Design Calculator</h3>
+</a>
+<a href="/aisc-welded-connection.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Steel Welded Connection Calculator (AISC)</h3>
+</a>
+<a href="/stellar-evolution.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">stellar evolution</h3>
+</a>
+<a href="/stem-and-leaf-plot.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Stem and Leaf Plot Generator</h3>
+</a>
+<a href="/stoichiometry.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Stoichiometry Calculator</h3>
+</a>
+<a href="/stream-discharge.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Stream Discharge Calculator</h3>
+</a>
+<a href="/stress-and-strain.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Stress and Strain Calculator</h3>
+</a>
+<a href="/strike-water-temperature-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Strike Water Temperature Calculator</h3>
+</a>
+<a href="/construction-structural-and-reinforcement.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Structural &amp; Reinforcement</h3>
+</a>
+<a href="/structural.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Structural Engineering Calculators</h3>
+</a>
+<a href="/template-subcat.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Subcategory Title</h3>
+</a>
+<a href="/grounding-grid.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Substation Grounding Grid Calculator</h3>
+</a>
+<a href="/sudoku-solver.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Sudoku Solver</h3>
+</a>
+<a href="/surface-area.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Surface Area Calculator</h3>
+</a>
+<a href="/surface-area-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">surface area calculator</h3>
+</a>
+<a href="/sustainable-growth-rate.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Sustainable Growth Rate (SGR) Calculator</h3>
+</a>
+<a href="/swolf-score.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">SWOLF Score Calculator</h3>
+</a>
+<a href="/synergy-value.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Synergy Value Calculator</h3>
+</a>
+<a href="/system-of-equations.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">System of Equations Calculator</h3>
+</a>
+<a href="/t-test.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">T-Test Calculator</h3>
+</a>
+<a href="/tablespoons-to-cups.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Tablespoons to Cups Converter</h3>
+</a>
+<a href="/tbsp-to-ml.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Tablespoons to Milliliters Converter</h3>
+</a>
+<a href="/tablespoons-to-teaspoons.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Tablespoons to Teaspoons Converter</h3>
+</a>
+<a href="/target-heart-rate.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Target Heart Rate Calculator</h3>
+</a>
+<a href="/tdee.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">TDEE (Total Daily Energy Expenditure) Calculator</h3>
+</a>
+<a href="/teaspoons-to-tablespoons.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Teaspoons to Tablespoons Converter</h3>
+</a>
+<a href="/template-home.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">template home</h3>
+</a>
+<a href="/tennis-elo-rating.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Tennis Elo Rating Calculator</h3>
+</a>
+<a href="/test-search.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">test search</h3>
+</a>
+<a href="/thin-lens-equation.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Thin Lens Equation Calculator</h3>
+</a>
+<a href="/three-phase-power.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">three phase power</h3>
+</a>
+<a href="/tile-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Tile Calculator</h3>
+</a>
+<a href="/tilt-up-wall-design.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Tilt-Up Concrete Wall Design Calculator</h3>
+</a>
+<a href="/time-of-concentration.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Time of Concentration Calculator</h3>
+</a>
+<a href="/time-travel.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Time Travel Calculator</h3>
+</a>
+<a href="/timi-risk-score.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">TIMI Risk Score Calculator</h3>
+</a>
+<a href="/tip.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Tip Calculator</h3>
+</a>
+<a href="/tipping.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Tipping Calculator</h3>
+</a>
+<a href="/tire-size.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Tire Size Calculator</h3>
+</a>
+<a href="/titration-curve.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Titration Curve Calculator</h3>
+</a>
+<a href="/civil-tms-402-602.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">TMS 402/602 Masonry Design Calculators</h3>
+</a>
+<a href="/topsoil.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Topsoil Calculator</h3>
+</a>
+<a href="/torus-volume.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Torus Volume Calculator</h3>
+</a>
+<a href="/tower-crane-foundation.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Tower Crane Foundation Design Calculator</h3>
+</a>
+<a href="/township-to-square-miles.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Townships to Square Miles Converter</h3>
+</a>
+<a href="/trading-tools.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">trading tools</h3>
+</a>
+<a href="/trapezoid-area.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Trapezoid Area Calculator</h3>
+</a>
+<a href="/trapezoid-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Trapezoid Calculator</h3>
+</a>
+<a href="/traveling-salesman-problem.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Traveling Salesman Problem (TSP) Calculator</h3>
+</a>
+<a href="/treynor-ratio.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Treynor Ratio Calculator</h3>
+</a>
+<a href="/triangle-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Triangle Calculator</h3>
+</a>
+<a href="/trig-identity.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Trigonometric Identity Calculator</h3>
+</a>
+<a href="/true-shooting-percentage.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">True Shooting Percentage (TS%) Calculator</h3>
+</a>
+<a href="/truth-table-generator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Truth Table Generator</h3>
+</a>
+<a href="/conversions-typography-and-web.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Typography &amp; Web</h3>
+</a>
+<a href="/typography-converter.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Typography Unit Converter (px, pt, em, rem, %)</h3>
+</a>
+<a href="/unit-circle.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">unit circle</h3>
+</a>
+<a href="/unit-converter.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Universal Unit Converter</h3>
+</a>
+<a href="/url-encoder-decoder.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">URL Encoder/Decoder</h3>
+</a>
+<a href="/utm-coordinate-converter.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">UTM Coordinate Converter</h3>
+</a>
+<a href="/variance-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">variance-calculator</h3>
+</a>
+<a href="/vector.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Vector Calculator</h3>
+</a>
+<a href="/venn-diagram-generator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Venn Diagram Generator</h3>
+</a>
+<a href="/vertex-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">vertex calculator</h3>
+</a>
+<a href="/natural-frequency.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Vibration Analysis (Natural Frequency) Calculator</h3>
+</a>
+<a href="/vigenere-cipher.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Vigenère Cipher Encoder/Decoder</h3>
+</a>
+<a href="/conversions-volume-and-capacity.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Volume &amp; Capacity</h3>
+</a>
+<a href="/volume.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Volume Calculator</h3>
+</a>
+<a href="/volume-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Volume Calculator</h3>
+</a>
+<a href="/volume-converter.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Volume Unit Converter (Gallons, Liters, cubic ft, cubic m)</h3>
+</a>
+<a href="/wall-framing.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Wall Framing Calculator</h3>
+</a>
+<a href="/wallpaper.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Wallpaper Calculator</h3>
+</a>
+<a href="/watts-to-btu.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Watts to BTU/hr Converter</h3>
+</a>
+<a href="/watts-to-hp.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Watts to Horsepower Converter</h3>
+</a>
+<a href="/watts-to-va.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Watts to VA Converter</h3>
+</a>
+<a href="/wedding-budget.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Wedding Budget Calculator</h3>
+</a>
+<a href="/wedding-seating-chart.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Wedding Seating Chart Calculator</h3>
+</a>
+<a href="/ww-points.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Weight Watchers Points Calculator</h3>
+</a>
+<a href="/welded-connection.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Welded Connection Design Calculator</h3>
+</a>
+<a href="/wells-criteria.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Wells' Criteria for DVT and PE Calculator</h3>
+</a>
+<a href="/patronus.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">What is My Patronus? Calculator</h3>
+</a>
+<a href="/asce-7-16-wind-load.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Wind Load Calculator (ASCE 7-16)</h3>
+</a>
+<a href="/wind-turbine-foundation.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Wind Turbine Foundation Design Calculator</h3>
+</a>
+<a href="/wind-turbine-power.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Wind Turbine Power Calculator</h3>
+</a>
+<a href="/wood-diaphragm.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Wood Diaphragm Design Calculator (NDS/SDPWS)</h3>
+</a>
+<a href="/wood-shear-wall.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">wood shear wall</h3>
+</a>
+<a href="/words-to-numbers-converter.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Words to Numbers Converter</h3>
+</a>
+<a href="/leveling.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">XP / Leveling Calculator</h3>
+</a>
+<a href="/yarn.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Yarn Calculator for Knitting/Crochet</h3>
+</a>
+<a href="/yeast-pitch-rate.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Yeast Pitch Rate & Starter Calculator</h3>
+</a>
+<a href="/yeast-starter.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">yeast starter calculator</h3>
+</a>
+<a href="/offline.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">You're Working Offline</h3>
+</a>
+<a href="/z-score.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Z-Score Calculator</h3>
+</a>
+<a href="/zombie-apocalypse.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Zombie Apocalypse Survival Calculator</h3>
+</a>
+  </div>
+</section>
+</main>
+
+<footer class="bg-white border-t mt-12">
+  <div class="container mx-auto px-6 py-8 text-center text-gray-600">
+    <p>&copy; 2025 CalcDomain. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://calcdomain.com/index.html"}, {"@type": "ListItem", "position": 2, "name": "Math", "item": "https://calcdomain.com/math.html"}]}</script>
+</body></html>

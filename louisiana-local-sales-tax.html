@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en"><head> 
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Louisiana Local Sales Tax Calculator | Finance & Money → Taxes | CalcDomain</title>
+<meta name="description" content="Louisiana Local Sales Tax Calculator: fast, accurate calculator." />
+<meta content="Ugo Candido" name="author"/>
+<link rel="canonical" href="https://calcdomain.com/louisiana-local-sales-tax.html" />
+<style>
+        :root {
+            --primary-color: #005A9C;
+            --secondary-color: #003F6E;
+            --background-color: #F8F9FA;
+            --surface-color: #FFFFFF;
+            --text-color: #212529;
+            --border-color: #DEE2E6;
+            --success-color: #198754;
+            --danger-color: #DC3545;
+            --font-sans: 'Inter', sans-serif;
+            --gap-medium: 1rem;
+            --gap-large: 2rem;
+            --border-radius: 8px;
+        }
+        body {
+            font-family: var(--font-sans);
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        h1, h2 {
+            color: var(--secondary-color);
+        }
+        .calculator-container, .results-container, .content-container {
+            background-color: var(--surface-color);
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius);
+            padding: var(--gap-large);
+            margin-top: var(--gap-large);
+        }
+        .form-group {
+            margin-bottom: var(--gap-medium);
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        input[type="number"] {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius);
+            font-size: 1rem;
+        }
+        input[type="number"]:focus {
+            border-color: var(--primary-color);
+            outline: none;
+        }
+        .results-container {
+            min-height: 150px;
+        }
+        .result-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .result-item:last-child {
+            border-bottom: none;
+        }
+        .tooltip {
+            display: inline-block;
+            position: relative;
+            cursor: pointer;
+            margin-left: 0.5rem;
+            border-bottom: 1px dotted;
+        }
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 200px;
+            background-color: var(--primary-color);
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%; /* Positioned above the tooltip */
+            left: 50%;
+            margin-left: -100px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Louisiana Local Sales Tax Calculator",
+  "description": "Calculate Louisiana local sales tax efficiently with our authoritative and accessible tool.",
+  "url": "https://calcdomain.com/louisiana-local-sales-tax.html",
+  "author": {
+    "@type": "Person",
+    "name": "Ugo Candido"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "CalcDomain"
+  },
+  "mainEntity": {
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the sales tax rate in Louisiana?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The sales tax rate in Louisiana varies by locality. Please refer to the official Louisiana Department of Revenue for accurate rates."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I use this calculator?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Enter the amount and select the locality to compute the sales tax."
+        }
+      }
+    ]
+  }
+}
+  </script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="search.js" defer></script>
+<!-- MathJax for LaTeX formulas -->
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['\(','\)'], ['$', '$']],
+      displayMath: [['$','$'], ['\[','\]']]
+    },
+    svg: { fontCache: 'global' }
+  };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<link rel="preload" href="/assets/js/mobile-menu.js" as="script">
+<link rel="preload" href="/assets/js/page-enhancements.js" as="script">
+
+</head>
+<body>
+
+<header class="bg-white shadow-sm sticky top-0 z-50">
+  <nav class="container mx-auto px-4 lg:px-6 py-4 flex items-center justify-between" aria-label="Primary">
+    <a href="https://calcdomain.com/index.html" class="text-2xl font-bold text-blue-600">CalcDomain</a>
+    <div class="w-full max-w-md hidden md:block">
+      <label for="site-search" class="sr-only">Search calculators</label>
+      <div class="relative">
+        <input id="site-search" type="search" placeholder="Search for a calculator…" class="w-full py-2 px-4 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<main class="container" id="main-content">
+<nav class="text-sm mb-4 text-gray-600" aria-label="Breadcrumb">
+  <ol class="flex flex-wrap gap-1 items-center"><li><a href="https://calcdomain.com/index.html" class="hover:text-blue-600">Home</a></li><li aria-hidden="true">»</li><li><a href="https://calcdomain.com/finance.html" class="hover:text-blue-600">Finance & Money</a></li><li aria-hidden="true">»</li><li><a href="https://calcdomain.com/subcategories/taxes.html" class="hover:text-blue-600">Taxes</a></li><li aria-hidden="true">»</li><li aria-current="page" class="text-gray-800 font-medium">Louisiana Local Sales Tax Calculator</li></ol>
+</nav>
+<h1>Louisiana Local Sales Tax Calculator</h1>
+<p>This calculator helps you compute the local sales tax in Louisiana accurately. It's designed for businesses, consumers, and anyone needing to determine the applicable sales tax in different regions of Louisiana.</p>
+<section class="calculator-container">
+<h2>Calculator</h2>
+<div class="form-group">
+<label for="amount">Amount ($) <span class="tooltip">?<span class="tooltiptext">Enter the purchase amount</span></span></label>
+<input aria-required="true" id="amount" placeholder="e.g., 100" type="number"/>
+</div>
+<div class="form-group">
+<label for="locality">Choose Locality <span class="tooltip">?<span class="tooltiptext">Select the locality for tax calculation</span></span></label>
+<select aria-required="true" id="locality">
+<option value="0.04">Baton Rouge - 4%</option>
+<option value="0.045">New Orleans - 4.5%</option>
+<option value="0.05">Lafayette - 5%</option>
+</select>
+</div>
+<button id="calculateBtn">Calculate</button>
+</section>
+<section class="results-container">
+<h2>Results</h2>
+<div class="result-item">
+<span>Amount:</span>
+<span id="resultAmount">$0.00</span>
+</div>
+<div class="result-item">
+<span>Sales Tax:</span>
+<span id="resultTax">$0.00</span>
+</div>
+<div class="result-item">
+<span>Total:</span>
+<span id="resultTotal">$0.00</span>
+</div>
+</section>
+<section class="content-container">
+<h2>Data Source and Methodology</h2>
+<p>All calculations are based on official rates from the <a href="https://revenue.louisiana.gov/businesses/sales-taxes/general-sales-use-tax/" target="_blank">Louisiana Department of Revenue</a>. All calculations are strictly based on formulas and data provided by this source.</p>
+<h2>The Formula Explained</h2>
+<p>The sales tax is calculated using the formula:</p>
+<div class="formula-box">
+<code>Total = Amount + (Amount × Sales Tax Rate)</code>
+</div>
+<h2>Glossary of Terms</h2>
+<ul>
+<li><strong>Amount:</strong> The initial purchase amount.</li>
+<li><strong>Sales Tax Rate:</strong> The percentage of tax applied to the amount.</li>
+<li><strong>Total:</strong> The total amount including sales tax.</li>
+</ul>
+<h2>Frequently Asked Questions (FAQ)</h2>
+<div>
+<h3>What is the sales tax rate in Louisiana?</h3>
+<p>The sales tax rate in Louisiana varies by locality. Please refer to the official Louisiana Department of Revenue for accurate rates.</p>
+<h3>How do I use this calculator?</h3>
+<p>Enter the amount and select the locality to compute the sales tax.</p>
+</div>
+<div class="author-box">
+<p>
+                    Tool developed by <strong>Ugo Candido</strong>.
+                    <br/>
+                    Last reviewed for accuracy on: October 1, 2023.
+                </p>
+</div>
+</section>
+</main>
+<script>
+        document.getElementById('calculateBtn').addEventListener('click', function() {
+            const amount = parseFloat(document.getElementById('amount').value);
+            const taxRate = parseFloat(document.getElementById('locality').value);
+            const taxAmount = amount * taxRate;
+            const totalAmount = amount + taxAmount;
+
+            document.getElementById('resultAmount').innerText = `$${amount.toFixed(2)}`;
+            document.getElementById('resultTax').innerText = `$${taxAmount.toFixed(2)}`;
+            document.getElementById('resultTotal').innerText = `$${totalAmount.toFixed(2)}`;
+        });
+    </script>
+
+
+```
+
+
+
+<footer class="bg-white border-t mt-12">
+  <div class="container mx-auto px-6 py-8 text-center text-gray-600">
+    <p>&copy; 2025 CalcDomain. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://calcdomain.com/index.html"}, {"@type": "ListItem", "position": 2, "name": "Finance & Money", "item": "https://calcdomain.com/finance.html"}, {"@type": "ListItem", "position": 3, "name": "Taxes", "item": "https://calcdomain.com/subcategories/taxes.html"}, {"@type": "ListItem", "position": 4, "name": "Louisiana Local Sales Tax Calculator", "item": "https://calcdomain.com/louisiana-local-sales-tax.html"}]}</script>
+</body></html>

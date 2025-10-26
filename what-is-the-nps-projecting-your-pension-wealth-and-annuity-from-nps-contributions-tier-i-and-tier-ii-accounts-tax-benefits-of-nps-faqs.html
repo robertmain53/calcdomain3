@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en"><head> 
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>NPS Calculator | Finance & Money → Taxes | CalcDomain</title>
+<meta name="description" content="NPS Calculator: fast, accurate calculator." />
+<meta content="Ugo Candido" name="author"/>
+<link rel="canonical" href="https://calcdomain.com/what-is-the-nps-projecting-your-pension-wealth-and-annuity-from-nps-contributions-tier-i-and-tier-ii-accounts-tax-benefits-of-nps-faqs.html" />
+<style>
+        :root {
+            --primary-color: #005A9C;
+            --secondary-color: #003F6E;
+            --text-color: #212529;
+            --background-color: #F8F9FA;
+            --surface-color: #FFFFFF;
+            --border-color: #DEE2E6;
+            --font-sans-serif: 'Inter', sans-serif;
+            --touch-target-min: 48px;
+            --border-radius: 8px;
+        }
+        body {
+            font-family: var(--font-sans-serif);
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 1rem;
+        }
+        .calculator-container {
+            background-color: var(--surface-color);
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius);
+            padding: 1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        h1, h2, h3 {
+            color: var(--primary-color);
+        }
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius);
+        }
+        .results-container {
+            margin-top: 1rem;
+            padding: 1rem;
+            background-color: var(--background-color);
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius);
+        }
+        .result-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .faq-section {
+            margin-top: 2rem;
+        }
+        .faq-item {
+            margin-bottom: 1rem;
+        }
+    </style>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="search.js" defer></script>
+<!-- MathJax for LaTeX formulas -->
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['\(','\)'], ['$', '$']],
+      displayMath: [['$','$'], ['\[','\]']]
+    },
+    svg: { fontCache: 'global' }
+  };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<link rel="preload" href="/assets/js/mobile-menu.js" as="script">
+<link rel="preload" href="/assets/js/page-enhancements.js" as="script">
+
+</head>
+<body>
+
+
+<header class="bg-white shadow-sm sticky top-0 z-50">
+  <nav class="container mx-auto px-4 lg:px-6 py-4 flex items-center justify-between" aria-label="Primary">
+    <a href="https://calcdomain.com/index.html" class="text-2xl font-bold text-blue-600">CalcDomain</a>
+    <div class="w-full max-w-md hidden md:block">
+      <label for="site-search" class="sr-only">Search calculators</label>
+      <div class="relative">
+        <input id="site-search" type="search" placeholder="Search for a calculator…" class="w-full py-2 px-4 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+<nav class="text-sm mb-4 text-gray-600" aria-label="Breadcrumb">
+  <ol class="flex flex-wrap gap-1 items-center"><li><a href="https://calcdomain.com/index.html" class="hover:text-blue-600">Home</a></li><li aria-hidden="true">»</li><li><a href="https://calcdomain.com/finance.html" class="hover:text-blue-600">Finance & Money</a></li><li aria-hidden="true">»</li><li><a href="https://calcdomain.com/subcategories/taxes.html" class="hover:text-blue-600">Taxes</a></li><li aria-hidden="true">»</li><li aria-current="page" class="text-gray-800 font-medium">NPS Calculator</li></ol>
+</nav>
+<p>This calculator is designed to help individuals project their pension wealth and annuity from contributions to the Indian National Pension System (NPS). It is targeted at Indian citizens looking to understand the benefits of NPS for their retirement planning.</p>
+<section class="calculator-container">
+<h2>Calculator</h2>
+<div class="form-group">
+<label for="monthly-contribution">Monthly Contribution *</label>
+<input aria-describedby="contributionError" aria-required="true" id="monthly-contribution" placeholder="Enter monthly contribution" type="number"/>
+<div class="error-message" id="contributionError" role="alert"></div>
+</div>
+<div class="form-group">
+<label for="expected-return">Expected Annual Return (%) *</label>
+<input aria-describedby="returnError" aria-required="true" id="expected-return" placeholder="Enter expected return rate" type="number"/>
+<div class="error-message" id="returnError" role="alert"></div>
+</div>
+<div class="form-group">
+<label for="investment-duration">Investment Duration (Years) *</label>
+<input aria-describedby="durationError" aria-required="true" id="investment-duration" placeholder="Enter investment duration" type="number"/>
+<div class="error-message" id="durationError" role="alert"></div>
+</div>
+<button onclick="calculateNPS()">Calculate</button>
+</section>
+<section class="results-container" id="results">
+<h3>Results</h3>
+<div class="result-item">
+<span>Total Pension Wealth:</span>
+<span id="pension-wealth">$0.00</span>
+</div>
+<div class="result-item">
+<span>Annuity Income:</span>
+<span id="annuity-income">$0.00</span>
+</div>
+</section>
+<section class="faq-section">
+<h2>Frequently Asked Questions (FAQ)</h2>
+<div class="faq-item">
+<h3>What is the National Pension System (NPS)?</h3>
+<p>The National Pension System is a retirement savings scheme in India designed to provide financial security during retirement.</p>
+</div>
+<div class="faq-item">
+<h3>How is the pension wealth calculated?</h3>
+<p>It is calculated based on your contributions, the expected return rate, and the duration of investment.</p>
+</div>
+</section>
+</main>
+
+<script>
+        function calculateNPS() {
+            const monthlyContribution = parseFloat(document.getElementById('monthly-contribution').value);
+            const annualReturn = parseFloat(document.getElementById('expected-return').value) / 100;
+            const duration = parseInt(document.getElementById('investment-duration').value);
+            
+            if (isNaN(monthlyContribution) || isNaN(annualReturn) || isNaN(duration)) {
+                alert("Please enter valid numbers for all fields.");
+                return;
+            }
+
+            const totalContributions = monthlyContribution * duration * 12;
+            const estimatedWealth = totalContributions * Math.pow((1 + annualReturn / 12), duration * 12);
+            const annuityIncome = estimatedWealth * 0.04; // assuming 4% annuity rate
+
+            document.getElementById('pension-wealth').textContent = `$${estimatedWealth.toFixed(2)}`;
+            document.getElementById('annuity-income').textContent = `$${annuityIncome.toFixed(2)}`;
+        }
+    </script>
+
+
+```
+
+<footer class="bg-white border-t mt-12">
+  <div class="container mx-auto px-6 py-8 text-center text-gray-600">
+    <p>&copy; 2025 CalcDomain. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://calcdomain.com/index.html"}, {"@type": "ListItem", "position": 2, "name": "Finance & Money", "item": "https://calcdomain.com/finance.html"}, {"@type": "ListItem", "position": 3, "name": "Taxes", "item": "https://calcdomain.com/subcategories/taxes.html"}, {"@type": "ListItem", "position": 4, "name": "NPS Calculator", "item": "https://calcdomain.com/what-is-the-nps-projecting-your-pension-wealth-and-annuity-from-nps-contributions-tier-i-and-tier-ii-accounts-tax-benefits-of-nps-faqs.html"}]}</script>
+</body></html>

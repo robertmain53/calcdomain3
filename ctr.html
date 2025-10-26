@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en"><head> 
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Click-Through Rate (CTR) Calculator | Statistics & Probability | CalcDomain</title>
+<meta name="description" content="Click-Through Rate (CTR) Calculator: fast, accurate calculator." />
+<meta content="Ugo Candido" name="author"/>
+<link rel="canonical" href="https://calcdomain.com/ctr.html" />
+<style>
+        :root {
+            --primary-color: #005A9C;
+            --background-color: #F8F9FA;
+            --text-color: #212529;
+            --border-color: #DEE2E6;
+            --success-color: #28a745;
+            --danger-color: #dc3545;
+            --font-family: 'Arial', sans-serif;
+            --font-size-base: 16px;
+        }
+
+        body {
+            font-family: var(--font-family);
+            font-size: var(--font-size-base);
+            line-height: 1.5;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            color: var(--primary-color);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        input[type="number"] {
+            width: 100%;
+            padding: 0.5rem;
+            font-size: 1rem;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+        }
+
+        input[type="number"]:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(0, 90, 156, 0.2);
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            font-weight: bold;
+            color: #fff;
+            background-color: var(--primary-color);
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .btn:hover {
+            background-color: #00457c;
+        }
+
+        .results-container {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            background-color: #fff;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+        }
+
+        .result-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .result-item:last-child {
+            border-bottom: none;
+        }
+
+        .result-value {
+            font-weight: bold;
+            color: var(--success-color);
+        }
+
+        .error-message {
+            color: var(--danger-color);
+            font-size: 0.875rem;
+            margin-top: 0.5rem;
+        }
+    </style>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="search.js" defer></script>
+<!-- MathJax for LaTeX formulas -->
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['\(','\)'], ['$', '$']],
+      displayMath: [['$','$'], ['\[','\]']]
+    },
+    svg: { fontCache: 'global' }
+  };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<link rel="preload" href="/assets/js/mobile-menu.js" as="script">
+<link rel="preload" href="/assets/js/page-enhancements.js" as="script">
+
+</head>
+<body>
+<div class="container mx-auto px-4 py-4"><nav class="text-sm mb-4 text-gray-600" aria-label="Breadcrumb">
+  <ol class="flex flex-wrap gap-1 items-center"><li><a href="https://calcdomain.com/index.html" class="hover:text-blue-600">Home</a></li><li aria-hidden="true">»</li><li><a href="https://calcdomain.com/statistics.html" class="hover:text-blue-600">Statistics & Probability</a></li><li aria-hidden="true">»</li><li aria-current="page" class="text-gray-800 font-medium">Click-Through Rate (CTR) Calculator</li></ol>
+</nav></div>
+
+<header class="bg-white shadow-sm sticky top-0 z-50">
+  <nav class="container mx-auto px-4 lg:px-6 py-4 flex items-center justify-between" aria-label="Primary">
+    <a href="https://calcdomain.com/index.html" class="text-2xl font-bold text-blue-600">CalcDomain</a>
+    <div class="w-full max-w-md hidden md:block">
+      <label for="site-search" class="sr-only">Search calculators</label>
+      <div class="relative">
+        <input id="site-search" type="search" placeholder="Search for a calculator…" class="w-full py-2 px-4 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+<div class="container">
+<h1>Click-Through Rate (CTR) Calculator</h1>
+<p>This CTR calculator is designed for marketing and sales professionals who want to measure and optimize their campaign performance efficiently. By entering the number of clicks and impressions, you can instantly find out the CTR percentage, allowing you to assess the effectiveness of your ads.</p>
+<section aria-labelledby="calculator-heading" class="calculator-container">
+<h2 id="calculator-heading">CTR Calculator</h2>
+<div class="form-group">
+<label for="clicks">Number of Clicks *</label>
+<input aria-describedby="clicksError" aria-required="true" id="clicks" type="number"/>
+<div aria-live="polite" class="error-message" id="clicksError" role="alert"></div>
+</div>
+<div class="form-group">
+<label for="impressions">Number of Impressions *</label>
+<input aria-describedby="impressionsError" aria-required="true" id="impressions" type="number"/>
+<div aria-live="polite" class="error-message" id="impressionsError" role="alert"></div>
+</div>
+<button class="btn" onclick="calculateCTR()" type="button">Calculate CTR</button>
+</section>
+<section aria-labelledby="results-heading" class="results-container">
+<h2 id="results-heading">Results</h2>
+<div class="result-item">
+<span>Click-Through Rate (CTR):</span>
+<span class="result-value" id="ctrResult">0.00%</span>
+</div>
+</section>
+<section>
+<h2>Data Source and Methodology</h2>
+<p>All calculations are strictly based on the standard formula for determining click-through rate (CTR).</p>
+</section>
+<section>
+<h2>The Formula Explained</h2>
+<div class="formula-box">
+                \[ \text{CTR} = \left( \frac{\text{Clicks}}{\text{Impressions}} \right) \times 100 \]
+            </div>
+</section>
+<section>
+<h2>Glossary of Variables</h2>
+<ul>
+<li><strong>Clicks:</strong> The number of times an ad is clicked.</li>
+<li><strong>Impressions:</strong> The number of times an ad is shown.</li>
+<li><strong>CTR:</strong> The percentage of impressions that resulted in a click.</li>
+</ul>
+</section>
+<section>
+<h2>How It Works: A Step-by-Step Example</h2>
+<p>Imagine an ad receives 500 clicks and is shown 10,000 times. Using the formula, the CTR is calculated as follows:</p>
+<p><strong>CTR = (500 / 10,000) × 100 = 5%</strong></p>
+</section>
+<section>
+<h2>Frequently Asked Questions (FAQ)</h2>
+<div>
+<h3>What is a good CTR?</h3>
+<p>A good CTR is subjective and varies by industry, but generally, a CTR above 2% is considered to be satisfactory.</p>
+<h3>How can I improve my CTR?</h3>
+<p>Improving ad relevance, targeting, and using compelling calls-to-action can help increase CTR.</p>
+<h3>Why is CTR important?</h3>
+<p>CTR is a key metric in assessing the effectiveness of your ad campaigns, reflecting how well your ads engage users.</p>
+<h3>Does a high CTR always mean a successful campaign?</h3>
+<p>Not necessarily. While a high CTR indicates engagement, it should also lead to conversions for a campaign to be truly successful.</p>
+<h3>Can CTR affect my ad's cost?</h3>
+<p>Yes, higher CTRs can improve Quality Scores, potentially lowering costs in pay-per-click advertising models.</p>
+</div>
+</section>
+<div class="author-box">
+<p>
+                Tool developed by <strong>Ugo Candido</strong>, content verified by the <strong>CalcDomain Expert Team</strong>.
+                <br/>
+                Last reviewed for accuracy on: October 10, 2023.
+            </p>
+</div>
+</div>
+<script>
+        function calculateCTR() {
+            const clicks = document.getElementById('clicks').value;
+            const impressions = document.getElementById('impressions').value;
+            const clicksError = document.getElementById('clicksError');
+            const impressionsError = document.getElementById('impressionsError');
+
+            clicksError.textContent = '';
+            impressionsError.textContent = '';
+
+            if (!clicks || clicks < 0) {
+                clicksError.textContent = 'Please enter a valid number of clicks.';
+                return;
+            }
+            if (!impressions || impressions <= 0) {
+                impressionsError.textContent = 'Please enter a valid number of impressions.';
+                return;
+            }
+
+            const ctr = (clicks / impressions) * 100;
+            document.getElementById('ctrResult').textContent = `${ctr.toFixed(2)}%`;
+        }
+    </script>
+
+
+
+```
+
+
+
+<footer class="bg-white border-t mt-12">
+  <div class="container mx-auto px-6 py-8 text-center text-gray-600">
+    <p>&copy; 2025 CalcDomain. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://calcdomain.com/index.html"}, {"@type": "ListItem", "position": 2, "name": "Statistics & Probability", "item": "https://calcdomain.com/statistics.html"}, {"@type": "ListItem", "position": 3, "name": "Click-Through Rate (CTR) Calculator", "item": "https://calcdomain.com/ctr.html"}]}</script>
+</body></html>

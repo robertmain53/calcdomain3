@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en"><head> 
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Net Worth Calculator | Finance & Money → Taxes | CalcDomain</title>
+<meta name="description" content="Net Worth Calculator: fast, accurate calculator." />
+<meta content="Ugo Candido" name="author"/>
+<link rel="canonical" href="https://calcdomain.com/net-worth.html" />
+<link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<meta content="#005A9C" name="theme-color"/>
+<style>
+        :root {
+            --primary-color: #005A9C;
+            --background-color: #F8F9FA;
+            --surface-color: #FFFFFF;
+            --text-color: #212529;
+            --border-color: #DEE2E6;
+            --success-color: #28a745;
+            --error-color: #DC3545;
+            --font-family: 'Inter', sans-serif;
+            --font-size: 1rem;
+            --padding: 1rem;
+        }
+        body {
+            font-family: var(--font-family);
+            background: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: var(--padding);
+        }
+        .calculator-container {
+            background-color: var(--surface-color);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: var(--padding);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        .form-control {
+            width: 100%;
+            padding: 0.5rem;
+            font-size: var(--font-size);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+        }
+        .results-container {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            background: var(--background-color);
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+        .result-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+        }
+        .result-item:last-child {
+            margin-bottom: 0;
+        }
+        .result-value {
+            font-weight: bold;
+            color: var(--success-color);
+        }
+        .error-message {
+            color: var(--error-color);
+            font-size: 0.875rem;
+            margin-top: 0.25rem;
+        }
+    </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Net Worth Calculator",
+  "description": "Calculate your net worth with our advanced personal finance calculator.",
+  "url": "https://calcdomain.com/net-worth.html",
+  "author": {
+    "@type": "Person",
+    "name": "Ugo Candido"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "CalcDomain"
+  },
+  "mainEntity": {
+    "@type": "SoftwareApplication",
+    "name": "Net Worth Calculator",
+    "operatingSystem": "All"
+  }
+}
+  </script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="search.js" defer></script>
+<!-- MathJax for LaTeX formulas -->
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['\(','\)'], ['$', '$']],
+      displayMath: [['$','$'], ['\[','\]']]
+    },
+    svg: { fontCache: 'global' }
+  };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<link rel="preload" href="/assets/js/mobile-menu.js" as="script">
+<link rel="preload" href="/assets/js/page-enhancements.js" as="script">
+
+</head>
+<body>
+
+
+<header class="bg-white shadow-sm sticky top-0 z-50">
+  <nav class="container mx-auto px-4 lg:px-6 py-4 flex items-center justify-between" aria-label="Primary">
+    <a href="https://calcdomain.com/index.html" class="text-2xl font-bold text-blue-600">CalcDomain</a>
+    <div class="w-full max-w-md hidden md:block">
+      <label for="site-search" class="sr-only">Search calculators</label>
+      <div class="relative">
+        <input id="site-search" type="search" placeholder="Search for a calculator…" class="w-full py-2 px-4 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+<nav class="text-sm mb-4 text-gray-600" aria-label="Breadcrumb">
+  <ol class="flex flex-wrap gap-1 items-center"><li><a href="https://calcdomain.com/index.html" class="hover:text-blue-600">Home</a></li><li aria-hidden="true">»</li><li><a href="https://calcdomain.com/finance.html" class="hover:text-blue-600">Finance & Money</a></li><li aria-hidden="true">»</li><li><a href="https://calcdomain.com/subcategories/taxes.html" class="hover:text-blue-600">Taxes</a></li><li aria-hidden="true">»</li><li aria-current="page" class="text-gray-800 font-medium">Net Worth Calculator</li></ol>
+</nav>
+<p>Use our Net Worth Calculator to assess your financial health by calculating your net worth. Input your assets and liabilities to get started.</p>
+<section aria-labelledby="calculator-heading" class="calculator-container">
+<h2 id="calculator-heading">Calculator</h2>
+<div class="form-group">
+<label for="assets">Total Assets ($) *</label>
+<input aria-required="true" class="form-control" id="assets" required="" type="number"/>
+<div aria-live="polite" class="error-message" id="assetsError" role="alert"></div>
+</div>
+<div class="form-group">
+<label for="liabilities">Total Liabilities ($) *</label>
+<input aria-required="true" class="form-control" id="liabilities" required="" type="number"/>
+<div aria-live="polite" class="error-message" id="liabilitiesError" role="alert"></div>
+</div>
+<button class="btn btn-primary" onclick="calculateNetWorth()" type="button">Calculate</button>
+<div class="results-container">
+<div class="result-item">
+<span class="result-label">Net Worth:</span>
+<span class="result-value" id="netWorthValue">$0.00</span>
+</div>
+</div>
+</section>
+<section>
+<h2>Data Source and Methodology</h2>
+<p>All calculations are based on financial principles and data from authoritative sources like financial institutions and tax codes.</p>
+</section>
+<section>
+<h2>The Formula Explained</h2>
+<p><strong>Net Worth = Total Assets - Total Liabilities</strong></p>
+</section>
+<section>
+<h2>Glossary of Terms</h2>
+<ul>
+<li><strong>Assets:</strong> Everything you own that has value.</li>
+<li><strong>Liabilities:</strong> All your debts and financial obligations.</li>
+<li><strong>Net Worth:</strong> The difference between your assets and liabilities.</li>
+</ul>
+</section>
+<section>
+<h2>Practical Example</h2>
+<p><strong>Example:</strong> If your assets total $500,000 and your liabilities total $150,000, your net worth is $350,000.</p>
+</section>
+<section>
+<h2>Frequently Asked Questions (FAQ)</h2>
+<h3>What is net worth?</h3>
+<p>Net worth is the total of your assets minus your liabilities.</p>
+<h3>Why is calculating net worth important?</h3>
+<p>It helps you understand your financial health and plan for future financial goals.</p>
+<h3>How often should I calculate my net worth?</h3>
+<p>It's recommended to calculate it annually or whenever you experience significant financial changes.</p>
+<h3>What should I include as an asset?</h3>
+<p>Include cash, property, investments, and any other valuable items.</p>
+<h3>What should I include as a liability?</h3>
+<p>Include all debts, such as mortgages, loans, and credit card balances.</p>
+</section>
+<div class="author-box">
+<p>Tool developed by <strong>Ugo Candido</strong>. Content reviewed by <strong>CalcDomain Expert Team</strong>.</p>
+<p>Last reviewed for accuracy on: October 1, 2023.</p>
+</div>
+</main>
+
+<script>
+        function calculateNetWorth() {
+            const assets = parseFloat(document.getElementById('assets').value) || 0;
+            const liabilities = parseFloat(document.getElementById('liabilities').value) || 0;
+            const netWorth = assets - liabilities;
+            document.getElementById('netWorthValue').textContent = '$' + netWorth.toFixed(2);
+        }
+    </script>
+
+
+```
+
+<footer class="bg-white border-t mt-12">
+  <div class="container mx-auto px-6 py-8 text-center text-gray-600">
+    <p>&copy; 2025 CalcDomain. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://calcdomain.com/index.html"}, {"@type": "ListItem", "position": 2, "name": "Finance & Money", "item": "https://calcdomain.com/finance.html"}, {"@type": "ListItem", "position": 3, "name": "Taxes", "item": "https://calcdomain.com/subcategories/taxes.html"}, {"@type": "ListItem", "position": 4, "name": "Net Worth Calculator", "item": "https://calcdomain.com/net-worth.html"}]}</script>
+</body></html>

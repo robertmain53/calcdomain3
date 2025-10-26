@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en"><head> 
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Arithmetic Sequence Calculator | Finance & Money | CalcDomain</title>
+<meta name="description" content="Arithmetic Sequence Calculator: fast, accurate calculator." />
+<meta content="Ugo Candido" name="author"/>
+<link rel="canonical" href="https://calcdomain.com/arithmetic-sequence.html" />
+<style>
+        :root {
+            --primary-color: #005A9C;
+            --secondary-color: #003F6E;
+            --text-color: #212529;
+            --background-color: #F8F9FA;
+            --surface-color: #FFFFFF;
+            --border-color: #DEE2E6;
+            --muted-text-color: #6C757D;
+            --success-color: #28a745;
+            --danger-color: #dc3545;
+            --font-sans-serif: 'Inter', sans-serif;
+            --font-monospace: 'Source Code Pro', monospace;
+            --gap-large: 2rem;
+            --gap-medium: 1rem;
+        }
+
+        body {
+            font-family: var(--font-sans-serif);
+            background: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header, footer {
+            background: var(--surface-color);
+            padding: 1rem;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        main {
+            padding: var(--gap-large);
+        }
+
+        h1, h2 {
+            color: var(--secondary-color);
+        }
+
+        .calculator-container, .results-container, .content-container {
+            background-color: var(--surface-color);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: var(--gap-medium);
+            margin-bottom: var(--gap-large);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 0.75rem;
+            font-size: 1rem;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+        }
+
+        .form-control:focus {
+            outline: 3px solid var(--primary-color);
+        }
+
+        .results-container {
+            min-height: 100px;
+        }
+
+        .result-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .result-label {
+            color: var(--muted-text-color);
+        }
+
+        .result-value {
+            font-weight: bold;
+            color: var(--success-color);
+        }
+
+        .error-message {
+            color: var(--danger-color);
+            font-size: 0.875rem;
+            margin-top: 0.25rem;
+        }
+
+        .formula-box {
+            background-color: #e9ecef;
+            padding: 1.5rem;
+            border-radius: 6px;
+            font-size: 1.2rem;
+            text-align: center;
+            overflow-x: auto;
+        }
+
+        .author-box {
+            font-size: 0.9rem;
+            color: var(--muted-text-color);
+            margin-top: 2rem;
+            border-top: 1px solid var(--border-color);
+            padding-top: 1rem;
+        }
+    </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Arithmetic Sequence Calculator",
+  "description": "Calculate terms in an arithmetic sequence with our authoritative online tool.",
+  "url": "https://calcdomain.com/arithmetic-sequence.html",
+  "author": {
+    "@type": "Person",
+    "name": "Ugo Candido"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "CalcDomain"
+  },
+  "mainEntity": {
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is an arithmetic sequence?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "An arithmetic sequence is a sequence of numbers in which the difference between consecutive terms is constant."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I find the nth term of an arithmetic sequence?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Use the formula: a_n = a_1 + (n - 1) * d, where a_1 is the first term and d is the common difference."
+        }
+      }
+    ]
+  }
+}
+  </script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="search.js" defer></script>
+<!-- MathJax for LaTeX formulas -->
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['\(','\)'], ['$', '$']],
+      displayMath: [['$','$'], ['\[','\]']]
+    },
+    svg: { fontCache: 'global' }
+  };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<link rel="preload" href="/assets/js/mobile-menu.js" as="script">
+<link rel="preload" href="/assets/js/page-enhancements.js" as="script">
+
+</head>
+<body>
+
+
+<header class="bg-white shadow-sm sticky top-0 z-50">
+  <nav class="container mx-auto px-4 lg:px-6 py-4 flex items-center justify-between" aria-label="Primary">
+    <a href="https://calcdomain.com/index.html" class="text-2xl font-bold text-blue-600">CalcDomain</a>
+    <div class="w-full max-w-md hidden md:block">
+      <label for="site-search" class="sr-only">Search calculators</label>
+      <div class="relative">
+        <input id="site-search" type="search" placeholder="Search for a calculator…" class="w-full py-2 px-4 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+<nav class="text-sm mb-4 text-gray-600" aria-label="Breadcrumb">
+  <ol class="flex flex-wrap gap-1 items-center"><li><a href="https://calcdomain.com/index.html" class="hover:text-blue-600">Home</a></li><li aria-hidden="true">»</li><li><a href="https://calcdomain.com/finance.html" class="hover:text-blue-600">Finance & Money</a></li><li aria-hidden="true">»</li><li aria-current="page" class="text-gray-800 font-medium">Arithmetic Sequence Calculator</li></ol>
+</nav>
+<section class="calculator-container">
+<h2>Calculator</h2>
+<div class="form-group">
+<label for="firstTerm">First Term (a<sub>1</sub>) *</label>
+<input aria-required="true" class="form-control" id="firstTerm" type="number"/>
+<div aria-live="polite" class="error-message" id="firstTermError" role="alert"></div>
+</div>
+<div class="form-group">
+<label for="commonDifference">Common Difference (d) *</label>
+<input aria-required="true" class="form-control" id="commonDifference" type="number"/>
+<div aria-live="polite" class="error-message" id="commonDifferenceError" role="alert"></div>
+</div>
+<div class="form-group">
+<label for="termNumber">Term Number (n) *</label>
+<input aria-required="true" class="form-control" id="termNumber" type="number"/>
+<div aria-live="polite" class="error-message" id="termNumberError" role="alert"></div>
+</div>
+<button class="btn btn-primary" id="calculateBtn" onclick="calculateSequence()">Calculate</button>
+</section>
+<section class="results-container" id="results">
+<h2>Results</h2>
+<div class="result-item">
+<span class="result-label">Nth Term (a<sub>n</sub>)</span>
+<span class="result-value" id="nthTermValue">N/A</span>
+</div>
+</section>
+<section class="content-container">
+<h2>Data Source and Methodology</h2>
+<p>All calculations are rigorously based on standard arithmetic sequence formulas. For detailed information, please consult algebraic textbooks or educational websites.</p>
+<h2>The Formula Explained</h2>
+<div class="formula-box">
+<p>To find the nth term of an arithmetic sequence, use the formula:</p>
+<p><code>a<sub>n</sub> = a<sub>1</sub> + (n - 1) × d</code></p>
+</div>
+<h2>Glossary of Terms</h2>
+<ul>
+<li><strong>First Term (a<sub>1</sub>):</strong> The initial number in the sequence.</li>
+<li><strong>Common Difference (d):</strong> The consistent difference between consecutive terms.</li>
+<li><strong>Term Number (n):</strong> The position of the term in the sequence.</li>
+<li><strong>Nth Term (a<sub>n</sub>):</strong> The term at position 'n' in the sequence.</li>
+</ul>
+<h2>How It Works: A Step-by-Step Example</h2>
+<p>Consider a sequence starting at 3, with a common difference of 5, and you want to find the 10th term:</p>
+<ol>
+<li>First Term (a<sub>1</sub>) = 3</li>
+<li>Common Difference (d) = 5</li>
+<li>Term Number (n) = 10</li>
+<li>Calculation: a<sub>10</sub> = 3 + (10 - 1) × 5 = 48</li>
+</ol>
+<h2>Frequently Asked Questions (FAQ)</h2>
+<div>
+<h3>What is an arithmetic sequence?</h3>
+<p>An arithmetic sequence is a sequence of numbers in which the difference between consecutive terms is constant.</p>
+<h3>How do I find the nth term of an arithmetic sequence?</h3>
+<p>Use the formula: a<sub>n</sub> = a<sub>1</sub> + (n - 1) × d, where a<sub>1</sub> is the first term and d is the common difference.</p>
+<h3>Can an arithmetic sequence have a negative common difference?</h3>
+<p>Yes, a negative common difference means the sequence decreases.</p>
+<h3>What is the sum of an arithmetic sequence?</h3>
+<p>The sum of the first n terms of an arithmetic sequence can be found using the formula: S<sub>n</sub> = n/2 × (2a<sub>1</sub> + (n - 1) × d).</p>
+<h3>Are all sequences arithmetic?</h3>
+<p>No, sequences can follow different patterns and not all have a constant difference.</p>
+</div>
+<div class="author-box">
+<p>Tool developed by <strong>Ugo Candido</strong>. Content reviewed by the <strong>CalcDomain Expert Team</strong>. Last reviewed for accuracy on: October 20, 2023.</p>
+</div>
+</section>
+</main>
+
+<script>
+        function calculateSequence() {
+            const firstTerm = parseFloat(document.getElementById('firstTerm').value);
+            const commonDifference = parseFloat(document.getElementById('commonDifference').value);
+            const termNumber = parseInt(document.getElementById('termNumber').value);
+
+            if (isNaN(firstTerm) || isNaN(commonDifference) || isNaN(termNumber)) {
+                alert('Please enter valid numbers for all fields.');
+                return;
+            }
+
+            const nthTerm = firstTerm + (termNumber - 1) * commonDifference;
+            document.getElementById('nthTermValue').innerText = nthTerm;
+        }
+    </script>
+
+
+```
+
+<footer class="bg-white border-t mt-12">
+  <div class="container mx-auto px-6 py-8 text-center text-gray-600">
+    <p>&copy; 2025 CalcDomain. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://calcdomain.com/index.html"}, {"@type": "ListItem", "position": 2, "name": "Finance & Money", "item": "https://calcdomain.com/finance.html"}, {"@type": "ListItem", "position": 3, "name": "Arithmetic Sequence Calculator", "item": "https://calcdomain.com/arithmetic-sequence.html"}]}</script>
+</body></html>

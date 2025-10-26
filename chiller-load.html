@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en"><head> 
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Chiller Load Calculator | Math | CalcDomain</title>
+<meta name="description" content="Chiller Load Calculator: fast, accurate calculator." />
+<meta content="Ugo Candido" name="author"/>
+<link rel="canonical" href="https://calcdomain.com/chiller-load.html" />
+<style>
+        :root {
+            --primary-color: #005A9C;
+            --secondary-color: #003F6E;
+            --background-color: #F8F9FA;
+            --text-color: #212529;
+            --border-color: #DEE2E6;
+            --success-color: #198754;
+            --error-color: #DC3545;
+            --font-sans-serif: 'Inter', sans-serif;
+            --font-monospace: 'Source Code Pro', monospace;
+        }
+
+        body {
+            font-family: var(--font-sans-serif);
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        h1, h2 {
+            color: var(--secondary-color);
+        }
+
+        .calculator-container {
+            background-color: var(--background-color);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        input, button {
+            width: 100%;
+            padding: 0.5rem;
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: var(--primary-color);
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: var(--secondary-color);
+        }
+
+        .results-container {
+            padding: 1rem;
+            background: var(--background-color);
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        .result-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .result-item:last-child {
+            border-bottom: none;
+        }
+
+        .result-label {
+            color: var(--text-color);
+        }
+
+        .result-value {
+            font-weight: bold;
+            color: var(--success-color);
+        }
+
+        .content-section {
+            margin-top: 2rem;
+        }
+
+        .author-box {
+            font-size: 0.9rem;
+            color: var(--text-color);
+            margin-top: 2rem;
+            border-top: 1px solid var(--border-color);
+            padding-top: 1rem;
+        }
+    </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Chiller Load Calculator",
+  "description": "Calculate the chiller load effortlessly with our interactive Chiller Load Calculator.",
+  "url": "https://calcdomain.com/chiller-load.html",
+  "author": {
+    "@type": "Person",
+    "name": "Ugo Candido"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Evroprom"
+  },
+  "mainEntity": {
+    "@type": "WebApplication",
+    "applicationCategory": "Engineering",
+    "operatingSystem": "Web"
+  }
+}
+  </script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="search.js" defer></script>
+<!-- MathJax for LaTeX formulas -->
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['\(','\)'], ['$', '$']],
+      displayMath: [['$','$'], ['\[','\]']]
+    },
+    svg: { fontCache: 'global' }
+  };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<link rel="preload" href="/assets/js/mobile-menu.js" as="script">
+<link rel="preload" href="/assets/js/page-enhancements.js" as="script">
+
+</head>
+<body>
+<div class="container mx-auto px-4 py-4"><nav class="text-sm mb-4 text-gray-600" aria-label="Breadcrumb">
+  <ol class="flex flex-wrap gap-1 items-center"><li><a href="https://calcdomain.com/index.html" class="hover:text-blue-600">Home</a></li><li aria-hidden="true">»</li><li><a href="https://calcdomain.com/math.html" class="hover:text-blue-600">Math</a></li><li aria-hidden="true">»</li><li aria-current="page" class="text-gray-800 font-medium">Chiller Load Calculator</li></ol>
+</nav></div>
+
+<header class="bg-white shadow-sm sticky top-0 z-50">
+  <nav class="container mx-auto px-4 lg:px-6 py-4 flex items-center justify-between" aria-label="Primary">
+    <a href="https://calcdomain.com/index.html" class="text-2xl font-bold text-blue-600">CalcDomain</a>
+    <div class="w-full max-w-md hidden md:block">
+      <label for="site-search" class="sr-only">Search calculators</label>
+      <div class="relative">
+        <input id="site-search" type="search" placeholder="Search for a calculator…" class="w-full py-2 px-4 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+<div class="container">
+<h1>Chiller Load Calculator</h1>
+<p>This calculator is designed for mechanical HVAC engineers to simplify the process of calculating the chiller load needed for their systems. By entering specific parameters, users can determine the necessary cooling capacity efficiently.</p>
+<section class="calculator-container" id="chiller-calculator">
+<h2>Calculate Your Chiller Load</h2>
+<div class="form-group">
+<label for="flowRate">Flow Rate (GPM) *</label>
+<input aria-required="true" id="flowRate" placeholder="e.g., 500" type="number"/>
+</div>
+<div class="form-group">
+<label for="temperatureDifference">Temperature Difference (°F) *</label>
+<input aria-required="true" id="temperatureDifference" placeholder="e.g., 10" type="number"/>
+</div>
+<button onclick="calculateChillerLoad()" type="button">Calculate</button>
+</section>
+<section class="results-container" id="results">
+<h2>Results</h2>
+<div class="result-item">
+<span class="result-label">Chiller Load (Tons):</span>
+<span class="result-value" id="chillerLoadResult">0.00</span>
+</div>
+</section>
+<section aria-labelledby="data-source-methodology" class="content-section">
+<h2 id="data-source-methodology">Data Source and Methodology</h2>
+<p>All calculations are based strictly on the formulas provided by the American Society of Heating, Refrigerating and Air-Conditioning Engineers (ASHRAE). For more information, visit the <a href="https://www.ashrae.org" target="_blank">ASHRAE website</a>. All calculations are rigorously based on these sources.</p>
+</section>
+<section aria-labelledby="formula-explained" class="content-section">
+<h2 id="formula-explained">The Formula Explained</h2>
+<div class="formula-box">
+<p>Chiller Load (Tons) = <code>\frac{FlowRate \times TemperatureDifference \times 500}{12000}</code></p>
+</div>
+</section>
+<section aria-labelledby="glossary" class="content-section">
+<h2 id="glossary">Glossary of Variables</h2>
+<ul>
+<li><strong>Flow Rate (GPM):</strong> The rate of fluid flow through the system, measured in gallons per minute.</li>
+<li><strong>Temperature Difference (°F):</strong> The difference in temperature across the chiller, measured in Fahrenheit.</li>
+<li><strong>Chiller Load (Tons):</strong> The cooling capacity required, measured in tons.</li>
+</ul>
+</section>
+<section aria-labelledby="example" class="content-section">
+<h2 id="example">How It Works: A Step-by-Step Example</h2>
+<p>For a flow rate of 500 GPM and a temperature difference of 10°F, the chiller load is calculated as follows:</p>
+<p>Chiller Load = \(\frac{500 \times 10 \times 500}{12000}\) = 20.83 Tons</p>
+</section>
+<section aria-labelledby="faq" class="content-section">
+<h2 id="faq">Frequently Asked Questions (FAQ)</h2>
+<div>
+<h3>What is a chiller load?</h3>
+<p>A chiller load is the amount of cooling capacity required to remove heat from a space or process.</p>
+<h3>How do I determine the flow rate?</h3>
+<p>The flow rate can be determined by measuring the volume of fluid passing through a section of the system per unit of time.</p>
+<h3>Why is the temperature difference important?</h3>
+<p>The temperature difference indicates the change in temperature across the chiller, essential for calculating the cooling load.</p>
+<h3>Can I use this calculator for residential systems?</h3>
+<p>This calculator is primarily designed for commercial systems but can be adapted for residential use with appropriate adjustments.</p>
+<h3>What is the unit of measurement for chiller load?</h3>
+<p>The chiller load is measured in tons, a standard unit of measurement in HVAC applications.</p>
+</div>
+</section>
+<div class="author-box">
+<p>
+                Tool developed by <strong>Ugo Candido</strong>. Content reviewed by the <strong>Evroprom Expert Team</strong>.
+                <br/>Last reviewed for accuracy on: October 1, 2023.
+            </p>
+</div>
+</div>
+<script>
+        function calculateChillerLoad() {
+            const flowRate = parseFloat(document.getElementById('flowRate').value);
+            const temperatureDifference = parseFloat(document.getElementById('temperatureDifference').value);
+
+            if (isNaN(flowRate) || isNaN(temperatureDifference)) {
+                alert('Please enter valid numbers for all fields.');
+                return;
+            }
+
+            const chillerLoad = (flowRate * temperatureDifference * 500) / 12000;
+            document.getElementById('chillerLoadResult').textContent = chillerLoad.toFixed(2);
+        }
+    </script>
+
+
+
+```
+
+
+
+<footer class="bg-white border-t mt-12">
+  <div class="container mx-auto px-6 py-8 text-center text-gray-600">
+    <p>&copy; 2025 CalcDomain. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://calcdomain.com/index.html"}, {"@type": "ListItem", "position": 2, "name": "Math", "item": "https://calcdomain.com/math.html"}, {"@type": "ListItem", "position": 3, "name": "Chiller Load Calculator", "item": "https://calcdomain.com/chiller-load.html"}]}</script>
+</body></html>

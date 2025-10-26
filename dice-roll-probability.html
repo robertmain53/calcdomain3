@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en"><head> 
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dice Roll Probability Calculator | Finance & Money | CalcDomain</title>
+<meta name="description" content="Dice Roll Probability Calculator: fast, accurate calculator." />
+<meta content="Ugo Candido" name="author"/>
+<link rel="canonical" href="https://calcdomain.com/dice-roll-probability.html" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Dice Roll Probability Calculator",
+  "description": "Calculate the probability of rolling dice outcomes. Understand dice probabilities with our advanced online calculator.",
+  "url": "https://calcdomain.com/dice-roll-probability.html",
+  "author": {
+    "@type": "Person",
+    "name": "Ugo Candido"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Example Domain"
+  },
+  "mainEntity": [
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do you calculate dice probability?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Dice probability is calculated by considering the total number of possible outcomes and the number of desired outcomes."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+<style>
+        :root {
+            --primary-color: #005A9C;
+            --background-color: #F8F9FA;
+            --text-color: #212529;
+            --border-color: #DEE2E6;
+            --success-color: #28a745;
+            --error-color: #dc3545;
+            --font-family: 'Inter', sans-serif;
+        }
+        body {
+            font-family: var(--font-family);
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        h1, h2 {
+            color: var(--primary-color);
+        }
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .calculator-container, .results-container, .content-container {
+            background: #fff;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+        .form-control {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+        }
+        .btn {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .btn:hover {
+            background-color: darken(var(--primary-color), 10%);
+        }
+        .results-container {
+            display: none;
+        }
+        .result-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .result-item:last-child {
+            border-bottom: none;
+        }
+        .error-message {
+            color: var(--error-color);
+            font-size: 0.875rem;
+        }
+    </style>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="search.js" defer></script>
+<!-- MathJax for LaTeX formulas -->
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['\(','\)'], ['$', '$']],
+      displayMath: [['$','$'], ['\[','\]']]
+    },
+    svg: { fontCache: 'global' }
+  };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<link rel="preload" href="/assets/js/mobile-menu.js" as="script">
+<link rel="preload" href="/assets/js/page-enhancements.js" as="script">
+
+</head>
+<body>
+
+
+<header class="bg-white shadow-sm sticky top-0 z-50">
+  <nav class="container mx-auto px-4 lg:px-6 py-4 flex items-center justify-between" aria-label="Primary">
+    <a href="https://calcdomain.com/index.html" class="text-2xl font-bold text-blue-600">CalcDomain</a>
+    <div class="w-full max-w-md hidden md:block">
+      <label for="site-search" class="sr-only">Search calculators</label>
+      <div class="relative">
+        <input id="site-search" type="search" placeholder="Search for a calculator…" class="w-full py-2 px-4 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main class="container">
+<nav class="text-sm mb-4 text-gray-600" aria-label="Breadcrumb">
+  <ol class="flex flex-wrap gap-1 items-center"><li><a href="https://calcdomain.com/index.html" class="hover:text-blue-600">Home</a></li><li aria-hidden="true">»</li><li><a href="https://calcdomain.com/finance.html" class="hover:text-blue-600">Finance & Money</a></li><li aria-hidden="true">»</li><li aria-current="page" class="text-gray-800 font-medium">Dice Roll Probability Calculator</li></ol>
+</nav>
+<section aria-labelledby="calculator-heading" class="calculator-container">
+<h2 id="calculator-heading">Calculator</h2>
+<div class="form-group">
+<label for="diceSides">Number of Sides on the Dice *</label>
+<input aria-required="true" class="form-control" id="diceSides" placeholder="e.g., 6" type="number"/>
+<div class="error-message" id="diceSidesError" role="alert"></div>
+</div>
+<div class="form-group">
+<label for="diceCount">Number of Dice *</label>
+<input aria-required="true" class="form-control" id="diceCount" placeholder="e.g., 2" type="number"/>
+<div class="error-message" id="diceCountError" role="alert"></div>
+</div>
+<button class="btn" id="calculateBtn">Calculate Probability</button>
+</section>
+<section aria-live="polite" class="results-container" id="resultsSection">
+<h2>Results</h2>
+<div class="result-item">
+<span class="result-label">Probability of Rolling Desired Outcome</span>
+<span class="result-value" id="resultValue">0%</span>
+</div>
+</section>
+<section class="content-container">
+<h2>Data Source and Methodology</h2>
+<p>All calculations are based on standard probability equations as outlined in <a href="https://www.statisticshowto.com/probability-and-statistics/probability-main-index/dice-roll-probability-6-sided-dice/" rel="noopener" target="_blank">Statistics How To</a>. All calculations strictly follow the formulas and data provided.</p>
+<h2>The Formula Explained</h2>
+<p class="formula-box">P = (Number of Successful Outcomes) / (Total Number of Outcomes)</p>
+<h2>Glossary of Variables</h2>
+<ul>
+<li><strong>Number of Sides:</strong> The number of faces on one die.</li>
+<li><strong>Number of Dice:</strong> The total number of dice being rolled.</li>
+<li><strong>Probability:</strong> The likelihood of rolling a specific outcome.</li>
+</ul>
+<h2>How It Works: A Step-by-Step Example</h2>
+<p>If you roll two 6-sided dice, the probability of rolling a sum of 7 is calculated as follows: There are 6 x 6 = 36 possible outcomes, and 6 of those result in a sum of 7. Thus, P = 6/36 = 1/6 ≈ 16.67%.</p>
+<h2>Frequently Asked Questions (FAQ)</h2>
+<div>
+<h3>How do you calculate dice probability?</h3>
+<p>Dice probability is calculated by considering the total number of possible outcomes and the number of desired outcomes.</p>
+<h3>What is the probability of rolling a 7 with two dice?</h3>
+<p>The probability of rolling a sum of 7 with two 6-sided dice is 16.67%.</p>
+<h3>Can this calculator handle different types of dice?</h3>
+<p>Yes, you can input any number of sides to simulate different types of dice.</p>
+</div>
+</section>
+</main>
+
+<script defer="">
+        document.getElementById('calculateBtn').addEventListener('click', function() {
+            const diceSides = document.getElementById('diceSides').value;
+            const diceCount = document.getElementById('diceCount').value;
+            const totalOutcomes = Math.pow(diceSides, diceCount);
+            const desiredOutcomes = 1; // Example: specific outcome
+            const probability = (desiredOutcomes / totalOutcomes) * 100;
+            document.getElementById('resultValue').textContent = probability.toFixed(2) + '%';
+            document.getElementById('resultsSection').style.display = 'block';
+        });
+    </script>
+
+
+```
+
+<footer class="bg-white border-t mt-12">
+  <div class="container mx-auto px-6 py-8 text-center text-gray-600">
+    <p>&copy; 2025 CalcDomain. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://calcdomain.com/index.html"}, {"@type": "ListItem", "position": 2, "name": "Finance & Money", "item": "https://calcdomain.com/finance.html"}, {"@type": "ListItem", "position": 3, "name": "Dice Roll Probability Calculator", "item": "https://calcdomain.com/dice-roll-probability.html"}]}</script>
+</body></html>

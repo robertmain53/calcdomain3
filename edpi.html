@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en"><head> 
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>eDPI Calculator | Finance & Money → Taxes | CalcDomain</title>
+<meta name="description" content="eDPI Calculator: fast, accurate calculator." />
+<meta content="Ugo Candido" name="author"/>
+<link rel="canonical" href="https://calcdomain.com/edpi.html" />
+<link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="/manifest.json" rel="manifest"/>
+<meta content="#333333" name="theme-color"/>
+<style>
+        :root {
+            --primary-color: #005A9C;
+            --background-color: #F8F9FA;
+            --text-color: #212529;
+            --border-color: #DEE2E6;
+            --success-color: #198754;
+            --danger-color: #DC3545;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+        }
+        h1 {
+            font-size: 2rem;
+            color: var(--primary-color);
+        }
+        p {
+            margin-bottom: 1rem;
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        .form-control {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            font-size: 1rem;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            transition: border-color 0.2s ease, box-shadow 0.2s ease;
+        }
+        .form-control:focus-visible {
+            outline: 3px solid var(--primary-color);
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(0, 90, 156, .25);
+        }
+        .results-container {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            background: #fff;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            min-height: 100px;
+        }
+        .result-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .result-item:last-child {
+            border-bottom: none;
+        }
+        .result-label {
+            color: #6c757d;
+        }
+        .result-value {
+            font-weight: 700;
+            font-size: 1.25rem;
+            color: var(--success-color);
+        }
+        .error-message {
+            color: var(--danger-color);
+            font-size: 0.875rem;
+            margin-top: 0.25rem;
+        }
+    </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "eDPI Calculator",
+  "description": "Calculate your effective DPI (eDPI) for gaming precision with our intuitive eDPI calculator.",
+  "url": "https://calcdomain.com/edpi.html",
+  "author": {
+    "@type": "Person",
+    "name": "Ugo Candido"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "GamingSmart"
+  },
+  "mainEntity": {
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is eDPI?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "eDPI stands for effective DPI and is calculated by multiplying your mouse DPI by your in-game sensitivity."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why is eDPI important?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "eDPI provides a standardized measure of sensitivity that can be compared across different setups."
+        }
+      }
+    ]
+  }
+}
+  </script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="search.js" defer></script>
+<!-- MathJax for LaTeX formulas -->
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['\(','\)'], ['$', '$']],
+      displayMath: [['$','$'], ['\[','\]']]
+    },
+    svg: { fontCache: 'global' }
+  };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<link rel="preload" href="/assets/js/mobile-menu.js" as="script">
+<link rel="preload" href="/assets/js/page-enhancements.js" as="script">
+
+</head>
+<body>
+<div class="container mx-auto px-4 py-4"><nav class="text-sm mb-4 text-gray-600" aria-label="Breadcrumb">
+  <ol class="flex flex-wrap gap-1 items-center"><li><a href="https://calcdomain.com/index.html" class="hover:text-blue-600">Home</a></li><li aria-hidden="true">»</li><li><a href="https://calcdomain.com/finance.html" class="hover:text-blue-600">Finance & Money</a></li><li aria-hidden="true">»</li><li><a href="https://calcdomain.com/subcategories/taxes.html" class="hover:text-blue-600">Taxes</a></li><li aria-hidden="true">»</li><li aria-current="page" class="text-gray-800 font-medium">eDPI Calculator</li></ol>
+</nav></div>
+
+<div class="container">
+
+<header class="bg-white shadow-sm sticky top-0 z-50">
+  <nav class="container mx-auto px-4 lg:px-6 py-4 flex items-center justify-between" aria-label="Primary">
+    <a href="https://calcdomain.com/index.html" class="text-2xl font-bold text-blue-600">CalcDomain</a>
+    <div class="w-full max-w-md hidden md:block">
+      <label for="site-search" class="sr-only">Search calculators</label>
+      <div class="relative">
+        <input id="site-search" type="search" placeholder="Search for a calculator…" class="w-full py-2 px-4 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      </div>
+    </div>
+  </nav>
+</header>
+
+<section>
+<p>This eDPI calculator is designed for gamers to calculate their effective DPI based on their mouse DPI and in-game sensitivity. It helps in achieving precision in gaming by standardizing sensitivity settings.</p>
+</section>
+<section id="calculator-section">
+<div class="form-group">
+<label for="dpi">Mouse DPI *</label>
+<input aria-describedby="dpiError" aria-required="true" class="form-control" id="dpi" placeholder="Enter your mouse DPI" type="number"/>
+<div aria-live="polite" class="error-message" id="dpiError" role="alert"></div>
+</div>
+<div class="form-group">
+<label for="sensitivity">In-Game Sensitivity *</label>
+<input aria-describedby="sensitivityError" aria-required="true" class="form-control" id="sensitivity" placeholder="Enter your in-game sensitivity" step="0.01" type="number"/>
+<div aria-live="polite" class="error-message" id="sensitivityError" role="alert"></div>
+</div>
+<button class="btn-primary form-control" onclick="calculateEDPI()">Calculate eDPI</button>
+</section>
+<section class="results-container" id="results">
+<h2>Results</h2>
+<div class="result-item">
+<span class="result-label">Effective DPI:</span>
+<span class="result-value" id="edpiResult">0</span>
+</div>
+</section>
+<section>
+<h2>Data Source and Methodology</h2>
+<p>All calculations are strictly based on standard gaming formulas. For more details, visit <a href="https://gamingsmart.com/valorant-edpi-calculator/">GamingSmart</a>.</p>
+</section>
+<section>
+<h2>The Formula Explained</h2>
+<div class="formula-box">
+<p><strong>eDPI = DPI × Sensitivity</strong></p>
+</div>
+</section>
+<section>
+<h2>Glossary of Terms</h2>
+<ul>
+<li><strong>DPI:</strong> Dots Per Inch, a measure of mouse sensitivity.</li>
+<li><strong>In-Game Sensitivity:</strong> The sensitivity setting within a game.</li>
+<li><strong>eDPI:</strong> Effective DPI, calculated as DPI multiplied by in-game sensitivity.</li>
+</ul>
+</section>
+<section>
+<h2>Example Use Case</h2>
+<p>For a mouse with DPI of 800 and an in-game sensitivity of 0.5, the eDPI would be:</p>
+<div class="formula-box">
+<p>eDPI = 800 × 0.5 = 400</p>
+</div>
+</section>
+<section>
+<h2>Frequently Asked Questions (FAQ)</h2>
+<div>
+<h3>What is eDPI?</h3>
+<p>eDPI stands for effective DPI and is calculated by multiplying your mouse DPI by your in-game sensitivity.</p>
+<h3>Why is eDPI important?</h3>
+<p>eDPI provides a standardized measure of sensitivity that can be compared across different setups.</p>
+</div>
+</section>
+
+</div>
+<script defer="">
+        function calculateEDPI() {
+            const dpi = document.getElementById('dpi').value;
+            const sensitivity = document.getElementById('sensitivity').value;
+            const dpiError = document.getElementById('dpiError');
+            const sensitivityError = document.getElementById('sensitivityError');
+            let hasError = false;
+
+            if (!dpi || dpi <= 0) {
+                dpiError.textContent = 'Please enter a valid DPI value.';
+                hasError = true;
+            } else {
+                dpiError.textContent = '';
+            }
+
+            if (!sensitivity || sensitivity <= 0) {
+                sensitivityError.textContent = 'Please enter a valid sensitivity value.';
+                hasError = true;
+            } else {
+                sensitivityError.textContent = '';
+            }
+
+            if (!hasError) {
+                const edpi = dpi * sensitivity;
+                document.getElementById('edpiResult').textContent = edpi.toFixed(2);
+            }
+        }
+    </script>
+
+
+```
+
+<footer class="bg-white border-t mt-12">
+  <div class="container mx-auto px-6 py-8 text-center text-gray-600">
+    <p>&copy; 2025 CalcDomain. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://calcdomain.com/index.html"}, {"@type": "ListItem", "position": 2, "name": "Finance & Money", "item": "https://calcdomain.com/finance.html"}, {"@type": "ListItem", "position": 3, "name": "Taxes", "item": "https://calcdomain.com/subcategories/taxes.html"}, {"@type": "ListItem", "position": 4, "name": "eDPI Calculator", "item": "https://calcdomain.com/edpi.html"}]}</script>
+</body></html>

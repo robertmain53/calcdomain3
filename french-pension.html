@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en"><head> 
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>French Pension Calculator | Finance & Money → Taxes | CalcDomain</title>
+<meta name="description" content="French Pension Calculator: fast, accurate calculator." />
+<meta content="Ugo Candido" name="author"/>
+<link rel="canonical" href="https://calcdomain.com/french-pension.html" />
+<style>
+        :root {
+            --primary-color: #005A9C;
+            --secondary-color: #003F6E;
+            --background-color: #F8F9FA;
+            --text-color: #212529;
+            --border-color: #DEE2E6;
+            --success-color: #198754;
+            --danger-color: #DC3545;
+            --muted-text-color: #6C757D;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        h1, h2 {
+            color: var(--primary-color);
+        }
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        h2 {
+            margin-top: 2rem;
+            font-size: 1.5rem;
+        }
+        .calculator-container, .results-container, .content-container {
+            background-color: #fff;
+            padding: 1rem;
+            margin-bottom: 2rem;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+        }
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        input[type="number"] {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        input[type="number"]:focus {
+            border-color: var(--primary-color);
+            outline: none;
+        }
+        .results-container {
+            min-height: 150px;
+        }
+        .result-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .result-item:last-child {
+            border-bottom: none;
+        }
+        .result-label {
+            color: var(--muted-text-color);
+        }
+        .result-value {
+            font-weight: bold;
+            color: var(--success-color);
+        }
+        .author-box {
+            font-size: 0.9rem;
+            color: var(--muted-text-color);
+            margin-top: 2rem;
+            border-top: 1px solid var(--border-color);
+            padding-top: 1rem;
+        }
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+    </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "French Pension Calculator",
+  "description": "Calculate your French pension easily with our interactive tool. Understand how much pension you can receive based on your contributions and years of service.",
+  "url": "https://calcdomain.com/french-pension.html",
+  "author": {
+    "@type": "Person",
+    "name": "Ugo Candido"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Example Corp"
+  },
+  "mainEntity": {
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How is the French pension calculated?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The French pension is calculated based on the average salary, contribution period, and specific formulas provided by the French government."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the minimum contribution period for a French pension?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The minimum contribution period is typically 10 years, but it varies with specific employment conditions."
+        }
+      }
+    ]
+  }
+}
+  </script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="search.js" defer></script>
+<!-- MathJax for LaTeX formulas -->
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['\(','\)'], ['$', '$']],
+      displayMath: [['$','$'], ['\[','\]']]
+    },
+    svg: { fontCache: 'global' }
+  };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<link rel="preload" href="/assets/js/mobile-menu.js" as="script">
+<link rel="preload" href="/assets/js/page-enhancements.js" as="script">
+
+</head>
+<body>
+<div class="container mx-auto px-4 py-4"><nav class="text-sm mb-4 text-gray-600" aria-label="Breadcrumb">
+  <ol class="flex flex-wrap gap-1 items-center"><li><a href="https://calcdomain.com/index.html" class="hover:text-blue-600">Home</a></li><li aria-hidden="true">»</li><li><a href="https://calcdomain.com/finance.html" class="hover:text-blue-600">Finance & Money</a></li><li aria-hidden="true">»</li><li><a href="https://calcdomain.com/subcategories/taxes.html" class="hover:text-blue-600">Taxes</a></li><li aria-hidden="true">»</li><li aria-current="page" class="text-gray-800 font-medium">French Pension Calculator</li></ol>
+</nav></div>
+
+<header class="bg-white shadow-sm sticky top-0 z-50">
+  <nav class="container mx-auto px-4 lg:px-6 py-4 flex items-center justify-between" aria-label="Primary">
+    <a href="https://calcdomain.com/index.html" class="text-2xl font-bold text-blue-600">CalcDomain</a>
+    <div class="w-full max-w-md hidden md:block">
+      <label for="site-search" class="sr-only">Search calculators</label>
+      <div class="relative">
+        <input id="site-search" type="search" placeholder="Search for a calculator…" class="w-full py-2 px-4 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+<div class="container">
+<h1>French Pension Calculator</h1>
+<p>This calculator helps you estimate your French pension based on your contributions and years of service. It is designed for individuals looking to plan their retirement effectively.</p>
+<section aria-labelledby="calculator-heading" class="calculator-container">
+<h2 id="calculator-heading">Calculate Your Pension</h2>
+<div class="form-group">
+<label for="average-salary">Average Annual Salary (€)*</label>
+<input aria-required="true" id="average-salary" placeholder="Enter your average salary" type="number"/>
+</div>
+<div class="form-group">
+<label for="years-contributed">Years Contributed*</label>
+<input aria-required="true" id="years-contributed" placeholder="Enter the number of years" type="number"/>
+</div>
+<button onclick="calculatePension()">Calculate Pension</button>
+</section>
+<section aria-labelledby="results-heading" class="results-container">
+<h2 id="results-heading">Your Estimated Pension</h2>
+<div class="result-item">
+<span class="result-label">Annual Pension</span>
+<span class="result-value" id="annual-pension-value">€0.00</span>
+</div>
+</section>
+<section class="content-container">
+<h2>Data Source and Methodology</h2>
+<p>All calculations are rigorously based on data provided by the French government. For more details, visit the official website: <a href="https://www.service-public.fr/particuliers/vosdroits/F21552?lang=en" target="_blank">French Pension Information</a>. All calculations are based strictly on the formulas and data provided by this source.</p>
+<h2>The Formula Explained</h2>
+<p>The pension formula used is: <code>Pension = Salary × (Contribution Years / 40) × 0.5</code></p>
+<h2>Glossary of Terms</h2>
+<ul>
+<li><strong>Average Annual Salary:</strong> Your average salary over your career.</li>
+<li><strong>Years Contributed:</strong> The total number of years you have contributed to the pension system.</li>
+<li><strong>Annual Pension:</strong> The estimated amount you will receive annually after retirement.</li>
+</ul>
+<h2>How It Works: A Step-by-Step Example</h2>
+<p>For example, if your average salary is €30,000 and you have contributed for 30 years, your pension would be calculated as follows:</p>
+<p><code>Pension = 30,000 × (30 / 40) × 0.5 = €11,250</code></p>
+<h2>Frequently Asked Questions (FAQ)</h2>
+<h3>What is the French pension system?</h3>
+<p>The French pension system is a contributory system where benefits are calculated based on contributions made during a person’s working life.</p>
+<h3>Can I receive a French pension if I worked abroad?</h3>
+<p>Yes, under certain conditions. It depends on agreements between France and the country where you worked.</p>
+<h3>How do pension reforms affect my pension?</h3>
+<p>Pension reforms can affect the age of retirement and the calculation of benefits. Check the latest updates from the French government.</p>
+</section>
+<div class="author-box">
+<p>
+                Tool developed by <strong>Ugo Candido</strong>. Content reviewed by <strong>Example Corp Expert Team</strong>.
+                <br/>
+                Last reviewed for accuracy on: October 1, 2023.
+            </p>
+</div>
+</div>
+<script>
+        function calculatePension() {
+            let salary = parseFloat(document.getElementById('average-salary').value);
+            let years = parseFloat(document.getElementById('years-contributed').value);
+            let pension = salary * (years / 40) * 0.5;
+            
+            if (!isNaN(pension)) {
+                document.getElementById('annual-pension-value').textContent = `€${pension.toFixed(2)}`;
+            } else {
+                document.getElementById('annual-pension-value').textContent = '€0.00';
+            }
+        }
+    </script>
+
+
+```
+
+
+
+<footer class="bg-white border-t mt-12">
+  <div class="container mx-auto px-6 py-8 text-center text-gray-600">
+    <p>&copy; 2025 CalcDomain. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://calcdomain.com/index.html"}, {"@type": "ListItem", "position": 2, "name": "Finance & Money", "item": "https://calcdomain.com/finance.html"}, {"@type": "ListItem", "position": 3, "name": "Taxes", "item": "https://calcdomain.com/subcategories/taxes.html"}, {"@type": "ListItem", "position": 4, "name": "French Pension Calculator", "item": "https://calcdomain.com/french-pension.html"}]}</script>
+</body></html>

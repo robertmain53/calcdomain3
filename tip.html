@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en"><head> 
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Tip Calculator | Math | CalcDomain</title>
+<meta name="description" content="Tip Calculator: fast, accurate calculator." />
+<meta content="Ugo Candido" name="author"/>
+<link rel="canonical" href="https://calcdomain.com/tip.html" />
+<style>
+        :root {
+            --primary-color: #005A9C;
+            --background-color: #F8F9FA;
+            --text-color: #212529;
+            --muted-text-color: #6C757D;
+            --border-color: #DEE2E6;
+            --success-color: #28a745;
+            --danger-color: #dc3545;
+            --font-sans-serif: 'Inter', sans-serif;
+        }
+
+        body {
+            font-family: var(--font-sans-serif);
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            color: var(--primary-color);
+        }
+
+        .calculator-container, .results-container, .content-container {
+            background-color: var(--background-color);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        .form-control:focus {
+            border-color: var(--primary-color);
+            outline: none;
+        }
+
+        .button {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .button:hover {
+            background-color: #004080;
+        }
+
+        .results-container .result-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .results-container .result-item:last-child {
+            border-bottom: none;
+        }
+
+        .result-label {
+            color: var(--muted-text-color);
+        }
+
+        .result-value {
+            font-weight: bold;
+            color: var(--success-color);
+        }
+
+        .error-message {
+            color: var(--danger-color);
+            font-size: 0.875rem;
+        }
+
+        .faq h3 {
+            font-size: 1.25rem;
+            margin-top: 1rem;
+        }
+    </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Tip Calculator",
+  "description": "Use our authoritative tip calculator to easily compute tips based on service quality and split the bill among friends.",
+  "url": "https://calcdomain.com/tip.html",
+  "author": {
+    "@type": "Person",
+    "name": "Ugo Candido"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "CalcDomain"
+  },
+  "mainEntity": {
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is a tip calculator?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A tip calculator helps you determine the correct tip amount based on the service quality and bill total."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I use this tip calculator?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Enter the bill amount, select a tip percentage, and specify the number of people to split the bill."
+        }
+      }
+    ]
+  }
+}
+  </script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="search.js" defer></script>
+<!-- MathJax for LaTeX formulas -->
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['\(','\)'], ['$', '$']],
+      displayMath: [['$','$'], ['\[','\]']]
+    },
+    svg: { fontCache: 'global' }
+  };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<link rel="preload" href="/assets/js/mobile-menu.js" as="script">
+<link rel="preload" href="/assets/js/page-enhancements.js" as="script">
+
+</head>
+<body>
+<div class="container mx-auto px-4 py-4"><nav class="text-sm mb-4 text-gray-600" aria-label="Breadcrumb">
+  <ol class="flex flex-wrap gap-1 items-center"><li><a href="https://calcdomain.com/index.html" class="hover:text-blue-600">Home</a></li><li aria-hidden="true">»</li><li><a href="https://calcdomain.com/math.html" class="hover:text-blue-600">Math</a></li><li aria-hidden="true">»</li><li aria-current="page" class="text-gray-800 font-medium">Tip Calculator</li></ol>
+</nav></div>
+
+<header class="bg-white shadow-sm sticky top-0 z-50">
+  <nav class="container mx-auto px-4 lg:px-6 py-4 flex items-center justify-between" aria-label="Primary">
+    <a href="https://calcdomain.com/index.html" class="text-2xl font-bold text-blue-600">CalcDomain</a>
+    <div class="w-full max-w-md hidden md:block">
+      <label for="site-search" class="sr-only">Search calculators</label>
+      <div class="relative">
+        <input id="site-search" type="search" placeholder="Search for a calculator…" class="w-full py-2 px-4 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+<div class="container">
+<h1>Tip Calculator</h1>
+<p>This tool is designed to help you calculate the tip amount based on the quality of service and easily split the bill among friends or family.</p>
+<section class="calculator-container">
+<div class="form-group">
+<label for="billAmount">Bill Amount *</label>
+<input aria-describedby="billAmountError" aria-required="true" class="form-control" id="billAmount" placeholder="e.g., 50" type="number"/>
+<div aria-live="polite" class="error-message" id="billAmountError" role="alert"></div>
+</div>
+<div class="form-group">
+<label for="tipPercentage">Tip Percentage *</label>
+<input aria-describedby="tipPercentageError" aria-required="true" class="form-control" id="tipPercentage" placeholder="e.g., 15" type="number" value="15"/>
+<div aria-live="polite" class="error-message" id="tipPercentageError" role="alert"></div>
+</div>
+<div class="form-group">
+<label for="numberOfPeople">Number of People *</label>
+<input aria-describedby="numberOfPeopleError" aria-required="true" class="form-control" id="numberOfPeople" placeholder="e.g., 2" type="number" value="1"/>
+<div aria-live="polite" class="error-message" id="numberOfPeopleError" role="alert"></div>
+</div>
+<button class="button" onclick="calculateTip()">Calculate Tip</button>
+</section>
+<section class="results-container">
+<h2>Results</h2>
+<div class="result-item">
+<span class="result-label">Total Tip</span>
+<span class="result-value" id="totalTipValue">$0.00</span>
+</div>
+<div class="result-item">
+<span class="result-label">Tip Per Person</span>
+<span class="result-value" id="tipPerPersonValue">$0.00</span>
+</div>
+<div class="result-item">
+<span class="result-label">Total Per Person</span>
+<span class="result-value" id="totalPerPersonValue">$0.00</span>
+</div>
+</section>
+<section class="content-container">
+<h2>Data Source and Methodology</h2>
+<p>Tutti i calcoli si basano rigorosamente sulle formule matematiche standard per il calcolo della mancia. Consultate fonti ufficiali per dettagli specifici sui tassi di mancia.</p>
+<h2>The Formula Explained</h2>
+<div class="formula-box">
+<p>Tip Amount = (Bill Amount × Tip Percentage) / 100</p>
+<p>Total Amount = Bill Amount + Tip Amount</p>
+<p>Total Per Person = Total Amount / Number of People</p>
+</div>
+<h2>Glossary of Terms</h2>
+<ul>
+<li><strong>Bill Amount:</strong> The total cost of the meal or service.</li>
+<li><strong>Tip Percentage:</strong> The percentage of the bill you wish to tip.</li>
+<li><strong>Number of People:</strong> How many people will split the bill.</li>
+</ul>
+<h2>Frequently Asked Questions (FAQ)</h2>
+<div class="faq">
+<h3>What is a tip calculator?</h3>
+<p>A tip calculator helps you determine the correct tip amount based on the service quality and bill total.</p>
+<h3>How do I use this tip calculator?</h3>
+<p>Enter the bill amount, select a tip percentage, and specify the number of people to split the bill.</p>
+<h3>What is a reasonable tip percentage?</h3>
+<p>A typical tip percentage ranges from 15% to 20% of the bill amount.</p>
+<h3>Can I tip less for poor service?</h3>
+<p>Yes, you can adjust the tip percentage based on the quality of service received.</p>
+<h3>Is tipping mandatory?</h3>
+<p>Tipping is generally not mandatory, but it is a common practice to show appreciation for good service.</p>
+</div>
+<div class="author-box">
+<p>
+                    Tool developed by <strong>Ugo Candido</strong>. Content reviewed by the CalcDomain Expert Team.
+                    <br/>
+                    Last reviewed for accuracy on: October 20, 2023.
+                </p>
+</div>
+</section>
+</div>
+<script>
+        function calculateTip() {
+            const billAmount = parseFloat(document.getElementById('billAmount').value);
+            const tipPercentage = parseFloat(document.getElementById('tipPercentage').value);
+            const numberOfPeople = parseInt(document.getElementById('numberOfPeople').value);
+
+            let isValid = true;
+
+            if (isNaN(billAmount) || billAmount <= 0) {
+                document.getElementById('billAmountError').textContent = "Please enter a valid bill amount.";
+                isValid = false;
+            } else {
+                document.getElementById('billAmountError').textContent = "";
+            }
+
+            if (isNaN(tipPercentage) || tipPercentage < 0) {
+                document.getElementById('tipPercentageError').textContent = "Please enter a valid tip percentage.";
+                isValid = false;
+            } else {
+                document.getElementById('tipPercentageError').textContent = "";
+            }
+
+            if (isNaN(numberOfPeople) || numberOfPeople <= 0) {
+                document.getElementById('numberOfPeopleError').textContent = "Please enter a valid number of people.";
+                isValid = false;
+            } else {
+                document.getElementById('numberOfPeopleError').textContent = "";
+            }
+
+            if (!isValid) return;
+
+            const tipAmount = (billAmount * tipPercentage) / 100;
+            const totalAmount = billAmount + tipAmount;
+            const tipPerPerson = tipAmount / numberOfPeople;
+            const totalPerPerson = totalAmount / numberOfPeople;
+
+            document.getElementById('totalTipValue').textContent = `$${tipAmount.toFixed(2)}`;
+            document.getElementById('tipPerPersonValue').textContent = `$${tipPerPerson.toFixed(2)}`;
+            document.getElementById('totalPerPersonValue').textContent = `$${totalPerPerson.toFixed(2)}`;
+        }
+    </script>
+
+
+
+<footer class="bg-white border-t mt-12">
+  <div class="container mx-auto px-6 py-8 text-center text-gray-600">
+    <p>&copy; 2025 CalcDomain. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://calcdomain.com/index.html"}, {"@type": "ListItem", "position": 2, "name": "Math", "item": "https://calcdomain.com/math.html"}, {"@type": "ListItem", "position": 3, "name": "Tip Calculator", "item": "https://calcdomain.com/tip.html"}]}</script>
+</body></html>

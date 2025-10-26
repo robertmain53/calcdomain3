@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en"><head> 
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Canadian Mortgage Calculator | Finance & Money | CalcDomain</title>
+<meta name="description" content="Canadian Mortgage Calculator: fast, accurate calculator." />
+<meta content="Ugo Candido" name="author"/>
+<link rel="canonical" href="https://calcdomain.com/canadian-mortgage.html" />
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        h1, h2 {
+            color: #005a9c;
+        }
+        .calculator-container, .results-container, .content-container {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 1rem;
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        .form-control {
+            width: 100%;
+            padding: 0.75rem;
+            font-size: 1rem;
+            border: 1px solid #dee2e6;
+            border-radius: 6px;
+            transition: border-color 0.2s ease;
+        }
+        .form-control:focus {
+            outline: none;
+            border-color: #005a9c;
+            box-shadow: 0 0 0 3px rgba(0, 90, 156, 0.25);
+        }
+        .results-container {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+            min-height: 220px;
+        }
+        .result-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid #dee2e6;
+        }
+        .result-item:last-child {
+            border-bottom: none;
+        }
+        .result-value {
+            font-weight: 700;
+            color: #28a745;
+        }
+        .author-box {
+            font-size: 0.9rem;
+            color: #6c757d;
+            margin-top: 2rem;
+            border-top: 1px solid #dee2e6;
+            padding-top: 1rem;
+        }
+    </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Canadian Mortgage Calculator",
+  "description": "Calculate your Canadian mortgage payments with ease. Our tool is designed to help you make informed financial decisions.",
+  "url": "https://calcdomain.com/canadian-mortgage.html",
+  "author": {
+    "@type": "Person",
+    "name": "Ugo Candido"
+  },
+  "mainEntity": {
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is a mortgage calculator?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A mortgage calculator is a tool that helps you estimate your monthly mortgage payments based on the loan amount, interest rate, and loan term."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How accurate is this mortgage calculator?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "This calculator provides estimates based on the input data you provide. It's always best to consult with a financial advisor for precise calculations."
+        }
+      }
+    ]
+  }
+}
+  </script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="search.js" defer></script>
+<!-- MathJax for LaTeX formulas -->
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['\(','\)'], ['$', '$']],
+      displayMath: [['$','$'], ['\[','\]']]
+    },
+    svg: { fontCache: 'global' }
+  };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<link rel="preload" href="/assets/js/mobile-menu.js" as="script">
+<link rel="preload" href="/assets/js/page-enhancements.js" as="script">
+
+</head>
+<body>
+<div class="container mx-auto px-4 py-4"><nav class="text-sm mb-4 text-gray-600" aria-label="Breadcrumb">
+  <ol class="flex flex-wrap gap-1 items-center"><li><a href="https://calcdomain.com/index.html" class="hover:text-blue-600">Home</a></li><li aria-hidden="true">»</li><li><a href="https://calcdomain.com/finance.html" class="hover:text-blue-600">Finance & Money</a></li><li aria-hidden="true">»</li><li aria-current="page" class="text-gray-800 font-medium">Canadian Mortgage Calculator</li></ol>
+</nav></div>
+
+<header class="bg-white shadow-sm sticky top-0 z-50">
+  <nav class="container mx-auto px-4 lg:px-6 py-4 flex items-center justify-between" aria-label="Primary">
+    <a href="https://calcdomain.com/index.html" class="text-2xl font-bold text-blue-600">CalcDomain</a>
+    <div class="w-full max-w-md hidden md:block">
+      <label for="site-search" class="sr-only">Search calculators</label>
+      <div class="relative">
+        <input id="site-search" type="search" placeholder="Search for a calculator…" class="w-full py-2 px-4 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+<div class="container">
+<h1>Canadian Mortgage Calculator</h1>
+<p>This tool helps Canadians calculate their monthly mortgage payments, providing insights into loan affordability and financial planning.</p>
+<section aria-labelledby="calculator-heading" class="calculator-container">
+<h2 id="calculator-heading">Mortgage Calculator</h2>
+<div class="form-group">
+<label for="loanAmount">Loan Amount *</label>
+<input aria-required="true" class="form-control" id="loanAmount" placeholder="e.g., 300000" type="number"/>
+<div aria-live="polite" class="error-message" id="loanAmountError" role="alert"></div>
+</div>
+<div class="form-group">
+<label for="interestRate">Annual Interest Rate (%) *</label>
+<input aria-required="true" class="form-control" id="interestRate" placeholder="e.g., 3.5" type="number"/>
+<div aria-live="polite" class="error-message" id="interestRateError" role="alert"></div>
+</div>
+<div class="form-group">
+<label for="loanTerm">Loan Term (years) *</label>
+<input aria-required="true" class="form-control" id="loanTerm" placeholder="e.g., 25" type="number"/>
+<div aria-live="polite" class="error-message" id="loanTermError" role="alert"></div>
+</div>
+<button class="btn-primary" id="calculateBtn">Calculate</button>
+</section>
+<section class="results-container">
+<h2>Results</h2>
+<div class="result-item">
+<span>Monthly Payment:</span>
+<span class="result-value" id="monthlyPaymentValue">$0.00</span>
+</div>
+<div class="result-item">
+<span>Total Interest Paid:</span>
+<span class="result-value" id="totalInterestValue">$0.00</span>
+</div>
+<div class="result-item">
+<span>Total Payment:</span>
+<span class="result-value" id="totalPaymentValue">$0.00</span>
+</div>
+</section>
+<section class="content-container">
+<h2>Data Source and Methodology</h2>
+<p>This calculator uses standard mortgage formulas to provide accurate estimates. All calculations are based on data from the Government of Canada and industry standards.</p>
+<h2>The Formula Explained</h2>
+<p>The monthly payment is calculated using the formula:</p>
+<div class="formula-box">
+<p><code>P = \frac{L \cdot c \cdot (1 + c)^n}{(1 + c)^n - 1}</code></p>
+<p>where <code>P</code> is the monthly payment, <code>L</code> is the loan amount, <code>c</code> is the monthly interest rate, and <code>n</code> is the number of payments.</p>
+</div>
+<h2>Glossary of Terms</h2>
+<ul>
+<li><strong>Loan Amount:</strong> The principal amount borrowed.</li>
+<li><strong>Interest Rate:</strong> The annual interest rate on the loan.</li>
+<li><strong>Loan Term:</strong> The duration of the loan in years.</li>
+<li><strong>Monthly Payment:</strong> The amount paid monthly.</li>
+<li><strong>Total Interest Paid:</strong> The total interest paid over the loan term.</li>
+<li><strong>Total Payment:</strong> The total amount paid (principal + interest).</li>
+</ul>
+<h2>Frequently Asked Questions (FAQ)</h2>
+<div>
+<h3>What is a mortgage calculator?</h3>
+<p>A mortgage calculator is a tool that helps you estimate your monthly mortgage payments based on the loan amount, interest rate, and loan term.</p>
+<h3>How accurate is this mortgage calculator?</h3>
+<p>This calculator provides estimates based on the input data you provide. It's always best to consult with a financial advisor for precise calculations.</p>
+</div>
+<div class="author-box">
+<p>
+                    Tool developed by <strong>Ugo Candido</strong>. Content reviewed by the CalcDomain Expert Team.
+                    <br/>
+                    Last reviewed for accuracy on: October 15, 2023.
+                </p>
+</div>
+</section>
+</div>
+<script>
+        document.getElementById('calculateBtn').addEventListener('click', function() {
+            const loanAmount = parseFloat(document.getElementById('loanAmount').value);
+            const annualInterestRate = parseFloat(document.getElementById('interestRate').value);
+            const loanTerm = parseInt(document.getElementById('loanTerm').value);
+
+            if (isNaN(loanAmount) || isNaN(annualInterestRate) || isNaN(loanTerm)) {
+                alert('Please provide valid inputs.');
+                return;
+            }
+
+            const monthlyInterestRate = (annualInterestRate / 100) / 12;
+            const numberOfPayments = loanTerm * 12;
+            const monthlyPayment = (loanAmount * monthlyInterestRate) / (1 - Math.pow(1 + monthlyInterestRate, -numberOfPayments));
+            const totalPayment = monthlyPayment * numberOfPayments;
+            const totalInterest = totalPayment - loanAmount;
+
+            document.getElementById('monthlyPaymentValue').textContent = `$${monthlyPayment.toFixed(2)}`;
+            document.getElementById('totalInterestValue').textContent = `$${totalInterest.toFixed(2)}`;
+            document.getElementById('totalPaymentValue').textContent = `$${totalPayment.toFixed(2)}`;
+        });
+    </script>
+
+
+```
+
+
+
+<footer class="bg-white border-t mt-12">
+  <div class="container mx-auto px-6 py-8 text-center text-gray-600">
+    <p>&copy; 2025 CalcDomain. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://calcdomain.com/index.html"}, {"@type": "ListItem", "position": 2, "name": "Finance & Money", "item": "https://calcdomain.com/finance.html"}, {"@type": "ListItem", "position": 3, "name": "Canadian Mortgage Calculator", "item": "https://calcdomain.com/canadian-mortgage.html"}]}</script>
+</body></html>

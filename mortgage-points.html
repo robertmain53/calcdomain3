@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en"><head> 
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mortgage Points Calculator | Finance & Money → Taxes | CalcDomain</title>
+<meta name="description" content="Mortgage Points Calculator: fast, accurate calculator." />
+<meta content="Ugo Candido" name="author"/>
+<link rel="canonical" href="https://calcdomain.com/mortgage-points.html" />
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #0056b3;
+        }
+        .calculator-container, .results-container, .content-container {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .btn {
+            background-color: #0056b3;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #004494;
+        }
+        .results-container {
+            display: none;
+        }
+        .result-item {
+            margin-bottom: 10px;
+        }
+        .result-label {
+            font-weight: bold;
+        }
+    </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Mortgage Points Calculator",
+  "description": "Calculate the cost-effectiveness of mortgage points with our accurate and user-friendly online tool.",
+  "url": "https://calcdomain.com/mortgage-points.html",
+  "author": {
+    "@type": "Person",
+    "name": "Ugo Candido"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "US Bank"
+  }
+}
+  </script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="search.js" defer></script>
+<!-- MathJax for LaTeX formulas -->
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['\(','\)'], ['$', '$']],
+      displayMath: [['$','$'], ['\[','\]']]
+    },
+    svg: { fontCache: 'global' }
+  };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<link rel="preload" href="/assets/js/mobile-menu.js" as="script">
+<link rel="preload" href="/assets/js/page-enhancements.js" as="script">
+
+</head>
+<body>
+<div class="container mx-auto px-4 py-4"><nav class="text-sm mb-4 text-gray-600" aria-label="Breadcrumb">
+  <ol class="flex flex-wrap gap-1 items-center"><li><a href="https://calcdomain.com/index.html" class="hover:text-blue-600">Home</a></li><li aria-hidden="true">»</li><li><a href="https://calcdomain.com/finance.html" class="hover:text-blue-600">Finance & Money</a></li><li aria-hidden="true">»</li><li><a href="https://calcdomain.com/subcategories/taxes.html" class="hover:text-blue-600">Taxes</a></li><li aria-hidden="true">»</li><li aria-current="page" class="text-gray-800 font-medium">Mortgage Points Calculator</li></ol>
+</nav></div>
+
+<header class="bg-white shadow-sm sticky top-0 z-50">
+  <nav class="container mx-auto px-4 lg:px-6 py-4 flex items-center justify-between" aria-label="Primary">
+    <a href="https://calcdomain.com/index.html" class="text-2xl font-bold text-blue-600">CalcDomain</a>
+    <div class="w-full max-w-md hidden md:block">
+      <label for="site-search" class="sr-only">Search calculators</label>
+      <div class="relative">
+        <input id="site-search" type="search" placeholder="Search for a calculator…" class="w-full py-2 px-4 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+<div class="container">
+<h1>Mortgage Points Calculator</h1>
+<p>Use this calculator to determine if purchasing mortgage points is a good financial decision for your mortgage situation. Mortgage points can lower your interest rate and monthly payments, but they come at an upfront cost.</p>
+<section aria-labelledby="calculator-heading" class="calculator-container">
+<h2 id="calculator-heading">Calculator</h2>
+<div class="form-group">
+<label for="loanAmount">Loan Amount ($)*</label>
+<input aria-required="true" id="loanAmount" type="number"/>
+</div>
+<div class="form-group">
+<label for="interestRate">Interest Rate (%)*</label>
+<input aria-required="true" id="interestRate" type="number"/>
+</div>
+<div class="form-group">
+<label for="points">Points Purchased*</label>
+<input aria-required="true" id="points" type="number"/>
+</div>
+<button class="btn" onclick="calculateMortgagePoints()">Calculate</button>
+</section>
+<section aria-labelledby="results-heading" class="results-container" id="resultsSection">
+<h2 id="results-heading">Results</h2>
+<div class="result-item">
+<span class="result-label">Monthly Payment:</span> <span id="monthlyPayment">$0.00</span>
+</div>
+<div class="result-item">
+<span class="result-label">Total Cost of Points:</span> <span id="costOfPoints">$0.00</span>
+</div>
+<div class="result-item">
+<span class="result-label">Break-Even Point (Months):</span> <span id="breakEvenPoint">0</span>
+</div>
+</section>
+<section class="content-container">
+<h2>Data Source and Methodology</h2>
+<p>All calculations are based on standard mortgage formulas provided by the Federal Reserve and industry guidelines. <a href="https://www.federalreserve.gov/">Federal Reserve</a>. All calculations are strictly based on the formulas and data provided by this source.</p>
+<h2>The Formula Explained</h2>
+<p>The monthly payment is calculated using the formula:</p>
+<pre><code>Payment = P * r(1 + r)^n / ((1 + r)^n - 1)</code></pre>
+<p>where P is the loan amount, r is the monthly interest rate, and n is the number of payments.</p>
+<h2>Glossary of Terms</h2>
+<ul>
+<li><strong>Loan Amount:</strong> The total amount of the mortgage.</li>
+<li><strong>Interest Rate:</strong> The annual interest rate of the loan.</li>
+<li><strong>Points Purchased:</strong> The number of points purchased to reduce the interest rate.</li>
+<li><strong>Monthly Payment:</strong> The monthly payment amount calculated based on the input values.</li>
+<li><strong>Total Cost of Points:</strong> The upfront cost required to purchase the points.</li>
+<li><strong>Break-Even Point:</strong> The time it takes for the savings from the reduced monthly payments to equal the cost of the points.</li>
+</ul>
+<h2>Example: A Step-by-Step Guide</h2>
+<p>Let's consider a loan amount of $200,000 with an interest rate of 3.5% and purchasing 1 point. The monthly payment will be calculated based on these inputs.</p>
+<h2>Frequently Asked Questions (FAQ)</h2>
+<div>
+<h3>What are mortgage points?</h3>
+<p>Mortgage points are fees paid directly to the lender at closing in exchange for a reduced interest rate.</p>
+<h3>How much does a point lower the interest rate?</h3>
+<p>Typically, one point can lower the interest rate by 0.25%, but this varies by lender.</p>
+<h3>Are mortgage points tax-deductible?</h3>
+<p>Yes, mortgage points may be tax-deductible in the year they are paid, but consult with a tax advisor for your specific situation.</p>
+<h3>How do I know if buying points is worth it?</h3>
+<p>Use this calculator to determine the break-even point and assess if the upfront cost is justified by long-term savings.</p>
+<h3>Can mortgage points be refunded?</h3>
+<p>No, once paid, mortgage points are non-refundable.</p>
+</div>
+<div class="author-box">
+<p>Tool developed by <strong>Ugo Candido</strong>. Content reviewed by the US Bank Expert Team. Last reviewed for accuracy on: October 1, 2023.</p>
+</div>
+</section>
+</div>
+<script defer="">
+        function calculateMortgagePoints() {
+            const loanAmount = parseFloat(document.getElementById('loanAmount').value);
+            const interestRate = parseFloat(document.getElementById('interestRate').value) / 100 / 12;
+            const points = parseFloat(document.getElementById('points').value);
+            
+            if(isNaN(loanAmount) || isNaN(interestRate) || isNaN(points)) {
+                alert("Please enter valid numbers in all fields.");
+                return;
+            }
+
+            const pointsCost = loanAmount * (points / 100);
+            const newInterestRate = interestRate - (points / 100 / 12);
+            const monthlyPayment = loanAmount * newInterestRate / (1 - Math.pow((1 + newInterestRate), -360));
+            const oldMonthlyPayment = loanAmount * interestRate / (1 - Math.pow((1 + interestRate), -360));
+            const monthlySavings = oldMonthlyPayment - monthlyPayment;
+            const breakEvenPoint = pointsCost / monthlySavings;
+
+            document.getElementById('monthlyPayment').textContent = `$${monthlyPayment.toFixed(2)}`;
+            document.getElementById('costOfPoints').textContent = `$${pointsCost.toFixed(2)}`;
+            document.getElementById('breakEvenPoint').textContent = `${Math.ceil(breakEvenPoint)}`;
+
+            document.getElementById('resultsSection').style.display = 'block';
+        }
+    </script>
+
+
+
+<footer class="bg-white border-t mt-12">
+  <div class="container mx-auto px-6 py-8 text-center text-gray-600">
+    <p>&copy; 2025 CalcDomain. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://calcdomain.com/index.html"}, {"@type": "ListItem", "position": 2, "name": "Finance & Money", "item": "https://calcdomain.com/finance.html"}, {"@type": "ListItem", "position": 3, "name": "Taxes", "item": "https://calcdomain.com/subcategories/taxes.html"}, {"@type": "ListItem", "position": 4, "name": "Mortgage Points Calculator", "item": "https://calcdomain.com/mortgage-points.html"}]}</script>
+</body></html>

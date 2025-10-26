@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en"><head> 
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Credit Card Payoff Calculator | Finance & Money → Taxes | CalcDomain</title>
+<meta name="description" content="Credit Card Payoff Calculator: fast, accurate calculator." />
+<meta content="credit card payoff calculator, personal finance, credit card repayment" name="keywords"/>
+<meta content="Ugo Candido" name="author"/>
+<link rel="canonical" href="https://calcdomain.com/credit-card-payoff.html" />
+<style>
+        :root {
+            --primary-color: #005A9C;
+            --background-color: #F8F9FA;
+            --text-color: #212529;
+            --border-color: #DEE2E6;
+            --success-color: #198754;
+            --error-color: #DC3545;
+            --font-family: 'Arial', sans-serif;
+        }
+        body {
+            font-family: var(--font-family);
+            line-height: 1.6;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        h1, h2 {
+            color: var(--primary-color);
+        }
+        .calculator-container {
+            background-color: #fff;
+            padding: 1rem;
+            border-radius: 8px;
+            shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border: 1px solid var(--border-color);
+        }
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+        .form-control {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+        }
+        .results-container {
+            margin-top: 1rem;
+            padding: 1rem;
+            background-color: #f1f1f1;
+            border-radius: 8px;
+        }
+        .result-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .result-item:last-child {
+            border-bottom: none;
+        }
+        .result-label {
+            font-weight: bold;
+        }
+        .result-value {
+            color: var(--success-color);
+        }
+        .error-message {
+            color: var(--error-color);
+            font-size: 0.875rem;
+        }
+        .content-section {
+            margin-top: 2rem;
+        }
+        .content-section h2 {
+            margin-bottom: 1rem;
+        }
+        .content-section p {
+            margin-bottom: 1rem;
+        }
+        .faq-section h3 {
+            margin-top: 1rem;
+            font-size: 1.1rem;
+        }
+        .faq-section p {
+            margin-top: 0.5rem;
+        }
+    </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Credit Card Payoff Calculator",
+  "description": "Use our Credit Card Payoff Calculator to determine the repayment schedule to pay off your credit card debt efficiently.",
+  "url": "https://calcdomain.com/credit-card-payoff.html",
+  "author": {
+    "@type": "Person",
+    "name": "Ugo Candido"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "FinanceCalc Inc."
+  },
+  "mainEntity": {
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How does the credit card payoff calculator work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The calculator estimates the time required to pay off your credit card debt based on your balance, interest rate, and monthly payment."
+        }
+      }
+    ]
+  }
+}
+  </script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="search.js" defer></script>
+<!-- MathJax for LaTeX formulas -->
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['\(','\)'], ['$', '$']],
+      displayMath: [['$','$'], ['\[','\]']]
+    },
+    svg: { fontCache: 'global' }
+  };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<link rel="preload" href="/assets/js/mobile-menu.js" as="script">
+<link rel="preload" href="/assets/js/page-enhancements.js" as="script">
+
+</head>
+<body>
+
+
+<header class="bg-white shadow-sm sticky top-0 z-50">
+  <nav class="container mx-auto px-4 lg:px-6 py-4 flex items-center justify-between" aria-label="Primary">
+    <a href="https://calcdomain.com/index.html" class="text-2xl font-bold text-blue-600">CalcDomain</a>
+    <div class="w-full max-w-md hidden md:block">
+      <label for="site-search" class="sr-only">Search calculators</label>
+      <div class="relative">
+        <input id="site-search" type="search" placeholder="Search for a calculator…" class="w-full py-2 px-4 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main class="container">
+<nav class="text-sm mb-4 text-gray-600" aria-label="Breadcrumb">
+  <ol class="flex flex-wrap gap-1 items-center"><li><a href="https://calcdomain.com/index.html" class="hover:text-blue-600">Home</a></li><li aria-hidden="true">»</li><li><a href="https://calcdomain.com/finance.html" class="hover:text-blue-600">Finance & Money</a></li><li aria-hidden="true">»</li><li><a href="https://calcdomain.com/subcategories/taxes.html" class="hover:text-blue-600">Taxes</a></li><li aria-hidden="true">»</li><li aria-current="page" class="text-gray-800 font-medium">Credit Card Payoff Calculator</li></ol>
+</nav>
+<section aria-labelledby="calculator-heading" class="calculator-container">
+<h2 id="calculator-heading">Calculator</h2>
+<form id="payoff-calculator">
+<div class="form-group">
+<label for="balance">Current Balance ($)</label>
+<input aria-required="true" class="form-control" id="balance" required="" type="number"/>
+</div>
+<div class="form-group">
+<label for="interest-rate">Annual Interest Rate (%)</label>
+<input aria-required="true" class="form-control" id="interest-rate" required="" type="number"/>
+</div>
+<div class="form-group">
+<label for="monthly-payment">Monthly Payment ($)</label>
+<input aria-required="true" class="form-control" id="monthly-payment" required="" type="number"/>
+</div>
+<button onclick="calculatePayoff()" type="button">Calculate</button>
+</form>
+</section>
+<section class="results-container" id="results">
+<h2>Results</h2>
+<div class="result-item">
+<span class="result-label">Months to Payoff</span>
+<span class="result-value" id="months-result">0</span>
+</div>
+<div class="result-item">
+<span class="result-label">Total Interest Paid</span>
+<span class="result-value" id="interest-result">$0.00</span>
+</div>
+</section>
+<section class="content-section">
+<h2>Data Source and Methodology</h2>
+<p>All calculations are based on standard financial formulas and data from authoritative sources such as financial institutions and government agencies.</p>
+</section>
+<section class="content-section">
+<h2>The Formula Explained</h2>
+<p>The formula used to calculate the payoff time is:</p>
+<div class="formula">
+<code>Months to Payoff = -log(1 - (Balance * Interest Rate / (12 * Monthly Payment))) / log(1 + Interest Rate / 12)</code>
+</div>
+</section>
+<section class="content-section">
+<h2>Glossary of Terms</h2>
+<ul>
+<li><strong>Current Balance:</strong> The total amount of money you owe on the credit card.</li>
+<li><strong>Annual Interest Rate:</strong> The yearly interest rate charged on your credit card balance.</li>
+<li><strong>Monthly Payment:</strong> The amount you pay each month towards reducing your card balance.</li>
+</ul>
+</section>
+<section class="faq-section">
+<h2>Frequently Asked Questions</h2>
+<h3>How does the credit card payoff calculator work?</h3>
+<p>The calculator estimates the time required to pay off your credit card debt based on your balance, interest rate, and monthly payment.</p>
+<h3>Why is it important to pay off credit card debt?</h3>
+<p>Reducing credit card debt can improve your credit score and free up more money for savings and investment.</p>
+<h3>Can this calculator be used for multiple credit cards?</h3>
+<p>Yes, you can use the calculator for each credit card individually to determine the payoff schedule for each.</p>
+</section>
+</main>
+
+<script defer="">
+        function calculatePayoff() {
+            const balance = parseFloat(document.getElementById('balance').value);
+            const interestRate = parseFloat(document.getElementById('interest-rate').value) / 100;
+            const monthlyPayment = parseFloat(document.getElementById('monthly-payment').value);
+
+            if (balance <= 0 || interestRate < 0 || monthlyPayment <= 0) {
+                alert('Please enter valid numbers for all fields.');
+                return;
+            }
+
+            const monthlyInterestRate = interestRate / 12;
+            const months = Math.ceil(-Math.log(1 - (balance * monthlyInterestRate / monthlyPayment)) / Math.log(1 + monthlyInterestRate));
+            const totalInterestPaid = (months * monthlyPayment) - balance;
+
+            document.getElementById('months-result').textContent = months;
+            document.getElementById('interest-result').textContent = `$${totalInterestPaid.toFixed(2)}`;
+        }
+    </script>
+
+
+```
+
+<footer class="bg-white border-t mt-12">
+  <div class="container mx-auto px-6 py-8 text-center text-gray-600">
+    <p>&copy; 2025 CalcDomain. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://calcdomain.com/index.html"}, {"@type": "ListItem", "position": 2, "name": "Finance & Money", "item": "https://calcdomain.com/finance.html"}, {"@type": "ListItem", "position": 3, "name": "Taxes", "item": "https://calcdomain.com/subcategories/taxes.html"}, {"@type": "ListItem", "position": 4, "name": "Credit Card Payoff Calculator", "item": "https://calcdomain.com/credit-card-payoff.html"}]}</script>
+</body></html>

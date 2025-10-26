@@ -1,0 +1,1840 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Finance & Money | CalcDomain</title>
+  <meta name="description" content="Finance & Money calculators: complete hub with subcategories and full listings." />
+  <link rel="canonical" href="https://calcdomain.com/finance.html" />
+  <link rel="icon" type="image/svg+xml" href="https://calcdomain.com/favicon.svg" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+</head><body class="bg-gray-50 text-gray-800">
+
+<header class="bg-white shadow-sm sticky top-0 z-50">
+  <nav class="container mx-auto px-4 lg:px-6 py-4 flex items-center justify-between" aria-label="Primary">
+    <a href="https://calcdomain.com/index.html" class="text-2xl font-bold text-blue-600">CalcDomain</a>
+    <div class="w-full max-w-md hidden md:block">
+      <label for="site-search" class="sr-only">Search calculators</label>
+      <div class="relative">
+        <input id="site-search" type="search" placeholder="Search for a calculator…" class="w-full py-2 px-4 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main class="container mx-auto px-4 py-8">
+  <nav class="text-sm mb-4 text-gray-600" aria-label="Breadcrumb">
+  <ol class="flex flex-wrap gap-1 items-center"><li><a href="https://calcdomain.com/index.html" class="hover:text-blue-600">Home</a></li><li aria-hidden="true">»</li><li aria-current="page" class="text-gray-800 font-medium">Finance & Money</li></ol>
+</nav>
+  <header class="mb-6">
+    <h1 class="text-4xl font-extrabold text-gray-900 mb-2">Finance & Money</h1>
+    <p class="text-gray-700">Browse every calculator in finance & money — organized by subcategory.</p>
+    <div class="mt-4 flex flex-wrap gap-3 text-sm text-gray-600">
+      <span class="badge"><strong>Reviewed:</strong> Category Editor</span>
+      <span class="badge"><strong>Last updated:</strong> 2025-10-26</span>
+    </div>
+  </header>
+  
+<div class="mb-6">
+  <label for="filter" class="block text-sm font-medium text-gray-700 mb-1">Quick filter</label>
+  <input id="filter" type="text" placeholder="Type to filter (e.g., geometry, mortgage, tax…)" class="w-full md:max-w-md border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" aria-describedby="filter-help" />
+  <p id="filter-help" class="text-xs text-gray-500 mt-1">Filters tiles below in real time. Press Esc to clear.</p>
+</div>
+<script>
+(function(){
+  const input=document.getElementById('filter');
+  const tiles=Array.from(document.querySelectorAll('.cat-tiles a.link-tile'));
+  if(!input||!tiles.length) return;
+  const norm=s=>s.toLowerCase().normalize('NFKD').replace(/[^\w\s-]/g,'');
+  input.addEventListener('input',()=>{
+    const q=norm(input.value);
+    tiles.forEach(t=>{
+      const txt=norm(t.textContent||'');
+      t.parentElement.style.display = (!q||txt.includes(q)) ? '' : 'none';
+    });
+  });
+  input.addEventListener('keydown',(e)=>{ if(e.key==='Escape'){ input.value=''; input.dispatchEvent(new Event('input')); } });
+})();
+</script>
+
+  
+<section class="mb-10" aria-labelledby="general">
+  <div class="flex items-baseline justify-between gap-4 mb-2">
+    <h2 id="general" class="text-2xl font-bold">General</h2>
+    
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 cat-tiles">
+    <a href="/72t.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">72t</h3>
+</a>
+<a href="/a-b-test-significance.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">A/B Test Statistical Significance Calculator</h3>
+</a>
+<a href="/acceleration.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Acceleration Calculator</h3>
+</a>
+<a href="/loan-amortization-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Advanced Loan Amortization Calculator</h3>
+</a>
+<a href="/algebra-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">algebra calculator</h3>
+</a>
+<a href="/drake-equation.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Alien Civilization Calculator (Drake Equation)</h3>
+</a>
+<a href="/anagram-solver.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Anagram Solver</h3>
+</a>
+<a href="/greek-units-converter.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Ancient Greek Units Converter</h3>
+</a>
+<a href="/annuity-present-value.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Annuity Present Value Calculator</h3>
+</a>
+<a href="/theis-equation.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Aquifer Drawdown Calculator (Theis Equation)</h3>
+</a>
+<a href="/arc-length-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Arc Length Calculator</h3>
+</a>
+<a href="/area.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Area Calculator</h3>
+</a>
+<a href="/arithmetic-sequence.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Arithmetic Sequence Calculator</h3>
+</a>
+<a href="/asce-7-22-wind-load.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">ASCE 7-22 Wind Load Calculator (Main Wind-Force Resisting System)</h3>
+</a>
+<a href="/redshift.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Astronomical Redshift (Doppler) Calculator</h3>
+</a>
+<a href="/axis-of-symmetry-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">axis of symmetry calculator</h3>
+</a>
+<a href="/bacterial-growth-curve.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Bacterial Growth Curve Calculator</h3>
+</a>
+<a href="/balloon-loan.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Balloon Loan Calculator</h3>
+</a>
+<a href="/bayesian-network.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Bayesian Network Calculator</h3>
+</a>
+<a href="/beaufort-scale.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Beaufort Wind Scale Converter</h3>
+</a>
+<a href="/benzodiazepine-conversion.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Benzodiazepine Conversion Calculator</h3>
+</a>
+<a href="/billiards-angle.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Billiards Shot Angle Calculator</h3>
+</a>
+<a href="/binomial-option-pricing.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Binomial Option Pricing Calculator</h3>
+</a>
+<a href="/biweekly-mortgage.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Biweekly Mortgage Payment Calculator</h3>
+</a>
+<a href="/black-scholes.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Black-Scholes Option Pricing Calculator</h3>
+</a>
+<a href="/bmi-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">BMI Calculator</h3>
+</a>
+<a href="/bode-plot.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Bode Plot Calculator</h3>
+</a>
+<a href="/boolean-algebra.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Boolean Algebra Calculator</h3>
+</a>
+<a href="/bowling-score.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Bowling Score Calculator</h3>
+</a>
+<a href="/box-and-whisker-plot.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Box and Whisker Plot Generator</h3>
+</a>
+<a href="/bfs.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Breadth-First Search (BFS) Calculator</h3>
+</a>
+<a href="/break-even-analysis.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Break-Even Point Calculator</h3>
+</a>
+<a href="/business-small-biz.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Business & Small Biz Calculators</h3>
+</a>
+<a href="/corrected-calcium.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Calcium Correction for Albumin Calculator</h3>
+</a>
+<a href="/cam-design.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Cam Profile Design Calculator</h3>
+</a>
+<a href="/canadian-mortgage.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Canadian Mortgage Calculator</h3>
+</a>
+<a href="/cash-secured-put.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Cash-Secured Put Calculator</h3>
+</a>
+<a href="/cp-to-pa-s.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Centipoise to Pascal-Seconds Converter</h3>
+</a>
+<a href="/chains-to-feet.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Chains to Feet Converter</h3>
+</a>
+<a href="/child-support.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Child Support Calculator (Guideline Estimator)</h3>
+</a>
+<a href="/child-pugh-score.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Child-Pugh Score Calculator</h3>
+</a>
+<a href="/chinese-pension.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Chinese Pension Calculator</h3>
+</a>
+<a href="/circular-sector-area.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Circular Sector Area Calculator</h3>
+</a>
+<a href="/cochrans-q-test.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Cochran's Q Test Calculator</h3>
+</a>
+<a href="/cocomo.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">COCOMO Model Calculator</h3>
+</a>
+<a href="/cohen-s-kappa-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Cohen's Kappa Calculator</h3>
+</a>
+<a href="/collatz-conjecture.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Collatz Conjecture Calculator</h3>
+</a>
+<a href="/color-code-converter.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Color Code Converter (HEX, RGB, HSL, CMYK)</h3>
+</a>
+<a href="/construction-delay-analysis.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Construction Delay Analysis Calculator</h3>
+</a>
+<a href="/container-loading.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Container Loading Calculator</h3>
+</a>
+<a href="/correlation-coefficient.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Correlation Coefficient Calculator</h3>
+</a>
+<a href="/forward-rate.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Currency Forward Rate Calculator</h3>
+</a>
+<a href="/currency-option.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Currency Option Pricing Calculator (Garman-Kohlhagen)</h3>
+</a>
+<a href="/d-d-point-buy-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">D&amp;D Point Buy Calculator</h3>
+</a>
+<a href="/date-duration.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Date Duration Calculator</h3>
+</a>
+<a href="/decimal-to-time.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Decimal to Time Converter</h3>
+</a>
+<a href="/dice-roll-probability.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Dice Roll Probability Calculator</h3>
+</a>
+<a href="/diffraction-grating.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Diffraction Grating Calculator</h3>
+</a>
+<a href="/dinner.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">dinner</h3>
+</a>
+<a href="/distance-formula-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">distance formula calculator</h3>
+</a>
+<a href="/ligation.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">DNA Ligation Calculator</h3>
+</a>
+<a href="/how-to-calculate-emis-for-loans-home-car-personal-the-emi-formula-explained-principal-and-interest-components-prepayment-of-loans-faqs.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">EMI Calculator</h3>
+</a>
+<a href="/ems-to-pixels.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Ems to Pixels Converter</h3>
+</a>
+<a href="/energy-unit-converter.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Energy Unit Converter (Joules, Calories, kWh, BTU)</h3>
+</a>
+<a href="/eurocode-1-imposed-loads.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Eurocode 1 Imposed Loads on Buildings Calculator</h3>
+</a>
+<a href="/eurocode-4-composite-column.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Eurocode 4 Composite Column Design Calculator</h3>
+</a>
+<a href="/eurocode-7-bearing-resistance.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Eurocode 7 Bearing Resistance Calculator</h3>
+</a>
+<a href="/eurocode-8-inter-storey-drift.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Eurocode 8 Inter-Storey Drift Calculator</h3>
+</a>
+<a href="/eurocode-load-combinations.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Eurocode Load Combination Calculator</h3>
+</a>
+<a href="/edd.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Expected Date of Delivery (EDD) Calculator</h3>
+</a>
+<a href="/factoring.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Factoring Calculator</h3>
+</a>
+<a href="/fft.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Fast Fourier Transform (FFT) Calculator</h3>
+</a>
+<a href="/fibonacci-retracement.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Fibonacci Retracement Calculator</h3>
+</a>
+<a href="/finance-business-small-biz.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">finance business small biz</h3>
+</a>
+<a href="/fir-filter-design.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">FIR Filter Design Calculator</h3>
+</a>
+<a href="/flash-distillation.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Flash Distillation Calculator</h3>
+</a>
+<a href="/foil.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">FOIL Method Calculator</h3>
+</a>
+<a href="/kcal-to-kj.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Food Calories (kcal) to Kilojoules Converter</h3>
+</a>
+<a href="/energy-density.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Food Energy Density Calculator</h3>
+</a>
+<a href="/ft-lb-to-nm.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Foot-Pounds to Newton-Meters Converter</h3>
+</a>
+<a href="/fdi-roi.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Foreign Direct Investment (FDI) ROI Calculator</h3>
+</a>
+<a href="/fraction.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Fraction Calculator</h3>
+</a>
+<a href="/stress-intensity-factor.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Fracture Mechanics (Stress Intensity Factor) Calculator</h3>
+</a>
+<a href="/2d-frame-analysis.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Frame Analysis 2D Calculator</h3>
+</a>
+<a href="/freight-class.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Freight Class Calculator</h3>
+</a>
+<a href="/fujita-scale.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Fujita Scale (Tornado) Calculator</h3>
+</a>
+<a href="/furlongs-to-miles.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Furlongs to Miles Converter</h3>
+</a>
+<a href="/future-value-of-annuity.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Future Value of an Annuity Calculator</h3>
+</a>
+<a href="/gacha.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Gacha / Loot Box Probability Calculator</h3>
+</a>
+<a href="/gpm-to-lps.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Gallons per Minute (GPM) to Liters per Second Converter</h3>
+</a>
+<a href="/genetic-algorithm.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Genetic Algorithm Solver</h3>
+</a>
+<a href="/adjacency-list.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Graph Adjacency List Calculator</h3>
+</a>
+<a href="/graph-degree.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Graph Degree Calculator</h3>
+</a>
+<a href="/graphing-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">graphing calculator</h3>
+</a>
+<a href="/what-is-gratuity-calculating-the-gratuity-amount-payable-to-an-employee-based-on-last-drawn-salary-and-years-of-service-for-employees-covered-under-the-gratuity-act-faqs.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Gratuity Calculator</h3>
+</a>
+<a href="/greenhouse.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">greenhouse</h3>
+</a>
+<a href="/rsvp.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Guest List &amp; RSVP Tracker</h3>
+</a>
+<a href="/halstead-complexity.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">halstead complexity</h3>
+</a>
+<a href="/harris-benedict.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Harris-Benedict Equation Calculator</h3>
+</a>
+<a href="/herons-formula.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Heron's Formula Calculator</h3>
+</a>
+<a href="/historical-volatility.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Historical Volatility Calculator</h3>
+</a>
+<a href="/hobbies.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Hobbies Calculators</h3>
+</a>
+<a href="/home-insurance.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Home Insurance Estimator</h3>
+</a>
+<a href="/hourly-to-salary.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Hourly to Salary Converter</h3>
+</a>
+<a href="/human-capital-roi.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Human Capital ROI Calculator</h3>
+</a>
+<a href="/human-life-value.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Human Life Value Calculator</h3>
+</a>
+<a href="/hydration.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">hydration</h3>
+</a>
+<a href="/hyperbola-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">hyperbola calculator</h3>
+</a>
+<a href="/hypergeometric-distribution.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Hypergeometric Distribution Calculator</h3>
+</a>
+<a href="/iir-filter-design.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">IIR Filter Design Calculator</h3>
+</a>
+<a href="/inflation.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Inflation Calculator (CPI-U)</h3>
+</a>
+<a href="/influence-line.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Influence Line Diagram Generator</h3>
+</a>
+<a href="/interest-only-loan.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Interest-Only Loan Calculator</h3>
+</a>
+<a href="/international-fisher-effect.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">International Fisher Effect (IFE) Calculator</h3>
+</a>
+<a href="/interplanetary-trajectory.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Interplanetary Trajectory Calculator</h3>
+</a>
+<a href="/inverse-kinematics.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Inverse Kinematics Calculator (2R Manipulator)</h3>
+</a>
+<a href="/finance-investing-and-growth.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Investing &amp; Compound Growth</h3>
+</a>
+<a href="/irrigation.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Irrigation Water Requirement Calculator</h3>
+</a>
+<a href="/japanese-pension.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">japanese pension</h3>
+</a>
+<a href="/kendalls-tau.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">kendalls tau</h3>
+</a>
+<a href="/kinetic-energy.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Kinetic Energy Calculator</h3>
+</a>
+<a href="/lap-time.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Lap Time Calculator</h3>
+</a>
+<a href="/law-of-cosines-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Law of Cosines Calculator</h3>
+</a>
+<a href="/law-of-sines-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Law of Sines Calculator</h3>
+</a>
+<a href="/length-converter.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Length Unit Converter (Miles, km, feet, meters)</h3>
+</a>
+<a href="/life-expectancy.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Life Expectancy Calculator</h3>
+</a>
+<a href="/life-insurance-needs.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Life Insurance Needs Calculator</h3>
+</a>
+<a href="/linear-regression.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Linear Regression Calculator</h3>
+</a>
+<a href="/loan-comparison.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Loan Comparison Calculator</h3>
+</a>
+<a href="/loan-payment-formula.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Loan Payment (Amortization) Formula Calculator</h3>
+</a>
+<a href="/loan-payoff.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Loan Payoff Calculator</h3>
+</a>
+<a href="/lottery-odds.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Lottery Odds Calculator</h3>
+</a>
+<a href="/love.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Love Calculator</h3>
+</a>
+<a href="/maclaurin-series.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Maclaurin Series Expansion Calculator</h3>
+</a>
+<a href="/magic-number.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Magic Number Calculator</h3>
+</a>
+<a href="/margin.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Margin Calculator</h3>
+</a>
+<a href="/matrix.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Matrix Calculator</h3>
+</a>
+<a href="/mayan-calendar-converter.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Mayan Calendar Converter</h3>
+</a>
+<a href="/mean-median-mode.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Mean, Median, Mode, Range Calculator</h3>
+</a>
+<a href="/midpoint-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Midpoint Calculator</h3>
+</a>
+<a href="/when-will-i-be-a-millionaire.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Millionaire Calculator</h3>
+</a>
+<a href="/mixed-number.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Mixed Number Calculator</h3>
+</a>
+<a href="/mohrs-circle.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Mohr's Circle Calculator</h3>
+</a>
+<a href="/molar-mass.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Molar Mass Calculator</h3>
+</a>
+<a href="/moment-of-inertia.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Moment of Inertia Calculator</h3>
+</a>
+<a href="/momentum.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Momentum Calculator</h3>
+</a>
+<a href="/mortgages.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Mortgage calculators &amp; guides</h3>
+</a>
+<a href="/mortgage-refinance.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Mortgage Refinance Calculator</h3>
+</a>
+<a href="/finance-mortgages-and-home.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Mortgages &amp; Home Financing</h3>
+</a>
+<a href="/moving-average.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Moving Average (SMA &amp; EMA) Calculator</h3>
+</a>
+<a href="/ahp.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Multi-Criteria Decision Analysis (AHP) Calculator</h3>
+</a>
+<a href="/nps.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Net Promoter Score (NPS) Calculator</h3>
+</a>
+<a href="/nm-to-ft-lb.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Newton-Meters to Foot-Pounds Converter</h3>
+</a>
+<a href="/normal-distribution.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Normal Distribution (Gaussian) Calculator</h3>
+</a>
+<a href="/normal-line-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">normal line calculator</h3>
+</a>
+<a href="/number-to-words-converter.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Number to Words Converter</h3>
+</a>
+<a href="/nyquist-plot.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Nyquist Plot Calculator</h3>
+</a>
+<a href="/office-space.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Office Space Calculator</h3>
+</a>
+<a href="/overtime.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Overtime Pay Calculator</h3>
+</a>
+<a href="/p-value.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">P-Value Calculator</h3>
+</a>
+<a href="/pallet-loading.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Pallet Loading Calculator</h3>
+</a>
+<a href="/parabola-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">parabola calculator</h3>
+</a>
+<a href="/party-drink.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Party Drink Calculator</h3>
+</a>
+<a href="/pediatric-maintenance-fluids.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Pediatric Maintenance Fluid Calculator</h3>
+</a>
+<a href="/perpetuity.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Perpetuity Calculator</h3>
+</a>
+<a href="/pestle-analysis-generator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">PESTLE Analysis Generator</h3>
+</a>
+<a href="/pet-gestation.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Pet Gestation Calculator</h3>
+</a>
+<a href="/pipe-sizing.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Pipe Sizing Calculator (for Water)</h3>
+</a>
+<a href="/playfair-cipher.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Playfair Cipher Encoder/Decoder</h3>
+</a>
+<a href="/poisson-distribution.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Poisson Distribution Calculator</h3>
+</a>
+<a href="/polynomial.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Polynomial Calculator</h3>
+</a>
+<a href="/ponderal-index.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Ponderal Index Calculator</h3>
+</a>
+<a href="/statistical-power.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Power Analysis Calculator</h3>
+</a>
+<a href="/power-supply-design.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Power Supply Design Calculator</h3>
+</a>
+<a href="/power-unit-converter.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Power Unit Converter (Watts, Horsepower, BTU/hr)</h3>
+</a>
+<a href="/present-value-of-annuity.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Present Value of an Annuity Calculator</h3>
+</a>
+<a href="/project-roi.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Project ROI Calculator</h3>
+</a>
+<a href="/proportion-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">proportion calculator</h3>
+</a>
+<a href="/punnett-square.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Punnett Square Calculator</h3>
+</a>
+<a href="/put-call-parity.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Put-Call Parity Calculator</h3>
+</a>
+<a href="/pyramid-volume.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Pyramid Volume Calculator</h3>
+</a>
+<a href="/q-q-plot-generator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Q-Q Plot Generator</h3>
+</a>
+<a href="/qr-code-generator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">QR Code Generator</h3>
+</a>
+<a href="/qr-decomposition.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">QR Decomposition Calculator</h3>
+</a>
+<a href="/quarter-mile.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Quarter Mile (Drag Racing) Calculator</h3>
+</a>
+<a href="/queuing-theory.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Queuing Theory Calculator (M/M/1)</h3>
+</a>
+<a href="/rad-to-gray.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">rad to gray</h3>
+</a>
+<a href="/rail-fence-cipher.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Rail Fence Cipher Encoder/Decoder</h3>
+</a>
+<a href="/random-fact-generator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Random Fact Generator</h3>
+</a>
+<a href="/regex-tester.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Regular Expression (Regex) Tester</h3>
+</a>
+<a href="/icosahedron-volume.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Regular Icosahedron Volume Calculator</h3>
+</a>
+<a href="/rfm.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Relative Fat Mass (RFM) Calculator</h3>
+</a>
+<a href="/rsi.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Relative Strength Index (RSI) Calculator</h3>
+</a>
+<a href="/relativistic-kinetic-energy.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Relativistic Kinetic Energy Calculator</h3>
+</a>
+<a href="/reorder-point.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Reorder Point Calculator</h3>
+</a>
+<a href="/restriction-enzyme-digest.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Restriction Enzyme Digest Calculator</h3>
+</a>
+<a href="/river-discharge.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">River Discharge (Velocity-Area) Calculator</h3>
+</a>
+<a href="/rods-to-feet.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Rods to Feet Converter</h3>
+</a>
+<a href="/scientific-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">roots calculator</h3>
+</a>
+<a href="/rule-of-72.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Rule of 72 Calculator</h3>
+</a>
+<a href="/saffir-simpson-scale.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Saffir-Simpson Hurricane Wind Scale Calculator</h3>
+</a>
+<a href="/salary-increase.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Salary Increase Percentage Calculator</h3>
+</a>
+<a href="/scaffolding-load.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Scaffolding Load Calculator</h3>
+</a>
+<a href="/schofield-equation.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Schofield Equation Calculator</h3>
+</a>
+<a href="/scientific.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">scientific</h3>
+</a>
+<a href="/secant-line-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">secant line calculator</h3>
+</a>
+<a href="/seo-roi.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">SEO ROI Calculator</h3>
+</a>
+<a href="/shaft-design.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Shaft Design Calculator</h3>
+</a>
+<a href="/significant-figures.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Significant Figures Calculator</h3>
+</a>
+<a href="/simple-harmonic-motion.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Simple Harmonic Motion (SHM) Calculator</h3>
+</a>
+<a href="/simple-loan-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Simple Loan Calculator</h3>
+</a>
+<a href="/svd.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Singular Value Decomposition (SVD) Calculator</h3>
+</a>
+<a href="/sit-up-test.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Sit-Up Test Calculator</h3>
+</a>
+<a href="/skewness-and-kurtosis.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Skewness and Kurtosis Calculator</h3>
+</a>
+<a href="/skins-game.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Skins Game Calculator</h3>
+</a>
+<a href="/slope.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Slope Calculator</h3>
+</a>
+<a href="/slot-machine-payout.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Slot Machine Payout Calculator</h3>
+</a>
+<a href="/smith-chart.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Smith Chart Calculator</h3>
+</a>
+<a href="/sofa-score.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">SOFA Score Calculator</h3>
+</a>
+<a href="/proctor-test.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Soil Compaction (Proctor) Test Calculator</h3>
+</a>
+<a href="/soil-nail-design.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Soil Nail Wall Design Calculator</h3>
+</a>
+<a href="/soil-texture-triangle.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Soil Texture Triangle Calculator</h3>
+</a>
+<a href="/solar-position.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Solar Position Calculator</h3>
+</a>
+<a href="/spacetime-interval.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Spacetime Interval Calculator</h3>
+</a>
+<a href="/spearmans-rank-correlation.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Spearman's Rank Correlation Calculator</h3>
+</a>
+<a href="/state-space-to-transfer-function.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">State-Space to Transfer Function Converter</h3>
+</a>
+<a href="/statin-intensity.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Statin Intensity Calculator</h3>
+</a>
+<a href="/student-loan.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Student Loan Calculator</h3>
+</a>
+<a href="/what-is-superannuation-calculating-your-super-guarantee-sg-contributions-projecting-your-super-balance-at-retirement-investment-options-faqs.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Superannuation Calculator</h3>
+</a>
+<a href="/swot-analysis-generator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">SWOT Analysis Generator</h3>
+</a>
+<a href="/t-bill-yield.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">T-Bill (Treasury Bill) Yield Calculator</h3>
+</a>
+<a href="/tangent-line-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">tangent line calculator</h3>
+</a>
+<a href="/tide-prediction.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Tide Prediction Calculator</h3>
+</a>
+<a href="/time-dilation.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Time Dilation Calculator</h3>
+</a>
+<a href="/time-to-decimal.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Time to Decimal Converter</h3>
+</a>
+<a href="/meeting-planner-time-zone.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Time Zone Converter with Meeting Planner</h3>
+</a>
+<a href="/traffic-signal-timing.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Traffic Signal Timing Calculator (Webster's Method)</h3>
+</a>
+<a href="/triangular-prism-volume.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Triangular Prism Volume Calculator</h3>
+</a>
+<a href="/author.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Ugo Candido, MBA</h3>
+</a>
+<a href="/uml-diagram-generator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">UML Diagram Generator</h3>
+</a>
+<a href="/valence-electrons.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Valence Electrons Calculator</h3>
+</a>
+<a href="/van-t-hoff-factor-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">van't Hoff Factor Calculator</h3>
+</a>
+<a href="/vertical-jump.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Vertical Jump Calculator</h3>
+</a>
+<a href="/viscosity-converter.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Viscosity Unit Converter (Poise, Stokes)</h3>
+</a>
+<a href="/wbgt.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Wet Bulb Globe Temperature (WBGT) Calculator</h3>
+</a>
+<a href="/spirit-animal.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">What is My Spirit Animal? Calculator</h3>
+</a>
+<a href="/wilcoxon-signed-rank-test.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Wilcoxon Signed-Rank Test Calculator</h3>
+</a>
+<a href="/wind-chill.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Wind Chill Calculator</h3>
+</a>
+<a href="/work.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Work Calculator</h3>
+</a>
+<a href="/ymca-step-test.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">YMCA Step Test Calculator</h3>
+</a>
+  </div>
+</section>
+<section class="mb-10" aria-labelledby="taxes">
+  <div class="flex items-baseline justify-between gap-4 mb-2">
+    <h2 id="taxes" class="text-2xl font-bold">Taxes</h2>
+    <a href="/subcategories/taxes.html" class="text-sm text-blue-600 hover:underline">Open subcategory page →</a>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 cat-tiles">
+    <a href="/1031-exchange.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">1031 Exchange Calculator</h3>
+</a>
+<a href="/15-vs-30-year-mortgage.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">15 vs 30 Year Mortgage</h3>
+</a>
+<a href="/401k.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">401(k) Calculator</h3>
+</a>
+<a href="/401k-vs-roth-401k.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">401k vs roth 401k</h3>
+</a>
+<a href="/529-vs-utma.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">529 Plan vs. UTMA/UGMA Calculator</h3>
+</a>
+<a href="/70-rule.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">70% Rule (House Flipping) Calculator</h3>
+</a>
+<a href="/about.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">About CalcDomain</h3>
+</a>
+<a href="/arm.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Adjustable-Rate Mortgage (ARM) Calculator</h3>
+</a>
+<a href="/alabama-local-sales-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Alabama Local Sales Tax Calculator</h3>
+</a>
+<a href="/alabama-income-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Alabama State Income Tax Calculator</h3>
+</a>
+<a href="/alaska-income-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Alaska State Income Tax Calculator</h3>
+</a>
+<a href="/alberta-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Alberta Provincial Tax Calculator</h3>
+</a>
+<a href="/amt.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Alternative Minimum Tax (AMT) Calculator</h3>
+</a>
+<a href="/altman-z-score.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Altman Z-Score Calculator</h3>
+</a>
+<a href="/apr.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">APR Calculator</h3>
+</a>
+<a href="/arizona-income-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Arizona State Income Tax Calculator</h3>
+</a>
+<a href="/arkansas-income-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Arkansas State Income Tax Calculator</h3>
+</a>
+<a href="/asce-7-22-components-and-cladding.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">ASCE 7-22 Wind Load Calculator (Components &amp; Cladding)</h3>
+</a>
+<a href="/australian-tax-brackets-and-rates-for-residents-2025-26-medicare-levy-and-surcharge-low-income-tax-offset-calculating-your-tax-payable-faqs.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Australia Income Tax Calculator</h3>
+</a>
+<a href="/auto-lease-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Auto Lease Calculator</h3>
+</a>
+<a href="/auto-lease.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Auto Lease Calculator</h3>
+</a>
+<a href="/auto-loan-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Auto Loan & Affordability Calculator</h3>
+</a>
+<a href="/auto-loan.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Auto Loan Calculator</h3>
+</a>
+<a href="/bayesian-inference.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Bayesian Inference Calculator (Binomial)</h3>
+</a>
+<a href="/blog.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Blog & Resources</h3>
+</a>
+<a href="/board-foot.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Board Foot Calculator</h3>
+</a>
+<a href="/bond-ladder.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Bond Ladder Calculator</h3>
+</a>
+<a href="/bond-yield.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Bond Yield Calculator</h3>
+</a>
+<a href="/bradford-factor.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Bradford Factor Calculator</h3>
+</a>
+<a href="/bc-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">British Columbia (BC) Provincial Tax Calculator</h3>
+</a>
+<a href="/brrrr.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">BRRRR Method Calculator</h3>
+</a>
+<a href="/business-finance-and-ratios.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Business Finance &amp; Ratios</h3>
+</a>
+<a href="/business-loan.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Business Loan Calculator</h3>
+</a>
+<a href="/business-mileage.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Business Mileage Calculator</h3>
+</a>
+<a href="/business-operations.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Business Operations Calculators</h3>
+</a>
+<a href="/finance-business-ratios-and-valuation.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Business Ratios &amp; Valuation</h3>
+</a>
+<a href="/disclaimer.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Calculator Disclaimer</h3>
+</a>
+<a href="/california-sales-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">california sales tax</h3>
+</a>
+<a href="/california-income-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">California State Income Tax Calculator</h3>
+</a>
+<a href="/canada-taxes.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Canada Taxes</h3>
+</a>
+<a href="/finance-canada-taxes.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Canada Taxes &amp; Payroll</h3>
+</a>
+<a href="/canada-income-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Canadian Federal Income Tax Calculator</h3>
+</a>
+<a href="/canada-payroll.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Canadian Payroll Calculator</h3>
+</a>
+<a href="/capital-gains-harvesting.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Capital Gains Harvesting Calculator</h3>
+</a>
+<a href="/long-term-capital-gains-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Capital Gains Tax Calculator (Long-Term)</h3>
+</a>
+<a href="/short-term-capital-gains-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Capital Gains Tax Calculator (Short-Term)</h3>
+</a>
+<a href="/how-cgt-works-in-australia-calculating-your-capital-gain-or-loss-the-50-cgt-discount-for-individuals-main-residence-exemption-faqs.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Capital Gains Tax Calculator Australia</h3>
+</a>
+<a href="/cash-flow-statement.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Cash Flow Statement Calculator</h3>
+</a>
+<a href="/cash-on-cash-return.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Cash on Cash Return Calculator</h3>
+</a>
+<a href="/cd.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">CD (Certificate of Deposit) Calculator</h3>
+</a>
+<a href="/child-tax-credit.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Child Tax Credit Calculator</h3>
+</a>
+<a href="/closing-costs.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Closing Costs Calculator</h3>
+</a>
+<a href="/529-plan.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">College Savings Calculator (529 Plan)</h3>
+</a>
+<a href="/colorado-local-sales-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Colorado Local Sales Tax Calculator</h3>
+</a>
+<a href="/colorado-income-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Colorado State Income Tax Calculator</h3>
+</a>
+<a href="/finance-company-planning-and-statements.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Company Planning &amp; Financial Statements</h3>
+</a>
+<a href="/compound-interest-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Compound Interest Calculator</h3>
+</a>
+<a href="/conic classifier.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">conic classifier</h3>
+</a>
+<a href="/connecticut-income-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Connecticut State Income Tax Calculator</h3>
+</a>
+<a href="/construction-cost-estimator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Construction Cost Estimator</h3>
+</a>
+<a href="/cost-of-living.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Cost of Living Calculator</h3>
+</a>
+<a href="/luhn-algorithm.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Credit Card Number Validator (Luhn Algorithm)</h3>
+</a>
+<a href="/credit-card-payoff.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Credit Card Payoff Calculator</h3>
+</a>
+<a href="/crop-yield.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Crop Yield Estimation Calculator</h3>
+</a>
+<a href="/debt-consolidation.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Debt Consolidation Calculator</h3>
+</a>
+<a href="/dscr.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Debt Service Coverage Ratio (DSCR) Calculator</h3>
+</a>
+<a href="/dti-ratio.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Debt-to-Income (DTI) Ratio Calculator</h3>
+</a>
+<a href="/delaware-income-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Delaware State Income Tax Calculator</h3>
+</a>
+<a href="/depreciation.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Depreciation Calculator</h3>
+</a>
+<a href="/dewatering.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Dewatering System Design Calculator</h3>
+</a>
+<a href="/discount.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Discount Calculator</h3>
+</a>
+<a href="/dc-income-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">District of Columbia Income Tax Calculator</h3>
+</a>
+<a href="/down-payment.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Down Payment Calculator</h3>
+</a>
+<a href="/drywall.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Drywall Calculator</h3>
+</a>
+<a href="/dupont-analysis.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">DuPont Analysis Calculator</h3>
+</a>
+<a href="/eitc.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Earned Income Tax Credit (EITC) Calculator</h3>
+</a>
+<a href="/eps.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Earnings Per Share (EPS) Calculator</h3>
+</a>
+<a href="/eva.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Economic Value Added (EVA) Calculator</h3>
+</a>
+<a href="/edpi.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">eDPI Calculator</h3>
+</a>
+<a href="/effective-annual-rate.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Effective Annual Rate (EAR) Calculator</h3>
+</a>
+<a href="/what-is-epf-projecting-your-epf-balance-at-retirement-employee-and-employer-contributions-interest-rates-and-withdrawals-faqs.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">EPF Calculator</h3>
+</a>
+<a href="/equation-solver.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Equation Solver</h3>
+</a>
+<a href="/lease-vs-buy-equipment.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Equipment Lease vs. Buy Calculator</h3>
+</a>
+<a href="/estate-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Estate Tax Calculator</h3>
+</a>
+<a href="/eurocode-3-column-design.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Eurocode 3 Steel Column Compression &amp; Buckling Calculator</h3>
+</a>
+<a href="/eurocode-7-sliding-resistance.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Eurocode 7 Sliding Resistance Calculator</h3>
+</a>
+<a href="/event-budget.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Event Budget Calculator</h3>
+</a>
+<a href="/what-is-fringe-benefits-tax-calculating-fbt-on-a-company-car-using-the-statutory-formula-or-operating-cost-method-fbt-rates-and-thresholds-faqs.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">FBT Calculator</h3>
+</a>
+<a href="/federal-income-tax-head-of-household.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Federal Income Tax Calculator (Head of Household)</h3>
+</a>
+<a href="/federal-income-tax-married-filing-jointly.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Federal Income Tax Calculator (Married Filing Jointly)</h3>
+</a>
+<a href="/federal-income-tax-single.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Federal Income Tax Calculator (Single)</h3>
+</a>
+<a href="/fha-loan.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">FHA Loan Calculator</h3>
+</a>
+<a href="/finance.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Finance Calculators</h3>
+</a>
+<a href="/financial-goals.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Financial Goals Calculator</h3>
+</a>
+<a href="/flooring.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Flooring Calculator</h3>
+</a>
+<a href="/florida-sales-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Florida Local Sales Tax Calculator</h3>
+</a>
+<a href="/florida-income-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Florida State Income Tax Calculator</h3>
+</a>
+<a href="/forex.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Foreign Exchange (Forex) Calculator</h3>
+</a>
+<a href="/what-are-franking-credits-imputation-credits-calculating-the-gross-up-and-tax-offset-from-franked-dividends-for-australian-shareholders-faqs.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Franking Credits Calculator</h3>
+</a>
+<a href="/fcfe.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Free Cash Flow to Equity (FCFE) Calculator</h3>
+</a>
+<a href="/fcff.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Free Cash Flow to Firm (FCFF) Calculator</h3>
+</a>
+<a href="/index.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Free Online Calculatorsfor Every Need</h3>
+</a>
+<a href="/french-pension.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">French Pension Calculator</h3>
+</a>
+<a href="/faq.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Frequently Asked Questions</h3>
+</a>
+<a href="/fte.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">FTE (Full-Time Equivalent) Calculator</h3>
+</a>
+<a href="/future-value.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Future Value Calculator</h3>
+</a>
+<a href="/georgia-local-sales-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Georgia Local Option Sales Tax (LOST/SPLOST) Calculator</h3>
+</a>
+<a href="/georgia-income-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Georgia State Income Tax Calculator</h3>
+</a>
+<a href="/german-capital-gains-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">German Capital Gains (Abgeltungsteuer) Calculator</h3>
+</a>
+<a href="/church-tax-germany.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">German Church Tax (Kirchensteuer) Calculator</h3>
+</a>
+<a href="/german-income-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">German Income Tax Calculator</h3>
+</a>
+<a href="/german-pension.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">German Pension (Rente) Calculator</h3>
+</a>
+<a href="/solidarity-surcharge.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">German Solidarity Surcharge (Solidaritätszuschlag) Calculator</h3>
+</a>
+<a href="/german-trade-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">German Trade Tax (Gewerbesteuer) Calculator</h3>
+</a>
+<a href="/german-vat.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">German VAT (Umsatzsteuer) Calculator</h3>
+</a>
+<a href="/contact.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Get in Touch</h3>
+</a>
+<a href="/gift-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Gift Tax Calculator</h3>
+</a>
+<a href="/glycemic-load.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">glycemic load</h3>
+</a>
+<a href="/grm.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Gross Rent Multiplier (GRM) Calculator</h3>
+</a>
+<a href="/the-goods-and-services-tax-gst-in-australia-calculating-the-10-gst-adding-or-removing-gst-from-a-price-gst-free-sales-faqs.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">GST Calculator Australia</h3>
+</a>
+<a href="/goods-and-services-tax-gst-in-india-calculating-gst-at-different-slab-rates-5-12-18-28-adding-or-removing-gst-cgst-sgst-and-igst-explained-faqs.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">GST Calculator India</h3>
+</a>
+<a href="/gst-hst.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">GST/HST Calculator</h3>
+</a>
+<a href="/gwp.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">gwp</h3>
+</a>
+<a href="/hawaii-income-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Hawaii State Income Tax Calculator</h3>
+</a>
+<a href="/higher-education-loan-program-help-calculating-your-compulsory-repayment-amount-based-on-income-repayment-thresholds-and-rates-indexation-explained-faqs.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">HECS Debt Calculator</h3>
+</a>
+<a href="/hectares-to-acres.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Hectares to Acres Converter</h3>
+</a>
+<a href="/heloc.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">HELOC Calculator</h3>
+</a>
+<a href="/house-affordability.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">House Affordability Calculator</h3>
+</a>
+<a href="/how-much-house-can-i-afford.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">House Affordability Calculator</h3>
+</a>
+<a href="/how-to-calculate-your-hra-exemption-rules-for-hra-calculation-for-salaried-individuals-living-in-rented-accommodation-faqs.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">HRA Calculator</h3>
+</a>
+<a href="/hsa.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">HSA (Health Savings Account) Calculator</h3>
+</a>
+<a href="/idaho-income-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Idaho State Income Tax Calculator</h3>
+</a>
+<a href="/illinois-sales-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Illinois Local Sales Tax Calculator</h3>
+</a>
+<a href="/illinois-income-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Illinois State Income Tax Calculator</h3>
+</a>
+<a href="/finance-income-and-payroll.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Income, Payroll &amp; Cost of Living</h3>
+</a>
+<a href="/indian-tax-slabs-old-vs.-new-regime-for-fy-2025-26-calculating-your-tax-liability-deductions-under-section-80c-80d-etc.-surcharges-and-cess-faqs.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">India Income Tax Calculator</h3>
+</a>
+<a href="/indiana-county-income-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Indiana County Income Tax Calculator</h3>
+</a>
+<a href="/indiana-income-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Indiana State Income Tax Calculator</h3>
+</a>
+<a href="/inheritance-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Inheritance Tax Calculator</h3>
+</a>
+<a href="/interest-coverage-ratio.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Interest Coverage Ratio Calculator</h3>
+</a>
+<a href="/finance-international-personal.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">International Personal Finance</h3>
+</a>
+<a href="/finance-investment.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Investment Calculators</h3>
+</a>
+<a href="/roi.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Investment Return (ROI) Calculator</h3>
+</a>
+<a href="/iowa-income-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Iowa State Income Tax Calculator</h3>
+</a>
+<a href="/ira.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">IRA Calculator</h3>
+</a>
+<a href="/irr.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">IRR (Internal Rate of Return) Calculator</h3>
+</a>
+<a href="/isa.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">ISA (Individual Savings Account) Calculator (UK)</h3>
+</a>
+<a href="/kansas-local-sales-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">kansas local sales tax</h3>
+</a>
+<a href="/kansas-income-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Kansas State Income Tax Calculator</h3>
+</a>
+<a href="/kentucky-occupational-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Kentucky Occupational Tax Calculator</h3>
+</a>
+<a href="/kentucky-income-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Kentucky State Income Tax Calculator</h3>
+</a>
+<a href="/kiwisaver.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">KiwiSaver Calculator (New Zealand)</h3>
+</a>
+<a href="/lbtt.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Land and Buildings Transaction Tax (LBTT) Calculator (Scotland)</h3>
+</a>
+<a href="/ltt.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Land Transaction Tax (LTT) Calculator (Wales)</h3>
+</a>
+<a href="/land-transfer-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">land transfer tax</h3>
+</a>
+<a href="/landfill-volume.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Landfill Volume Calculator</h3>
+</a>
+<a href="/lead-generation-roi.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Lead Generation ROI Calculator</h3>
+</a>
+<a href="/lease-vs-buy-car.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">lease vs buy car</h3>
+</a>
+<a href="/lbo-model.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Leveraged Buyout (LBO) Model Calculator</h3>
+</a>
+<a href="/lifestyle-everyday.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Lifestyle & Everyday Calculators</h3>
+</a>
+<a href="/loan-amortization.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Loan Amortization Schedule Calculator</h3>
+</a>
+<a href="/loan-prepayment.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Loan Prepayment Calculator</h3>
+</a>
+<a href="/ltv.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Loan-to-Value (LTV) Calculator</h3>
+</a>
+<a href="/loans-debt.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Loans & Debt Calculators</h3>
+</a>
+<a href="/loans-and-debt.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Loans &amp; Debt</h3>
+</a>
+<a href="/finance-loans-and-debt.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Loans &amp; Debt Calculators</h3>
+</a>
+<a href="/finance-loans-debt.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Loans &amp; Debt Calculators</h3>
+</a>
+<a href="/long-division.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Long Division Calculator</h3>
+</a>
+<a href="/lotka-volterra.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Lotka-Volterra (Predator-Prey) Model Simulator</h3>
+</a>
+<a href="/lottery-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Lottery Tax Calculator</h3>
+</a>
+<a href="/louisiana-local-sales-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Louisiana Local Sales Tax Calculator</h3>
+</a>
+<a href="/louisiana-income-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Louisiana State Income Tax Calculator</h3>
+</a>
+<a href="/lumpsum-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Lumpsum Investment Plan Calculator Online</h3>
+</a>
+<a href="/maine-income-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Maine State Income Tax Calculator</h3>
+</a>
+<a href="/manitoba-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Manitoba Provincial Tax Calculator</h3>
+</a>
+<a href="/markup.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Markup Calculator</h3>
+</a>
+<a href="/maryland-county-income-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Maryland County Income Tax Calculator</h3>
+</a>
+<a href="/maryland-income-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Maryland State Income Tax Calculator</h3>
+</a>
+<a href="/massachusetts-income-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Massachusetts State Income Tax Calculator</h3>
+</a>
+<a href="/mastermind-solver.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Mastermind Code Breaker</h3>
+</a>
+<a href="/what-is-the-medicare-levy-surcharge-calculating-the-surcharge-for-high-income-earners-without-private-health-insurance-income-thresholds-faqs.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Medicare Levy Surcharge Calculator</h3>
+</a>
+<a href="/medicare-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Medicare Tax Calculator</h3>
+</a>
+<a href="/credit-card-processing-fee.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Merchant Account (Credit Card Processing) Fee Calculator</h3>
+</a>
+<a href="/michigan-city-income-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Michigan City Income Tax Calculator</h3>
+</a>
+<a href="/michigan-income-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Michigan State Income Tax Calculator</h3>
+</a>
+<a href="/minnesota-income-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Minnesota State Income Tax Calculator</h3>
+</a>
+<a href="/mirr.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">MIRR (Modified Internal Rate of Return) Calculator</h3>
+</a>
+<a href="/miscellaneous.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Miscellaneous Calculators</h3>
+</a>
+<a href="/mississippi-income-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Mississippi State Income Tax Calculator</h3>
+</a>
+<a href="/missouri-local-earnings-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Missouri Local Earnings Tax Calculator</h3>
+</a>
+<a href="/missouri-income-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Missouri State Income Tax Calculator</h3>
+</a>
+<a href="/montana-income-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Montana State Income Tax Calculator</h3>
+</a>
+<a href="/mortgage-real-estate.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Mortgage & Real Estate Calculators</h3>
+</a>
+<a href="/finance-mortgage-real-estate.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Mortgage &amp; Real Estate Calculators</h3>
+</a>
+<a href="/mortgage-affordability-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Mortgage Affordability Calculator</h3>
+</a>
+<a href="/mortgage-affordability-methodology-guide.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Mortgage Affordability Guide</h3>
+</a>
+<a href="/mortgage.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Mortgage Calculator</h3>
+</a>
+<a href="/mortgage-payment.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Mortgage Payment Calculator</h3>
+</a>
+<a href="/mortgage-payoff.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Mortgage Payoff Calculator</h3>
+</a>
+<a href="/mortgage-points.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Mortgage Points Calculator</h3>
+</a>
+<a href="/nebraska-income-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Nebraska State Income Tax Calculator</h3>
+</a>
+<a href="/negative-gearing.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Negative Gearing Calculator (Australia)</h3>
+</a>
+<a href="/net-worth.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Net Worth Calculator</h3>
+</a>
+<a href="/nevada-income-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Nevada State Income Tax Calculator</h3>
+</a>
+<a href="/new-brunswick-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">New Brunswick Provincial Tax Calculator</h3>
+</a>
+<a href="/new-hampshire-income-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">New Hampshire State Income Tax Calculator</h3>
+</a>
+<a href="/new-jersey-local-payroll-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">New Jersey Local Payroll Tax Calculator</h3>
+</a>
+<a href="/new-jersey-income-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">New Jersey State Income Tax Calculator</h3>
+</a>
+<a href="/new-mexico-income-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">New Mexico State Income Tax Calculator</h3>
+</a>
+<a href="/nyc-income-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">New York City (NYC) Income Tax Calculator</h3>
+</a>
+<a href="/new-york-income-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">New York State Income Tax Calculator</h3>
+</a>
+<a href="/newfoundland-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Newfoundland and Labrador Provincial Tax Calculator</h3>
+</a>
+<a href="/north-carolina-income-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">North Carolina State Income Tax Calculator</h3>
+</a>
+<a href="/north-dakota-income-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">North Dakota State Income Tax Calculator</h3>
+</a>
+<a href="/nwt-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Northwest Territories (NWT) Territorial Tax Calculator</h3>
+</a>
+<a href="/nova-scotia-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Nova Scotia Provincial Tax Calculator</h3>
+</a>
+<a href="/what-is-the-nps-projecting-your-pension-wealth-and-annuity-from-nps-contributions-tier-i-and-tier-ii-accounts-tax-benefits-of-nps-faqs.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">NPS Calculator</h3>
+</a>
+<a href="/npv.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">NPV (Net Present Value) Calculator</h3>
+</a>
+<a href="/nunavut-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Nunavut Territorial Tax Calculator</h3>
+</a>
+<a href="/ohio-local-income-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Ohio Municipal Income Tax Calculator</h3>
+</a>
+<a href="/ohio-income-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Ohio State Income Tax Calculator</h3>
+</a>
+<a href="/oklahoma-income-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Oklahoma State Income Tax Calculator</h3>
+</a>
+<a href="/ontario-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Ontario Provincial Tax Calculator</h3>
+</a>
+<a href="/options-greeks.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Options Greeks Calculator (Delta, Gamma, Theta, Vega)</h3>
+</a>
+<a href="/oregon-local-income-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Oregon Local Income Tax Calculator</h3>
+</a>
+<a href="/oregon-income-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Oregon State Income Tax Calculator</h3>
+</a>
+<a href="/parallelogram-area.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Parallelogram Area Calculator</h3>
+</a>
+<a href="/payback-period.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Payback Period Calculator (Simple & Discounted)</h3>
+</a>
+<a href="/paycheck.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Paycheck Calculator</h3>
+</a>
+<a href="/pay-as-you-go-payg-withholding-explained-calculating-tax-to-be-withheld-from-salary-using-ato-tax-tables-statement-of-attainment-faqs.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">PAYG Calculator</h3>
+</a>
+<a href="/pecking-order-theory.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Pecking Order Theory Calculator</h3>
+</a>
+<a href="/pa-local-income-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Pennsylvania Local Earned Income Tax (EIT) Calculator</h3>
+</a>
+<a href="/pennsylvania-income-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Pennsylvania State Income Tax Calculator</h3>
+</a>
+<a href="/pension.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Pension Calculator (DB & DC)</h3>
+</a>
+<a href="/percentage-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Percentage Calculator</h3>
+</a>
+<a href="/personal-loan.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Personal Loan Calculator</h3>
+</a>
+<a href="/personal-loan-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Personal Loan Calculator</h3>
+</a>
+<a href="/finance-personal-loans.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Personal Loan Calculators</h3>
+</a>
+<a href="/ziegler-nichols.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">PID Controller Tuning Calculator (Ziegler-Nichols)</h3>
+</a>
+<a href="/portfolio-rebalancing.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Portfolio Rebalancing Calculator</h3>
+</a>
+<a href="/what-is-ppf-calculating-maturity-amount-and-interest-on-a-ppf-account-contribution-limits-and-loan-facility-a-popular-tax-saving-investment-faqs.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">PPF Calculator</h3>
+</a>
+<a href="/present-value.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Present Value Calculator</h3>
+</a>
+<a href="/pei-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Prince Edward Island (PEI) Provincial Tax Calculator</h3>
+</a>
+<a href="/privacy.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Privacy Policy</h3>
+</a>
+<a href="/pmi.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Private Mortgage Insurance (PMI) Calculator</h3>
+</a>
+<a href="/pro-forma-income-statement.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Pro Forma Income Statement Calculator</h3>
+</a>
+<a href="/property-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Property Tax Calculator</h3>
+</a>
+<a href="/pump-sizing.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Pump Sizing Calculator</h3>
+</a>
+<a href="/quebec-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Quebec Provincial Tax Calculator</h3>
+</a>
+<a href="/real-estate-development.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Real Estate Development Feasibility Calculator</h3>
+</a>
+<a href="/finance-real-estate-investing.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Real Estate Investing</h3>
+</a>
+<a href="/real-estate-irr.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Real Estate IRR Calculator</h3>
+</a>
+<a href="/comparable-company-analysis.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Relative Valuation (Comparable Company Analysis) Calculator</h3>
+</a>
+<a href="/remainder.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Remainder Calculator</h3>
+</a>
+<a href="/rem-to-sievert.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Rems to Sieverts Converter</h3>
+</a>
+<a href="/rent-vs-buy.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Rent vs. Buy Calculator</h3>
+</a>
+<a href="/resp.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">RESP (Registered Education Savings Plan) Calculator</h3>
+</a>
+<a href="/retirement.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Retirement Calculator</h3>
+</a>
+<a href="/finance-retirement.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Retirement Calculators</h3>
+</a>
+<a href="/roas.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Return on Ad Spend (ROAS) Calculator</h3>
+</a>
+<a href="/return-on-equity.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Return on Equity (ROE) Calculator</h3>
+</a>
+<a href="/reverse-mortgage.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Reverse Mortgage Calculator</h3>
+</a>
+<a href="/reverse-sales-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Reverse Sales Tax Calculator</h3>
+</a>
+<a href="/rhode-island-income-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Rhode Island State Income Tax Calculator</h3>
+</a>
+<a href="/rmd.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">RMD (Required Minimum Distribution) Calculator</h3>
+</a>
+<a href="/roth-conversion.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Roth Conversion Calculator</h3>
+</a>
+<a href="/roth-ira.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Roth IRA Calculator</h3>
+</a>
+<a href="/rrsp.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">RRSP (Registered Retirement Savings Plan) Calculator</h3>
+</a>
+<a href="/calculating-your-net-salary-from-ctc-cost-to-company-deductions-pf-esi-professional-tax-tds-understanding-your-payslip-faqs.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Salary Calculator India</h3>
+</a>
+<a href="/salary-sacrifice.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Salary Sacrifice Calculator (UK)</h3>
+</a>
+<a href="/sales-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Sales Tax Calculator (by State/Province)</h3>
+</a>
+<a href="/saskatchewan-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Saskatchewan Provincial Tax Calculator</h3>
+</a>
+<a href="/savings.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Savings Calculator</h3>
+</a>
+<a href="/search.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Search Calculators</h3>
+</a>
+<a href="/seach.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Search Calculators</h3>
+</a>
+<a href="/section-179.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Section 179 Deduction Calculator</h3>
+</a>
+<a href="/self-employment-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Self-Employment Tax Calculator</h3>
+</a>
+<a href="/sensitivity-and-specificity.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Sensitivity and Specificity Calculator</h3>
+</a>
+<a href="/side-hustle.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">side hustle</h3>
+</a>
+<a href="/simple-interest.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Simple Interest Calculator</h3>
+</a>
+<a href="/simple-loan.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Simple Loan Calculator</h3>
+</a>
+<a href="/sipp.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">SIPP (Self-Invested Personal Pension) Calculator (UK)</h3>
+</a>
+<a href="/social-security-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Social Security Tax Calculator</h3>
+</a>
+<a href="/south-carolina-income-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">South Carolina State Income Tax Calculator</h3>
+</a>
+<a href="/south-dakota-income-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">South Dakota State Income Tax Calculator</h3>
+</a>
+<a href="/speed-distance-time.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Speed, Distance, Time Calculator</h3>
+</a>
+<a href="/stock.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Stock Calculator</h3>
+</a>
+<a href="/strike-water-temperature.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Strike Water Temperature Calculator</h3>
+</a>
+<a href="/student-loan-payoff.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Student Loan Payoff Calculator</h3>
+</a>
+<a href="/student-loan-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Student Loan Repayment Simulator</h3>
+</a>
+<a href="/synthetic-division.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Synthetic Division Calculator</h3>
+</a>
+<a href="/sip-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Systematic Investment Plan Calculator</h3>
+</a>
+<a href="/taxable-vs-tax-advantaged.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Taxable vs. Tax-Advantaged Investment Calculator</h3>
+</a>
+<a href="/taxes.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Taxes Calculators</h3>
+</a>
+<a href="/tennessee-income-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Tennessee State Income Tax Calculator</h3>
+</a>
+<a href="/terms.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Terms of Service</h3>
+</a>
+<a href="/texas-sales-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Texas Local Sales Tax Calculator</h3>
+</a>
+<a href="/texas-income-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Texas State Income Tax Calculator</h3>
+</a>
+<a href="/tfsa.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">TFSA (Tax-Free Savings Account) Calculator</h3>
+</a>
+<a href="/tile.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Tile Grout &amp; Mortar Calculator</h3>
+</a>
+<a href="/torque.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Torque Calculator</h3>
+</a>
+<a href="/training-roi.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">training roi</h3>
+</a>
+<a href="/travel-budget.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Travel Budget Calculator</h3>
+</a>
+<a href="/finance-uk-and-europe-taxes.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">UK &amp; Europe Taxes</h3>
+</a>
+<a href="/uk-and-europe-taxes.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">UK &amp; Europe Taxes</h3>
+</a>
+<a href="/capital-gains-tax-uk.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">UK Capital Gains Tax (CGT) Calculator</h3>
+</a>
+<a href="/council-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">UK Council Tax Calculator</h3>
+</a>
+<a href="/uk-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">UK Income Tax Calculator (England &amp; NI)</h3>
+</a>
+<a href="/scotland-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">UK Income Tax Calculator (Scotland)</h3>
+</a>
+<a href="/wales-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">UK Income Tax Calculator (Wales)</h3>
+</a>
+<a href="/national-insurance.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">UK National Insurance Calculator</h3>
+</a>
+<a href="/paye-uk.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">UK PAYE Calculator</h3>
+</a>
+<a href="/what-is-stamp-duty.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">UK Stamp Duty Land Tax (SDLT) Calculator</h3>
+</a>
+<a href="/vat-uk.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">UK VAT Calculator</h3>
+</a>
+<a href="/us-federal-taxes.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">US Federal Taxes</h3>
+</a>
+<a href="/finance-us-state-and-local-taxes.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">US State &amp; Local Taxes</h3>
+</a>
+<a href="/us-state-and-local-taxes.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">US State &amp; Local Taxes</h3>
+</a>
+<a href="/us-state-taxes.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">US State Income Tax Calculators</h3>
+</a>
+<a href="/utah-income-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Utah State Income Tax Calculator</h3>
+</a>
+<a href="/va-loan.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">VA Loan Calculator</h3>
+</a>
+<a href="/vat.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">VAT Calculator (Value Added Tax)</h3>
+</a>
+<a href="/vermont-income-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Vermont State Income Tax Calculator</h3>
+</a>
+<a href="/virginia-income-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Virginia State Income Tax Calculator</h3>
+</a>
+<a href="/w4-withholding.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">W-4 Withholding Calculator</h3>
+</a>
+<a href="/wash-sale-rule.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Wash Sale Rule Calculator</h3>
+</a>
+<a href="/washington-local-sales-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Washington Local Sales Tax Calculator</h3>
+</a>
+<a href="/washington-income-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Washington State & Federal Income Tax Calculator</h3>
+</a>
+<a href="/wedding-flower.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Wedding Flower Calculator</h3>
+</a>
+<a href="/wacc.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Weighted Average Cost of Capital (WACC) Calculator</h3>
+</a>
+<a href="/west-virginia-income-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">West Virginia State Income Tax Calculator</h3>
+</a>
+<a href="/wisconsin-income-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Wisconsin State Income Tax Calculator</h3>
+</a>
+<a href="/workout-calculator.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Workout & Calories Burned Calculator</h3>
+</a>
+<a href="/wyoming-income-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Wyoming State Income Tax Calculator</h3>
+</a>
+<a href="/yukon-tax.html" class="link-tile card-hover bg-white p-5 rounded-lg border shadow-sm">
+  <h3 class="font-semibold">Yukon Territorial Tax Calculator</h3>
+</a>
+  </div>
+</section>
+</main>
+
+<footer class="bg-white border-t mt-12">
+  <div class="container mx-auto px-6 py-8 text-center text-gray-600">
+    <p>&copy; 2025 CalcDomain. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://calcdomain.com/index.html"}, {"@type": "ListItem", "position": 2, "name": "Finance & Money", "item": "https://calcdomain.com/finance.html"}]}</script>
+</body></html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en"><head> 
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Arrhenius Equation Calculator | Unit Converters | CalcDomain</title>
+<meta name="description" content="Arrhenius Equation Calculator: fast, accurate calculator." />
+<meta content="Ugo Candido" name="author"/>
+<link rel="canonical" href="https://calcdomain.com/arrhenius-equation.html" />
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #212529;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #005a9c;
+        }
+        h1 {
+            font-size: 2rem;
+        }
+        h2 {
+            font-size: 1.5rem;
+            border-bottom: 2px solid #005a9c;
+            padding-bottom: 0.5rem;
+            margin-top: 2rem;
+        }
+        .calculator-container, .results-container, .content-container {
+            background-color: #ffffff;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+        .form-control {
+            width: 100%;
+            padding: 0.75rem;
+            font-size: 1rem;
+            border: 1px solid #dee2e6;
+            border-radius: 6px;
+        }
+        .form-control:focus {
+            border-color: #005a9c;
+            box-shadow: 0 0 0 3px rgba(0, 90, 156, 0.25);
+        }
+        .results-container {
+            min-height: 150px;
+        }
+        .results-container h3 {
+            border-bottom: 1px solid #dee2e6;
+            padding-bottom: 0.5rem;
+        }
+        .result-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5rem 0;
+        }
+        .result-label {
+            color: #6c757d;
+        }
+        .result-value {
+            font-weight: 700;
+            color: #28a745;
+        }
+        .author-box {
+            font-size: 0.9rem;
+            color: #6c757d;
+            margin-top: 2rem;
+            border-top: 1px solid #dee2e6;
+            padding-top: 1rem;
+        }
+    </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Arrhenius Equation Calculator",
+  "description": "Use this tool to calculate reaction rates using the Arrhenius Equation.",
+  "url": "https://calcdomain.com/arrhenius-equation.html",
+  "author": {
+    "@type": "Person",
+    "name": "Ugo Candido"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Omni Calculator"
+  },
+  "mainEntity": {
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the Arrhenius equation?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Arrhenius equation is a formula for the temperature dependence of reaction rates."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you calculate the rate constant using the Arrhenius equation?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The rate constant can be calculated using the formula: k = A * exp(-Ea / (R * T))."
+        }
+      }
+    ]
+  }
+}
+  </script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="search.js" defer></script>
+<!-- MathJax for LaTeX formulas -->
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['\(','\)'], ['$', '$']],
+      displayMath: [['$','$'], ['\[','\]']]
+    },
+    svg: { fontCache: 'global' }
+  };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<link rel="preload" href="/assets/js/mobile-menu.js" as="script">
+<link rel="preload" href="/assets/js/page-enhancements.js" as="script">
+
+</head>
+<body>
+<div class="container mx-auto px-4 py-4"><nav class="text-sm mb-4 text-gray-600" aria-label="Breadcrumb">
+  <ol class="flex flex-wrap gap-1 items-center"><li><a href="https://calcdomain.com/index.html" class="hover:text-blue-600">Home</a></li><li aria-hidden="true">»</li><li><a href="https://calcdomain.com/unit-converters.html" class="hover:text-blue-600">Unit Converters</a></li><li aria-hidden="true">»</li><li aria-current="page" class="text-gray-800 font-medium">Arrhenius Equation Calculator</li></ol>
+</nav></div>
+
+<header class="bg-white shadow-sm sticky top-0 z-50">
+  <nav class="container mx-auto px-4 lg:px-6 py-4 flex items-center justify-between" aria-label="Primary">
+    <a href="https://calcdomain.com/index.html" class="text-2xl font-bold text-blue-600">CalcDomain</a>
+    <div class="w-full max-w-md hidden md:block">
+      <label for="site-search" class="sr-only">Search calculators</label>
+      <div class="relative">
+        <input id="site-search" type="search" placeholder="Search for a calculator…" class="w-full py-2 px-4 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+<div class="container">
+<h1>Arrhenius Equation Calculator</h1>
+<p>This calculator is designed for chemistry professionals and students to compute the rate constant of a chemical reaction using the Arrhenius equation. It helps to determine how reaction rates vary with temperature, which is crucial in many scientific and industrial processes.</p>
+<section aria-labelledby="calculator-heading" class="calculator-container">
+<h2 id="calculator-heading">Calculator</h2>
+<div class="form-group">
+<label for="frequencyFactor">Frequency Factor (A) *</label>
+<input aria-required="true" class="form-control" id="frequencyFactor" placeholder="Enter frequency factor" type="number"/>
+</div>
+<div class="form-group">
+<label for="activationEnergy">Activation Energy (Ea) [J/mol] *</label>
+<input aria-required="true" class="form-control" id="activationEnergy" placeholder="Enter activation energy" type="number"/>
+</div>
+<div class="form-group">
+<label for="temperature">Temperature (T) [K] *</label>
+<input aria-required="true" class="form-control" id="temperature" placeholder="Enter temperature in Kelvin" type="number"/>
+</div>
+<button class="btn btn-primary" onclick="calculateRateConstant()">Calculate</button>
+</section>
+<section aria-labelledby="results-heading" class="results-container">
+<h2 id="results-heading">Results</h2>
+<div class="result-item">
+<span class="result-label">Rate Constant (k):</span>
+<span class="result-value" id="rateConstant">N/A</span>
+</div>
+</section>
+<section class="content-container">
+<h2>Data Source and Methodology</h2>
+<p>All calculations are based on the Arrhenius equation: k = A * exp(-Ea / (R * T)), where R is the universal gas constant (8.314 J/mol·K). This formula provides a precise method for calculating the rate constant of reactions.</p>
+<h2>The Formula Explained</h2>
+<p class="formula-box">\( k = A \cdot e^{\frac{-E_a}{R \cdot T}} \)</p>
+<h2>Glossary of Variables</h2>
+<ul>
+<li><strong>A:</strong> Frequency factor, representing the number of times reactants approach the activation barrier per unit time.</li>
+<li><strong>E<sub>a</sub>:</strong> Activation energy, the minimum energy required for a reaction to occur.</li>
+<li><strong>T:</strong> Temperature in Kelvin, affecting the reaction rate.</li>
+<li><strong>k:</strong> Rate constant, indicating the speed of the reaction.</li>
+</ul>
+<h2>How It Works: A Step-by-Step Example</h2>
+<p>Assume a reaction with A=1.5x10<sup>12</sup> s<sup>-1</sup>, E<sub>a</sub>=75,000 J/mol, and T=298 K. Using the Arrhenius equation, you can find k by substituting these values into the formula.</p>
+<h2>Frequently Asked Questions (FAQ)</h2>
+<div>
+<p><strong>What is the Arrhenius equation?</strong></p>
+<p>The Arrhenius equation is a formula for the temperature dependence of reaction rates.</p>
+<p><strong>How do you calculate the rate constant using the Arrhenius equation?</strong></p>
+<p>The rate constant can be calculated using the formula: k = A * exp(-Ea / (R * T)).</p>
+<p><strong>What does the activation energy represent?</strong></p>
+<p>Activation energy is the minimum energy required for a chemical reaction to occur.</p>
+<p><strong>Why is temperature important in the Arrhenius equation?</strong></p>
+<p>Temperature influences the reaction rate by affecting the kinetic energy of the molecules involved.</p>
+</div>
+</section>
+<div class="author-box">
+<p>Tool developed by <strong>Ugo Candido</strong>. Contents verified for accuracy.</p>
+<p>Last reviewed on: October 10, 2023.</p>
+</div>
+</div>
+<script>
+        function calculateRateConstant() {
+            const A = parseFloat(document.getElementById('frequencyFactor').value);
+            const Ea = parseFloat(document.getElementById('activationEnergy').value);
+            const T = parseFloat(document.getElementById('temperature').value);
+            const R = 8.314; // Universal gas constant in J/(mol·K)
+            
+            if (isNaN(A) || isNaN(Ea) || isNaN(T)) {
+                alert('Please enter valid numbers for all fields.');
+                return;
+            }
+            
+            const k = A * Math.exp(-Ea / (R * T));
+            document.getElementById('rateConstant').innerText = k.toExponential(3);
+        }
+    </script>
+
+
+
+<footer class="bg-white border-t mt-12">
+  <div class="container mx-auto px-6 py-8 text-center text-gray-600">
+    <p>&copy; 2025 CalcDomain. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://calcdomain.com/index.html"}, {"@type": "ListItem", "position": 2, "name": "Unit Converters", "item": "https://calcdomain.com/unit-converters.html"}, {"@type": "ListItem", "position": 3, "name": "Arrhenius Equation Calculator", "item": "https://calcdomain.com/arrhenius-equation.html"}]}</script>
+</body></html>

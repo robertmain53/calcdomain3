@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en"><head> 
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Spacetime Interval Calculator | Finance & Money | CalcDomain</title>
+<meta name="description" content="Spacetime Interval Calculator: fast, accurate calculator." />
+<meta content="Ugo Candido" name="author"/>
+<link rel="canonical" href="https://calcdomain.com/spacetime-interval.html" />
+<style>
+        :root {
+            --primary-color: #005A9C;
+            --background-color: #FFFFFF;
+            --text-color: #212529;
+            --border-color: #DEE2E6;
+            --success-color: #28a745;
+            --danger-color: #dc3545;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        h1, h2 {
+            color: var(--primary-color);
+        }
+        .calculator-container, .results-container, .content-section {
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        .form-control {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+        }
+        .form-control:focus {
+            outline: 2px solid var(--primary-color);
+        }
+        .results-container {
+            background-color: #f8f9fa;
+        }
+    </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Spacetime Interval Calculator",
+  "description": "Calculate spacetime intervals using our interactive tool designed for physics enthusiasts and professionals.",
+  "url": "https://calcdomain.com/spacetime-interval.html",
+  "author": {
+    "@type": "Person",
+    "name": "Ugo Candido"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "CalcDomain"
+  },
+  "mainEntity": {
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is a spacetime interval?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A spacetime interval is a measure of the separation between two events in space and time, invariant under Lorentz transformations."
+        }
+      }
+    ]
+  }
+}
+  </script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="search.js" defer></script>
+<!-- MathJax for LaTeX formulas -->
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['\(','\)'], ['$', '$']],
+      displayMath: [['$','$'], ['\[','\]']]
+    },
+    svg: { fontCache: 'global' }
+  };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<link rel="preload" href="/assets/js/mobile-menu.js" as="script">
+<link rel="preload" href="/assets/js/page-enhancements.js" as="script">
+
+</head>
+<body>
+<div class="container mx-auto px-4 py-4"><nav class="text-sm mb-4 text-gray-600" aria-label="Breadcrumb">
+  <ol class="flex flex-wrap gap-1 items-center"><li><a href="https://calcdomain.com/index.html" class="hover:text-blue-600">Home</a></li><li aria-hidden="true">»</li><li><a href="https://calcdomain.com/finance.html" class="hover:text-blue-600">Finance & Money</a></li><li aria-hidden="true">»</li><li aria-current="page" class="text-gray-800 font-medium">Spacetime Interval Calculator</li></ol>
+</nav></div>
+
+<header class="bg-white shadow-sm sticky top-0 z-50">
+  <nav class="container mx-auto px-4 lg:px-6 py-4 flex items-center justify-between" aria-label="Primary">
+    <a href="https://calcdomain.com/index.html" class="text-2xl font-bold text-blue-600">CalcDomain</a>
+    <div class="w-full max-w-md hidden md:block">
+      <label for="site-search" class="sr-only">Search calculators</label>
+      <div class="relative">
+        <input id="site-search" type="search" placeholder="Search for a calculator…" class="w-full py-2 px-4 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+<div class="container">
+<h1>Spacetime Interval Calculator</h1>
+<p>This calculator is designed for physicists and enthusiasts to compute the spacetime interval between two events. It helps in understanding concepts in relativity by providing an interactive way to calculate intervals.</p>
+<section aria-labelledby="calculator-heading" class="calculator-container">
+<h2 id="calculator-heading">Calculator</h2>
+<div class="form-group">
+<label for="delta-x">Spatial Distance (Δx)*</label>
+<input aria-required="true" class="form-control" id="delta-x" placeholder="Enter spatial distance" type="number"/>
+</div>
+<div class="form-group">
+<label for="delta-t">Time Interval (Δt)*</label>
+<input aria-required="true" class="form-control" id="delta-t" placeholder="Enter time interval" type="number"/>
+</div>
+<button class="btn btn-primary" id="calculate-btn">Calculate</button>
+</section>
+<section aria-labelledby="results-heading" class="results-container">
+<h2 id="results-heading">Results</h2>
+<div class="result-item">
+<span class="result-label">Spacetime Interval:</span>
+<span class="result-value" id="spacetime-interval">N/A</span>
+</div>
+</section>
+<section class="content-section">
+<h2>Data Source and Methodology</h2>
+<p>All calculations are rigorously based on the spacetime interval formula from standard physics texts.</p>
+<h2>The Formula Explained</h2>
+<p class="formula-box">
+                \( s^2 = c^2 \Delta t^2 - \Delta x^2 \)
+            </p>
+<h2>Glossary of Terms</h2>
+<ul>
+<li><strong>Δx:</strong> Spatial distance between events.</li>
+<li><strong>Δt:</strong> Time interval between events.</li>
+<li><strong>c:</strong> Speed of light in a vacuum.</li>
+</ul>
+<h2>Example Calculation</h2>
+<p>Suppose Δx = 3 meters and Δt = 4 seconds, using c = 299,792,458 m/s, the spacetime interval is calculated as follows...</p>
+<h2>Frequently Asked Questions (FAQ)</h2>
+<div>
+<h3>What is a spacetime interval?</h3>
+<p>A spacetime interval is the measure of separation between two events in space and time, invariant under Lorentz transformations.</p>
+<h3>Why is the spacetime interval important?</h3>
+<p>It is a key concept in the theory of relativity, providing a way to describe the geometric structure of spacetime.</p>
+</div>
+</section>
+
+</div>
+<script>
+        document.getElementById('calculate-btn').addEventListener('click', function() {
+            const deltaX = parseFloat(document.getElementById('delta-x').value);
+            const deltaT = parseFloat(document.getElementById('delta-t').value);
+            const c = 299792458; // Speed of light in m/s
+
+            if (!isNaN(deltaX) && !isNaN(deltaT)) {
+                const interval = Math.sqrt(c * c * deltaT * deltaT - deltaX * deltaX);
+                document.getElementById('spacetime-interval').textContent = interval.toFixed(2);
+            } else {
+                document.getElementById('spacetime-interval').textContent = "Invalid inputs.";
+            }
+        });
+    </script>
+
+
+```
+
+<footer class="bg-white border-t mt-12">
+  <div class="container mx-auto px-6 py-8 text-center text-gray-600">
+    <p>&copy; 2025 CalcDomain. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://calcdomain.com/index.html"}, {"@type": "ListItem", "position": 2, "name": "Finance & Money", "item": "https://calcdomain.com/finance.html"}, {"@type": "ListItem", "position": 3, "name": "Spacetime Interval Calculator", "item": "https://calcdomain.com/spacetime-interval.html"}]}</script>
+</body></html>

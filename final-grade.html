@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en"><head> 
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Final Grade Calculator | Unit Converters | CalcDomain</title>
+<meta name="description" content="Final Grade Calculator: fast, accurate calculator." />
+<meta content="Ugo Candido" name="author"/>
+<link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link rel="canonical" href="https://calcdomain.com/final-grade.html" />
+<style>
+        :root {
+            --primary-color: #005A9C;
+            --background-color: #F8F9FA;
+            --surface-color: #FFFFFF;
+            --text-color: #212529;
+            --muted-text-color: #6C757D;
+            --border-color: #DEE2E6;
+            --success-color: #28a745;
+            --danger-color: #dc3545;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 2rem;
+            color: var(--primary-color);
+        }
+        .calculator-container, .results-container, .content-container {
+            background-color: var(--surface-color);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid var(--border-color);
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 5px rgba(0, 90, 156, 0.5);
+        }
+        .results-container {
+            min-height: 100px;
+        }
+        .result-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+        }
+        .result-label {
+            color: var(--muted-text-color);
+        }
+        .result-value {
+            font-weight: bold;
+            color: var(--success-color);
+        }
+        .error-message {
+            color: var(--danger-color);
+            font-size: 0.875rem;
+            margin-top: 0.25rem;
+        }
+        .content-container h2 {
+            margin-top: 20px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 5px;
+        }
+        .formula-box {
+            background-color: #e9ecef;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 10px 0;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+        .author-box {
+            font-size: 0.9rem;
+            color: var(--muted-text-color);
+            margin-top: 20px;
+            border-top: 1px solid var(--border-color);
+            padding-top: 10px;
+        }
+    </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Final Grade Calculator",
+  "description": "Calculate your final grade easily with our authoritative final grade calculator tool.",
+  "url": "https://calcdomain.com/final-grade.html",
+  "author": {
+    "@type": "Person",
+    "name": "Ugo Candido"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "CalcDomain"
+  },
+  "mainEntity": {
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do I calculate my final grade?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You can use this calculator by entering your current grade, desired grade, and final exam weight to calculate the score you need on the final exam."
+        }
+      }
+    ]
+  }
+}
+  </script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="search.js" defer></script>
+<!-- MathJax for LaTeX formulas -->
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['\(','\)'], ['$', '$']],
+      displayMath: [['$','$'], ['\[','\]']]
+    },
+    svg: { fontCache: 'global' }
+  };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<link rel="preload" href="/assets/js/mobile-menu.js" as="script">
+<link rel="preload" href="/assets/js/page-enhancements.js" as="script">
+
+</head>
+<body>
+<div class="container mx-auto px-4 py-4"><nav class="text-sm mb-4 text-gray-600" aria-label="Breadcrumb">
+  <ol class="flex flex-wrap gap-1 items-center"><li><a href="https://calcdomain.com/index.html" class="hover:text-blue-600">Home</a></li><li aria-hidden="true">»</li><li><a href="https://calcdomain.com/unit-converters.html" class="hover:text-blue-600">Unit Converters</a></li><li aria-hidden="true">»</li><li aria-current="page" class="text-gray-800 font-medium">Final Grade Calculator</li></ol>
+</nav></div>
+
+<header class="bg-white shadow-sm sticky top-0 z-50">
+  <nav class="container mx-auto px-4 lg:px-6 py-4 flex items-center justify-between" aria-label="Primary">
+    <a href="https://calcdomain.com/index.html" class="text-2xl font-bold text-blue-600">CalcDomain</a>
+    <div class="w-full max-w-md hidden md:block">
+      <label for="site-search" class="sr-only">Search calculators</label>
+      <div class="relative">
+        <input id="site-search" type="search" placeholder="Search for a calculator…" class="w-full py-2 px-4 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+<div class="container">
+<h1>Final Grade Calculator</h1>
+<p>This calculator helps students determine the score needed on their final exam to achieve their desired overall grade in a course. It's perfect for students preparing for finals who need to understand what score will allow them to reach their academic goals.</p>
+<section aria-labelledby="calculator-heading" class="calculator-container">
+<h2 id="calculator-heading">Calculator</h2>
+<div class="form-group">
+<label for="current-grade">Current Grade (%) *</label>
+<input aria-describedby="currentGradeError" aria-required="true" class="form-control" id="current-grade" placeholder="e.g., 85" type="number"/>
+<div aria-live="polite" class="error-message" id="currentGradeError" role="alert"></div>
+</div>
+<div class="form-group">
+<label for="desired-grade">Desired Grade (%) *</label>
+<input aria-describedby="desiredGradeError" aria-required="true" class="form-control" id="desired-grade" placeholder="e.g., 90" type="number"/>
+<div aria-live="polite" class="error-message" id="desiredGradeError" role="alert"></div>
+</div>
+<div class="form-group">
+<label for="final-exam-weight">Final Exam Weight (%) *</label>
+<input aria-describedby="finalExamWeightError" aria-required="true" class="form-control" id="final-exam-weight" placeholder="e.g., 30" type="number"/>
+<div aria-live="polite" class="error-message" id="finalExamWeightError" role="alert"></div>
+</div>
+<button class="btn btn-primary" onclick="calculateGrade()" type="button">Calculate</button>
+</section>
+<section class="results-container">
+<h2>Results</h2>
+<div class="result-item">
+<span class="result-label">Score Needed on Final Exam:</span>
+<span class="result-value" id="scoreNeeded">0%</span>
+</div>
+</section>
+<section class="content-container">
+<h2>Data Source and Methodology</h2>
+<p>All calculations are based on standard educational grading formulas. For more information, consult your educational institution's guidelines.</p>
+<h2>The Formula Explained</h2>
+<div class="formula-box">
+<p>\( \text{Score Needed} = \frac{(\text{Desired Grade} \times 100) - (\text{Current Grade} \times (100 - \text{Final Exam Weight}))}{\text{Final Exam Weight}} \)</p>
+</div>
+<h2>Glossary of Variables</h2>
+<ul>
+<li><strong>Current Grade:</strong> Your current grade in the course.</li>
+<li><strong>Desired Grade:</strong> The overall grade you wish to achieve.</li>
+<li><strong>Final Exam Weight:</strong> The percentage of your final grade that is determined by your final exam score.</li>
+<li><strong>Score Needed:</strong> The score you need to achieve on the final exam to reach your desired grade.</li>
+</ul>
+<h2>How It Works: A Step-by-Step Example</h2>
+<p>Suppose your current grade is 85%, you want a final grade of 90%, and the final exam is worth 30% of your grade. Using the formula provided, you can calculate the score you need on the final exam.</p>
+<h2>Frequently Asked Questions (FAQ)</h2>
+<div>
+<h3>What is the purpose of this calculator?</h3>
+<p>This calculator helps students determine what score they need on their final exam to achieve their desired course grade.</p>
+<h3>How do I use this calculator?</h3>
+<p>Enter your current grade, desired final grade, and the weight of your final exam to calculate the score needed on your final exam.</p>
+</div>
+<div class="author-box">
+<p>
+                    Tool developed by <strong>Ugo Candido</strong>.
+                    <br/>
+                    Last reviewed for accuracy on: October 1, 2023.
+                </p>
+</div>
+</section>
+</div>
+<script defer="">
+        function calculateGrade() {
+            const currentGrade = parseFloat(document.getElementById('current-grade').value);
+            const desiredGrade = parseFloat(document.getElementById('desired-grade').value);
+            const finalExamWeight = parseFloat(document.getElementById('final-exam-weight').value);
+
+            if (isNaN(currentGrade) || isNaN(desiredGrade) || isNaN(finalExamWeight)) {
+                alert("Please enter valid numbers for all fields.");
+                return;
+            }
+
+            const scoreNeeded = ((desiredGrade * 100) - (currentGrade * (100 - finalExamWeight))) / finalExamWeight;
+            document.getElementById('scoreNeeded').textContent = scoreNeeded.toFixed(2) + '%';
+        }
+    </script>
+
+
+```
+
+
+
+<footer class="bg-white border-t mt-12">
+  <div class="container mx-auto px-6 py-8 text-center text-gray-600">
+    <p>&copy; 2025 CalcDomain. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://calcdomain.com/index.html"}, {"@type": "ListItem", "position": 2, "name": "Unit Converters", "item": "https://calcdomain.com/unit-converters.html"}, {"@type": "ListItem", "position": 3, "name": "Final Grade Calculator", "item": "https://calcdomain.com/final-grade.html"}]}</script>
+</body></html>

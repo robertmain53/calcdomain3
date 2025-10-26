@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+  <meta charset="utf-8"/>
+  <title>annuity | Unit Converters | CalcDomain</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="description" content="annuity: fast, accurate calculator." />
+  <meta name="author" content="Ugo Candido"/>
+  <link rel="canonical" href="https://calcdomain.com/annuity.html" />
+  <meta name="theme-color" content="#0b3d69"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="Annuity Calculator"/>
+  <meta property="og:description" content="Solve annuity payments, present value, future value, and inflation-adjusted figures with flexible frequencies."/>
+  <meta property="og:url" content="https://calcdomain.com/annuity.html"/>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="search.js" defer></script>
+  <style>
+    body { font-family:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; }
+    .prose { max-width:72ch; }
+    .prose h2 { font-size:1.5rem; font-weight:700; margin-top:2rem; margin-bottom:.75rem; }
+    .prose h3 { font-size:1.125rem; font-weight:700; margin-top:1.25rem; margin-bottom:.5rem; }
+    .prose p { margin-bottom:.9rem; line-height:1.7; }
+    .result-pill { display:inline-flex; align-items:center; font-size:.875rem; font-weight:600; padding:.25rem .75rem; border-radius:9999px; }
+    .btn { display:inline-flex; align-items:center; justify-content:center; gap:.5rem; padding:.5rem 1rem; border-radius:.5rem; border:1px solid transparent; font-weight:600; min-height:44px; transition:background-color .2s ease,color .2s ease,border-color .2s ease; }
+    .btn-primary { background:#2563eb; color:#fff; border-color:#2563eb; }
+    .btn-secondary { background:#fff; color:#2563eb; border-color:#2563eb; }
+    .btn-ghost { background:transparent; color:#1f2937; border-color:#e2e8f0; }
+    .btn:hover { filter:brightness(.95); }
+    .grid-form { display:grid; gap:1.5rem; grid-template-columns:repeat(1,minmax(0,1fr)); }
+    @media (min-width:768px){ .grid-form { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+    .field label { display:block; font-size:.875rem; font-weight:600; color:#374151; margin-bottom:.25rem; }
+    .field input, .field select { width:100%; padding:.5rem .75rem; border:1px solid #d1d5db; border-radius:.5rem; font-size:1rem; }
+    .helper { font-size:.75rem; color:#6b7280; margin-top:.25rem; }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://calcdomain.com/"},
+      {"@type":"ListItem","position":2,"name":"Finance","item":"https://calcdomain.com/finance.html"},
+      {"@type":"ListItem","position":3,"name":"Retirement","item":"https://calcdomain.com/subcategories/finance-retirement.html"},
+      {"@type":"ListItem","position":4,"name":"Annuity Calculator","item":"https://calcdomain.com/annuity.html"}
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebPage",
+    "name":"Annuity Calculator",
+    "description":"Solve ordinary and due annuity problems for payments, present value, future value, and inflation-adjusted results.",
+    "url":"https://calcdomain.com/annuity.html",
+    "author":{"@type":"Person","name":"Ugo Candido"},
+    "publisher":{"@type":"Organization","name":"CalcDomain"},
+    "mainEntity":{
+      "@type":"FAQPage",
+      "mainEntity":[
+        {"@type":"Question","name":"Does the calculator support annuity-due?","acceptedAnswer":{"@type":"Answer","text":"Yes, toggle the annuity type to compute due (beginning-of-period) values."}},
+        {"@type":"Question","name":"Can I solve for payment, PV, or FV?","acceptedAnswer":{"@type":"Answer","text":"Choose the unknown in the dropdown. Enter the other fields and the calculator solves for the selected variable."}},
+        {"@type":"Question","name":"How is inflation handled?","acceptedAnswer":{"@type":"Answer","text":"Enable the inflation option to show real (purchasing power) values using the Fisher equation."}}
+      ]
+    }
+  }
+  </script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  
+<header class="bg-white shadow-sm sticky top-0 z-50">
+  <nav class="container mx-auto px-4 lg:px-6 py-4 flex items-center justify-between" aria-label="Primary">
+    <a href="https://calcdomain.com/index.html" class="text-2xl font-bold text-blue-600">CalcDomain</a>
+    <div class="w-full max-w-md hidden md:block">
+      <label for="site-search" class="sr-only">Search calculators</label>
+      <div class="relative">
+        <input id="site-search" type="search" placeholder="Search for a calculator…" class="w-full py-2 px-4 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+  <main class="container mx-auto px-4 py-8">
+    <div class="flex flex-col lg:flex-row gap-8">
+      <section class="w-full lg:w-2/3">
+        <nav class="text-sm mb-4 text-gray-600" aria-label="Breadcrumb">
+          <a href="index.html" class="hover:text-blue-600">Home</a> &raquo;
+          <a href="finance.html" class="hover:text-blue-600">Finance</a> &raquo;
+          <a href="subcategories/finance-retirement.html" class="hover:text-blue-600">Retirement</a> &raquo;
+          <span class="text-gray-900 font-medium">Annuity Calculator</span>
+        </nav>
+
+        <section class="bg-white p-6 rounded-lg shadow-md">
+          <h1 class="text-3x렴 cumplen in command allowances??

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en"><head> 
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Psychrometric Chart Calculator | Math | CalcDomain</title>
+<meta name="description" content="Psychrometric Chart Calculator: fast, accurate calculator." />
+<meta content="Ugo Candido" name="author"/>
+<link rel="canonical" href="https://calcdomain.com/psychrometric-chart.html" />
+<style>
+        :root {
+            --primary-color: #005a9c;
+            --background-color: #f8f9fa;
+            --text-color: #212529;
+            --border-color: #dee2e6;
+            --success-color: #28a745;
+            --danger-color: #dc3545;
+            --font-family: 'Inter', sans-serif;
+        }
+        body {
+            font-family: var(--font-family);
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        h1 {
+            font-size: 2rem;
+            color: var(--primary-color);
+        }
+        .calculator-section, .results-section, .content-section {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background-color: #fff;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+        input[type="number"] {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+        input[type="number"]:focus {
+            outline: 3px solid var(--primary-color);
+        }
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        .results-container {
+            background: var(--background-color);
+            border-radius: 8px;
+            padding: 1rem;
+        }
+        .result-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .result-item:last-child {
+            border-bottom: none;
+        }
+        .result-label {
+            color: var(--text-color);
+        }
+        .result-value {
+            font-weight: bold;
+            color: var(--success-color);
+        }
+    </style>
+<script defer="">
+        document.addEventListener('DOMContentLoaded', function() {
+            const calculatorForm = document.querySelector('#psychrometric-calculator-form');
+            const resultsContainer = document.querySelector('.results-container');
+
+            calculatorForm.addEventListener('submit', function(event) {
+                event.preventDefault();
+                const dryBulbTemp = parseFloat(document.querySelector('#dry-bulb-temp').value);
+                const relativeHumidity = parseFloat(document.querySelector('#relative-humidity').value);
+
+                if (isNaN(dryBulbTemp) || isNaN(relativeHumidity)) {
+                    alert('Please enter valid numbers for all fields.');
+                    return;
+                }
+
+                const dewPoint = calculateDewPoint(dryBulbTemp, relativeHumidity);
+                const specificHumidity = calculateSpecificHumidity(dryBulbTemp, relativeHumidity);
+
+                resultsContainer.innerHTML = `
+                    <div class="result-item">
+                        <span class="result-label">Dew Point:</span>
+                        <span class="result-value">${dewPoint.toFixed(2)} °C</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Specific Humidity:</span>
+                        <span class="result-value">${specificHumidity.toFixed(4)} kg/kg</span>
+                    </div>
+                `;
+            });
+
+            function calculateDewPoint(dryBulbTemp, relativeHumidity) {
+                // Simplified dew point calculation
+                return dryBulbTemp - ((100 - relativeHumidity) / 5);
+            }
+
+            function calculateSpecificHumidity(dryBulbTemp, relativeHumidity) {
+                // Simplified specific humidity calculation
+                const saturationVaporPressure = 6.11 * Math.pow(10, (7.5 * dryBulbTemp) / (237.7 + dryBulbTemp));
+                const actualVaporPressure = (relativeHumidity / 100) * saturationVaporPressure;
+                return 0.622 * (actualVaporPressure / (101.3 - actualVaporPressure));
+            }
+        });
+    </script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="search.js" defer></script>
+<!-- MathJax for LaTeX formulas -->
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['\(','\)'], ['$', '$']],
+      displayMath: [['$','$'], ['\[','\]']]
+    },
+    svg: { fontCache: 'global' }
+  };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<link rel="preload" href="/assets/js/mobile-menu.js" as="script">
+<link rel="preload" href="/assets/js/page-enhancements.js" as="script">
+
+</head>
+<body>
+<div class="container mx-auto px-4 py-4"><nav class="text-sm mb-4 text-gray-600" aria-label="Breadcrumb">
+  <ol class="flex flex-wrap gap-1 items-center"><li><a href="https://calcdomain.com/index.html" class="hover:text-blue-600">Home</a></li><li aria-hidden="true">»</li><li><a href="https://calcdomain.com/math.html" class="hover:text-blue-600">Math</a></li><li aria-hidden="true">»</li><li aria-current="page" class="text-gray-800 font-medium">Psychrometric Chart Calculator</li></ol>
+</nav></div>
+
+<header class="bg-white shadow-sm sticky top-0 z-50">
+  <nav class="container mx-auto px-4 lg:px-6 py-4 flex items-center justify-between" aria-label="Primary">
+    <a href="https://calcdomain.com/index.html" class="text-2xl font-bold text-blue-600">CalcDomain</a>
+    <div class="w-full max-w-md hidden md:block">
+      <label for="site-search" class="sr-only">Search calculators</label>
+      <div class="relative">
+        <input id="site-search" type="search" placeholder="Search for a calculator…" class="w-full py-2 px-4 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+<div class="container">
+<h1>Psychrometric Chart Calculator</h1>
+<p>This calculator provides engineers and HVAC professionals with an interactive tool to compute psychrometric properties such as dew point and specific humidity based on input conditions.</p>
+<section aria-labelledby="calculator-heading" class="calculator-section">
+<h2 id="calculator-heading">Calculator</h2>
+<form id="psychrometric-calculator-form">
+<label for="dry-bulb-temp">Dry Bulb Temperature (°C) *</label>
+<input aria-required="true" id="dry-bulb-temp" name="dry-bulb-temp" required="" type="number"/>
+<label for="relative-humidity">Relative Humidity (%) *</label>
+<input aria-required="true" id="relative-humidity" name="relative-humidity" required="" type="number"/>
+<button class="btn" type="submit">Calculate</button>
+</form>
+</section>
+<section aria-labelledby="results-heading" class="results-section">
+<h2 id="results-heading">Results</h2>
+<div class="results-container">
+<div class="result-item">
+<span class="result-label">Dew Point:</span>
+<span class="result-value" id="dew-point-value">-</span>
+</div>
+<div class="result-item">
+<span class="result-label">Specific Humidity:</span>
+<span class="result-value" id="specific-humidity-value">-</span>
+</div>
+</div>
+</section>
+<section class="content-section">
+<h2>Authoritative Data Source</h2>
+<p>Tutti i calcoli si basano rigorosamente sulle formule e sui dati forniti da ASHRAE Handbook - Fundamentals. For further details, visit <a href="https://www.ashrae.org/">ASHRAE</a>.</p>
+<h2>The Formula Explained</h2>
+<p class="formula-box">Dew Point: \( T_{dew} = T_{dry} - \frac{(100 - RH)}{5} \)</p>
+<p class="formula-box">Specific Humidity: \( SH = 0.622 \times \frac{e}{P - e} \)</p>
+<h2>Glossary of Terms</h2>
+<ul>
+<li><strong>Dry Bulb Temperature:</strong> The ambient air temperature measured by a thermometer freely exposed to the air.</li>
+<li><strong>Relative Humidity:</strong> The percentage of moisture in the air compared to the maximum amount the air can hold at that temperature.</li>
+<li><strong>Dew Point:</strong> The temperature at which air becomes saturated with moisture and dew can form.</li>
+<li><strong>Specific Humidity:</strong> The mass of water vapor present in a unit mass of air.</li>
+</ul>
+<h2>How It Works: A Step-by-Step Example</h2>
+<p>For a dry bulb temperature of 25°C and a relative humidity of 60%, the dew point is calculated as 19°C, and the specific humidity is 0.0102 kg/kg.</p>
+<h2>Frequently Asked Questions (FAQ)</h2>
+<div>
+<h3>What is a psychrometric chart?</h3>
+<p>A psychrometric chart is a graphical representation of the physical and thermal properties of moist air.</p>
+<h3>How do I use the psychrometric calculator?</h3>
+<p>Input the dry bulb temperature and relative humidity, then click 'Calculate' to see the dew point and specific humidity.</p>
+<h3>Why is psychrometry important in HVAC?</h3>
+<p>Psychrometry is crucial for designing HVAC systems as it helps in understanding air properties and behavior under different conditions.</p>
+<h3>What is relative humidity?</h3>
+<p>Relative humidity is the amount of moisture in the air compared to what the air can hold at that temperature.</p>
+<h3>Can this tool be used for educational purposes?</h3>
+<p>Yes, this tool is designed to assist both students and professionals in understanding and applying psychrometric principles.</p>
+</div>
+</section>
+<!-- Standard Footer -->  </div>
+
+
+```
+
+
+<footer class="bg-white border-t mt-12">
+  <div class="container mx-auto px-6 py-8 text-center text-gray-600">
+    <p>&copy; 2025 CalcDomain. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://calcdomain.com/index.html"}, {"@type": "ListItem", "position": 2, "name": "Math", "item": "https://calcdomain.com/math.html"}, {"@type": "ListItem", "position": 3, "name": "Psychrometric Chart Calculator", "item": "https://calcdomain.com/psychrometric-chart.html"}]}</script>
+</body></html>

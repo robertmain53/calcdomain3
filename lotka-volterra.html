@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en"><head> 
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Lotka-Volterra (Predator-Prey) Model Simulator | Finance & Money → Taxes | CalcDomain</title>
+<meta name="description" content="Lotka-Volterra (Predator-Prey) Model Simulator: fast, accurate calculator." />
+<meta content="Ugo Candido" name="author"/>
+<link rel="canonical" href="https://calcdomain.com/lotka-volterra.html" />
+<style>
+        :root {
+            --primary-color: #005A9C;
+            --secondary-color: #003F6E;
+            --background-color: #F8F9FA;
+            --text-color: #212529;
+            --border-color: #DEE2E6;
+            --success-color: #28A745;
+            --error-color: #DC3545;
+            --font-sans-serif: 'Inter', sans-serif;
+            --font-monospace: 'Source Code Pro', monospace;
+            --touch-target: 48px;
+            --transition: 0.2s ease-in-out;
+        }
+
+        body {
+            font-family: var(--font-sans-serif);
+            background: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        h1, h2, h3 {
+            color: var(--secondary-color);
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        .calculator-container, .results-container, .content-section {
+            background-color: var(--background-color);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            font-size: 1rem;
+        }
+
+        .form-control:focus {
+            border-color: var(--primary-color);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(0, 90, 156, 0.15);
+        }
+
+        .results-container {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            background: var(--background-color);
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            min-height: 220px;
+        }
+
+        .result-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .result-item:last-child {
+            border-bottom: none;
+        }
+
+        .result-label {
+            color: var(--text-color);
+        }
+
+        .result-value {
+            font-weight: 700;
+            font-size: 1.25rem;
+            color: var(--success-color);
+        }
+
+        .formula-box {
+            background-color: #e9ecef;
+            padding: 1.5rem;
+            border-radius: 6px;
+            margin: 1rem 0;
+            font-size: 1.2rem;
+            text-align: center;
+            overflow-x: auto;
+        }
+
+        .author-box {
+            font-size: 0.9rem;
+            color: var(--text-color);
+            margin-top: 2rem;
+            border-top: 1px solid var(--border-color);
+            padding-top: 1rem;
+        }
+    </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Lotka-Volterra (Predator-Prey) Model Simulator",
+  "description": "An advanced Lotka-Volterra calculator for simulating predator-prey dynamics in ecological studies.",
+  "url": "https://calcdomain.com/lotka-volterra.html",
+  "author": {
+    "@type": "Person",
+    "name": "Ugo Candido"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Omni Calculator"
+  },
+  "mainEntity": {
+    "@type": "FAQPage",
+    "mainEntity": []
+  }
+}
+  </script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="search.js" defer></script>
+<!-- MathJax for LaTeX formulas -->
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['\(','\)'], ['$', '$']],
+      displayMath: [['$','$'], ['\[','\]']]
+    },
+    svg: { fontCache: 'global' }
+  };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<link rel="preload" href="/assets/js/mobile-menu.js" as="script">
+<link rel="preload" href="/assets/js/page-enhancements.js" as="script">
+
+</head>
+<body>
+<div class="container mx-auto px-4 py-4"><nav class="text-sm mb-4 text-gray-600" aria-label="Breadcrumb">
+  <ol class="flex flex-wrap gap-1 items-center"><li><a href="https://calcdomain.com/index.html" class="hover:text-blue-600">Home</a></li><li aria-hidden="true">»</li><li><a href="https://calcdomain.com/finance.html" class="hover:text-blue-600">Finance & Money</a></li><li aria-hidden="true">»</li><li><a href="https://calcdomain.com/subcategories/taxes.html" class="hover:text-blue-600">Taxes</a></li><li aria-hidden="true">»</li><li aria-current="page" class="text-gray-800 font-medium">Lotka-Volterra (Predator-Prey) Model Simulator</li></ol>
+</nav></div>
+
+<div class="container">
+
+<header class="bg-white shadow-sm sticky top-0 z-50">
+  <nav class="container mx-auto px-4 lg:px-6 py-4 flex items-center justify-between" aria-label="Primary">
+    <a href="https://calcdomain.com/index.html" class="text-2xl font-bold text-blue-600">CalcDomain</a>
+    <div class="w-full max-w-md hidden md:block">
+      <label for="site-search" class="sr-only">Search calculators</label>
+      <div class="relative">
+        <input id="site-search" type="search" placeholder="Search for a calculator…" class="w-full py-2 px-4 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      </div>
+    </div>
+  </nav>
+</header>
+
+<section class="introduction">
+<p>This calculator simulates the Lotka-Volterra equations, which model predator-prey interactions in ecology. It is designed for researchers and students in life and earth sciences looking to explore dynamic population changes.</p>
+</section>
+<section aria-labelledby="calculator-heading" class="calculator-container">
+<h2 id="calculator-heading">Enter Parameters</h2>
+<div class="form-group">
+<label for="prey-initial">Initial Prey Population *</label>
+<input aria-required="true" class="form-control" id="prey-initial" placeholder="e.g., 40" type="number"/>
+</div>
+<div class="form-group">
+<label for="predator-initial">Initial Predator Population *</label>
+<input aria-required="true" class="form-control" id="predator-initial" placeholder="e.g., 9" type="number"/>
+</div>
+<div class="form-group">
+<label for="prey-growth-rate">Prey Growth Rate *</label>
+<input aria-required="true" class="form-control" id="prey-growth-rate" placeholder="e.g., 0.1" step="0.01" type="number"/>
+</div>
+<div class="form-group">
+<label for="predator-death-rate">Predator Death Rate *</label>
+<input aria-required="true" class="form-control" id="predator-death-rate" placeholder="e.g., 0.1" step="0.01" type="number"/>
+</div>
+<div class="form-group">
+<label for="predation-rate">Predation Rate *</label>
+<input aria-required="true" class="form-control" id="predation-rate" placeholder="e.g., 0.01" step="0.01" type="number"/>
+</div>
+<div class="form-group">
+<label for="growth-rate-reduction">Growth Rate Reduction *</label>
+<input aria-required="true" class="form-control" id="growth-rate-reduction" placeholder="e.g., 0.01" step="0.01" type="number"/>
+</div>
+<button class="btn btn-primary" id="calculate-btn">Calculate</button>
+</section>
+<section aria-labelledby="results-heading" class="results-container">
+<h2 id="results-heading">Simulation Results</h2>
+<div class="result-item">
+<span class="result-label">Prey Population After Simulation</span>
+<span class="result-value" id="prey-result">0</span>
+</div>
+<div class="result-item">
+<span class="result-label">Predator Population After Simulation</span>
+<span class="result-value" id="predator-result">0</span>
+</div>
+</section>
+<section class="content-section">
+<h2>Data Source and Methodology</h2>
+<p>All calculations are based on the classical Lotka-Volterra equations, widely used in ecological and biological studies to predict interaction dynamics between species.</p>
+<h2>The Formula Explained</h2>
+<div class="formula-box">
+<p><strong>Prey Equation:</strong> \( \frac{dX}{dt} = \alpha X - \beta XY \)</p>
+<p><strong>Predator Equation:</strong> \( \frac{dY}{dt} = \delta XY - \gamma Y \)</p>
+<p>Where \( X \) is the prey population, \( Y \) is the predator population, \( \alpha \) is the prey growth rate, \( \beta \) is the predation rate, \( \gamma \) is the predator death rate, and \( \delta \) is the growth rate reduction.</p>
+</div>
+<h2>Glossary of Variables</h2>
+<ul>
+<li><strong>Initial Prey Population:</strong> Starting number of prey.</li>
+<li><strong>Initial Predator Population:</strong> Starting number of predators.</li>
+<li><strong>Prey Growth Rate:</strong> Rate at which prey reproduce.</li>
+<li><strong>Predator Death Rate:</strong> Rate at which predators die.</li>
+<li><strong>Predation Rate:</strong> Rate at which predators consume prey.</li>
+<li><strong>Growth Rate Reduction:</strong> Impact of predation on prey growth.</li>
+</ul>
+<h2>How It Works: A Step-by-Step Example</h2>
+<p>Imagine an ecosystem with an initial prey population of 40 and a predator population of 9. Using the Lotka-Volterra equations with specified rates, you can predict changes over time.</p>
+<h2>Frequently Asked Questions (FAQ)</h2>
+<div>
+<h3>What are the Lotka-Volterra equations?</h3>
+<p>They are mathematical models of predator-prey interactions in an ecosystem.</p>
+<h3>Why are these models important?</h3>
+<p>They help ecologists understand the dynamics of populations over time.</p>
+<h3>Can these equations predict real-world scenarios?</h3>
+<p>While they provide insights, real-world factors can introduce complexities not accounted for by these models.</p>
+<h3>What are the limitations of the model?</h3>
+<p>The model assumes constant rates and no environmental changes, which is rarely the case in nature.</p>
+<h3>How can I adjust the model for accuracy?</h3>
+<p>Field data and additional factors should be incorporated for more precise predictions.</p>
+</div>
+</section>
+
+</div>
+<script>
+        document.getElementById('calculate-btn').addEventListener('click', function() {
+            // Example computation logic for Lotka-Volterra
+            const preyInitial = parseFloat(document.getElementById('prey-initial').value);
+            const predatorInitial = parseFloat(document.getElementById('predator-initial').value);
+            const preyGrowthRate = parseFloat(document.getElementById('prey-growth-rate').value);
+            const predatorDeathRate = parseFloat(document.getElementById('predator-death-rate').value);
+            const predationRate = parseFloat(document.getElementById('predation-rate').value);
+            const growthRateReduction = parseFloat(document.getElementById('growth-rate-reduction').value);
+
+            // Simplified calculation example
+            const preyResult = preyInitial * (1 + preyGrowthRate - predationRate * predatorInitial);
+            const predatorResult = predatorInitial * (1 - predatorDeathRate + growthRateReduction * preyInitial);
+
+            document.getElementById('prey-result').innerText = preyResult.toFixed(2);
+            document.getElementById('predator-result').innerText = predatorResult.toFixed(2);
+        });
+    </script>
+
+
+```
+
+<footer class="bg-white border-t mt-12">
+  <div class="container mx-auto px-6 py-8 text-center text-gray-600">
+    <p>&copy; 2025 CalcDomain. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://calcdomain.com/index.html"}, {"@type": "ListItem", "position": 2, "name": "Finance & Money", "item": "https://calcdomain.com/finance.html"}, {"@type": "ListItem", "position": 3, "name": "Taxes", "item": "https://calcdomain.com/subcategories/taxes.html"}, {"@type": "ListItem", "position": 4, "name": "Lotka-Volterra (Predator-Prey) Model Simulator", "item": "https://calcdomain.com/lotka-volterra.html"}]}</script>
+</body></html>

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+  <title>Science Calculators | Statistics & Probability | CalcDomain</title>
+  <meta name="description" content="Science Calculators: fast, accurate calculator." />
+  <meta name="author" content="CalcDomain"/>
+  <link rel="canonical" href="https://calcdomain.com/science.html" />
+  <meta name="robots" content="index,follow"/>
+  <meta name="theme-color" content="#0f172a"/>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="search.js" defer></script>
+  <link rel="preload" href="/assets/js/mobile-menu.js" as="script">
+  <link rel="preload" href="/assets/js/page-enhancements.js" as="script">
+
+  <style>
+    body { font-family:'Inter',system-ui,-apple-system,"Segoe UI",sans-serif; }
+    .skip-link{
+      position:absolute; top:-40px; left:12px; padding:0.5rem 0.75rem; background:#1d4ed8; color:#fff;
+      border-radius:0 0 8px 8px; z-index:1000; transition:top .2s ease;
+    }
+    .skip-link:focus{ top:8px; }
+    .card-grid{ display:grid; gap:1rem; grid-template-columns:repeat(1,minmax(0,1fr)); }
+    @media(min-width:640px){ .card-grid{ grid-template-columns:repeat(2,minmax(0,1fr)); } }
+    @media(min-width:1024px){ .card-grid{ grid-template-columns:repeat(3,minmax(0,1fr)); } }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"CollectionPage",
+    "name":"Science Calculators",
+    "description":"Physics, chemistry, astronomy, biology, and measurement calculators with detailed methodology.",
+    "url":"https://calcdomain.com/science.html",
+    "inLanguage":"en",
+    "breadcrumb":{
+      "@type":"BreadcrumbList",
+      "itemListElement":[
+        {"@type":"ListItem","position":1,"name":"Home","item":"https://calcdomain.com/index.html"},
+        {"@type":"ListItem","position":2,"name":"Science Calculators","item":"https://calcdomain.com/science.html"}
+      ]
+    }
+  }
+  </script>
+</head>
+<body class="bg-slate-50 text-slate-900">
+<a class="skip-link" href="#main">Skip to main content</a>
+
+
+<header class="bg-white shadow-sm sticky top-0 z-50">
+  <nav class="container mx-auto px-4 lg:px-6 py-4 flex items-center justify-between" aria-label="Primary">
+    <a href="https://calcdomain.com/index.html" class="text-2xl font-bold text-blue-600">CalcDomain</a>
+    <div class="w-full max-w-md hidden md:block">
+      <label for="site-search" class="sr-only">Search calculators</label>
+      <div class="relative">
+        <input id="site-search" type="search" placeholder="Search for a calculator…" class="w-full py-2 px-4 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+<main id="main" class="mx-auto w-full max-w-6xl px-4 py-10 lg:px-6">
+  <div class="flex flex-col lg:flex-row gap-8">
+    <!-- Left Column: Main Content -->
+    <div class="w-full lg:w-2/3">
+      <nav class="text-sm text-slate-600 mb-4" aria-label="Breadcrumb">
+        <a href="index.html" class="hover:text-blue-600">Home</a> &raquo;
+        <span class="text-slate-900 font-medium">Science Calculators</span>
+      </nav>
+
+      <section class="bg-white rounded-xl shadow-md px-6 py-8 mb-10">
+    <h1 class="text-3xl font-extrabold text-slate-900 mb-2">Science Calculators</h1>
+    <p class="text-slate-600 max-w-3xl">
+      Explore calculators for physics, chemistry, astronomy, earth science, biology, and measurement. Each tool includes transparent formulas and methodology, so you can trust the numbers behind your lab work, coursework, or research planning.
+    </p>
+    <div class="mt-6 flex flex-wrap items-center gap-3">
+      <a href="#physics" class="rounded-full border border-blue-200 bg-blue-50 px-4 py-2 text-sm font-semibold text-blue-700 hover:bg-blue-100">Physics</a>
+      <a href="#chemistry" class="rounded-full border border-blue-200 bg-blue-50 px-4 py-2 text-sm font-semibold text-blue-700 hover:bg-blue-100">Chemistry</a>
+      <a href="#astronomy" class="rounded-full border border-blue-200 bg-blue-50 px-4 py-2 text-sm font-semibold text-blue-700 hover:bg-blue-100">Astronomy</a>
+      <a href="#earth" class="rounded-full border border-blue-200 bg-blue-50 px-4 py-2 text-sm font-semibold text-blue-700 hover:bg-blue-100">Earth &amp; Atmosphere</a>
+      <a href="#biology" class="rounded-full border border-blue-200 bg-blue-50 px-4 py-2 text-sm font-semibold text-blue-700 hover:bg-blue-100">Biology</a>
+      <a href="#measurement" class="rounded-full border border-blue-200 bg-blue-50 px-4 py-2 text-sm font-semibold text-blue-700 hover:bg-blue-100">Measurement</a>
+      </div>
+      </section>
+
+      <section id="categories" class="space-y-12">
+        <section id="physics">
+      <div class="mb-4 flex items-center justify-between">
+        <h2 class="text-2xl font-bold text-slate-900">Physics &amp; Mechanics</h2>
+        <a href="physics.html" class="text-sm font-semibold text-blue-600 hover:text-blue-800">See all physics calculators →</a>
+      </div>
+      <div class="card-grid">
+        <a href="forward-kinematics.html" class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm hover:border-blue-300">
+          <h3 class="text-lg font-semibold text-slate-900">Kinematics (SUVAT)</h3>
+          <p class="text-sm text-slate-600">Solve displacement, velocity, time, and acceleration with step-by-step outputs.</p>
+        </a>
+        <a href="simple-harmonic-motion.html" class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm hover:border-blue-300">
+          <h3 class="text-lg font-semibold text-slate-900">Simple Harmonic Motion</h3>
+          <p class="text-sm text-slate-600">Amplitude, angular frequency, and phase relationships for oscillators.</p>
+        </a>
+        <a href="work.html" class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm hover:border-blue-300">
+          <h3 class="text-lg font-semibold text-slate-900">Work &amp; Energy</h3>
+          <p class="text-sm text-slate-600">Compute work, power, kinetic and potential energy with unit-aware inputs.</p>
+        </a>
+      </div>
+    </section>
+
+    <section id="em-optics">
+      <div class="mb-4 flex items-center justify-between">
+        <h2 class="text-2xl font-bold text-slate-900">Electromagnetism &amp; Optics</h2>
+      </div>
+      <div class="card-grid">
+        <a href="coulombs-law.html" class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm hover:border-blue-300">
+          <h3 class="text-lg font-semibold text-slate-900">Coulomb’s Law</h3>
+          <p class="text-sm text-slate-600">Electrostatic force and field intensity between point charges.</p>
+        </a>
+        <a href="reactance.html" class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm hover:border-blue-300">
+          <h3 class="text-lg font-semibold text-slate-900">Reactance &amp; Impedance</h3>
+          <p class="text-sm text-slate-600">Analyse capacitive and inductive reactance, series/parallel circuits.</p>
+        </a>
+        <a href="thin-lens-equation.html" class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm hover:border-blue-300">
+          <h3 class="text-lg font-semibold text-slate-900">Thin Lens Equation</h3>
+          <p class="text-sm text-slate-600">Compute magnification and image distance for lenses and mirrors.</p>
+        </a>
+      </div>
+    </section>
+
+    <section id="modern">
+      <div class="mb-4 flex items-center justify-between">
+        <h2 class="text-2xl font-bold text-slate-900">Modern &amp; Nuclear Physics</h2>
+      </div>
+      <div class="card-grid">
+        <a href="time-dilation.html" class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm hover:border-blue-300">
+          <h3 class="text-lg font-semibold text-slate-900">Relativistic Time Dilation</h3>
+          <p class="text-sm text-slate-600">Lorentz factor, Δt′, and velocity fractions relative to the speed of light.</p>
+        </a>
+        <a href="radioactive-decay.html" class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm hover:border-blue-300">
+          <h3 class="text-lg font-semibold text-slate-900">Radioactive Decay &amp; Half-Life</h3>
+          <p class="text-sm text-slate-600">N(t), activity, and decay constants with exponential plots.</p>
+        </a>
+        <a href="compton-scattering.html" class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm hover:border-blue-300">
+          <h3 class="text-lg font-semibold text-slate-900">Compton Scattering</h3>
+          <p class="text-sm text-slate-600">Wavelength shifts and photon energy after scattering.</p>
+        </a>
+      </div>
+    </section>
+
+    <section id="chemistry">
+      <div class="mb-4 flex items-center justify-between">
+        <h2 class="text-2xl font-bold text-slate-900">Chemistry</h2>
+        <a href="chemistry.html" class="text-sm font-semibold text-blue-600 hover:text-blue-800">Explore chemistry tools →</a>
+      </div>
+      <div class="card-grid">
+        <a href="molecular-weight.html" class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm hover:border-blue-300">
+          <h3 class="text-lg font-semibold text-slate-900">Molecular Weight Calculator</h3>
+          <p class="text-sm text-slate-600">Parse formulas, hydrates, and nested groups to get molar mass and composition.</p>
+        </a>
+        <a href="henderson-hasselbalch.html" class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm hover:border-blue-300">
+          <h3 class="text-lg font-semibold text-slate-900">Henderson–Hasselbalch</h3>
+          <p class="text-sm text-slate-600">Buffer pH predictions with conjugate acid–base ratios.</p>
+        </a>
+        <a href="beer-lambert-law.html" class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm hover:border-blue-300">
+          <h3 class="text-lg font-semibold text-slate-900">Beer–Lambert Law</h3>
+          <p class="text-sm text-slate-600">Absorbance, path length, and concentration relationships.</p>
+        </a>
+      </div>
+    </section>
+
+    <section id="astronomy">
+      <div class="mb-4 flex items-center justify-between">
+        <h2 class="text-2xl font-bold text-slate-900">Astronomy &amp; Space Science</h2>
+      </div>
+      <div class="card-grid">
+        <a href="orbital-period.html" class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm hover:border-blue-300">
+          <h3 class="text-lg font-semibold text-slate-900">Orbital Period Calculator</h3>
+          <p class="text-sm text-slate-600">Apply Kepler’s third law for satellites and celestial bodies.</p>
+        </a>
+        <a href="escape-velocity.html" class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm hover:border-blue-300">
+          <h3 class="text-lg font-semibold text-slate-900">Escape Velocity</h3>
+          <p class="text-sm text-slate-600">Minimum speed required to escape a planet’s gravitational field.</p>
+        </a>
+        <a href="light-year-converter.html" class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm hover:border-blue-300">
+          <h3 class="text-lg font-semibold text-slate-900">Light-Year Converter</h3>
+          <p class="text-sm text-slate-600">Convert between parsecs, astronomical units, and kilometers.</p>
+        </a>
+      </div>
+    </section>
+
+    <section id="earth">
+      <div class="mb-4 flex items-center justify-between">
+        <h2 class="text-2xl font-bold text-slate-900">Earth &amp; Atmospheric Science</h2>
+      </div>
+      <div class="card-grid">
+        <a href="dew-point.html" class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm hover:border-blue-300">
+          <h3 class="text-lg font-semibold text-slate-900">Dew Point</h3>
+          <p class="text-sm text-slate-600">Magnus formula for dew point from temperature and relative humidity.</p>
+        </a>
+        <a href="heat-index.html" class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm hover:border-blue-300">
+          <h3 class="text-lg font-semibold text-slate-900">Heat Index</h3>
+          <p class="text-sm text-slate-600">Feel-like temperature based on air temperature and humidity.</p>
+        </a>
+        <a href="wind-chill.html" class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm hover:border-blue-300">
+          <h3 class="text-lg font-semibold text-slate-900">Wind Chill</h3>
+          <p class="text-sm text-slate-600">US/Canada wind chill formula for exposed skin risk analysis.</p>
+        </a>
+      </div>
+    </section>
+
+    <section id="biology">
+      <div class="mb-4 flex items-center justify-between">
+        <h2 class="text-2xl font-bold text-slate-900">Biology &amp; Genetics</h2>
+        <a href="biology.html" class="text-sm font-semibold text-blue-600 hover:text-blue-800">Biology tools →</a>
+      </div>
+      <div class="card-grid">
+        <a href="dna-to-protein-translator.html" class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm hover:border-blue-300">
+          <h3 class="text-lg font-semibold text-slate-900">DNA → Protein Translator</h3>
+          <p class="text-sm text-slate-600">Convert DNA or RNA sequences into amino acid chains with codon tables.</p>
+        </a>
+        <a href="dna-concentration.html" class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm hover:border-blue-300">
+          <h3 class="text-lg font-semibold text-slate-900">DNA Concentration</h3>
+          <p class="text-sm text-slate-600">Normalize A260 readings to ng/µL, nM, and copies per µL with purity ratios.</p>
+        </a>
+        <a href="hemocytometer.html" class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm hover:border-blue-300">
+          <h3 class="text-lg font-semibold text-slate-900">Hemocytometer Counter</h3>
+          <p class="text-sm text-slate-600">Convert manual counts into cells per mL with dilution correction.</p>
+        </a>
+      </div>
+    </section>
+
+    <section id="measurement">
+      <div class="mb-4 flex items-center justify-between">
+        <h2 class="text-2xl font-bold text-slate-900">Measurement &amp; Uncertainty</h2>
+      </div>
+      <div class="card-grid">
+        <a href="significant-figures.html" class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm hover:border-blue-300">
+          <h3 class="text-lg font-semibold text-slate-900">Significant Figures</h3>
+          <p class="text-sm text-slate-600">Count sig figs, apply rounding rules, and format scientific notation.</p>
+        </a>
+        <a href="uncertainty-propagation.html" class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm hover:border-blue-300">
+          <h3 class="text-lg font-semibold text-slate-900">Uncertainty Propagation</h3>
+          <p class="text-sm text-slate-600">Combine measurement uncertainties for sums, products, and ratios.</p>
+        </a>
+        <a href="calibration-curve.html" class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm hover:border-blue-300">
+          <h3 class="text-lg font-semibold text-slate-900">Calibration Curve</h3>
+          <p class="text-sm text-slate-600">Construct linear regression curves for instrument calibration datasets.</p>
+        </a>
+      </div>
+    </section>
+  </section>
+
+      <section class="mt-12 rounded-xl border border-blue-100 bg-blue-50 px-6 py-5 text-sm text-blue-900">
+        <p><strong>Need something specific?</strong> Use the search bar above or filter by category. Each calculator includes references and detailed methodology so you can cite or audit your calculations.</p>
+      </section>
+    </div>
+
+    <!-- Right Sidebar: Ads & Popular Links -->
+    <aside class="w-full lg:w-1/3">
+      <div class="sticky top-24 space-y-8">
+        <!-- Ad Placeholder -->
+        <div class="bg-gray-200 h-96 rounded-lg flex items-center justify-center">
+          <p class="text-gray-500">Sticky Ad Unit (e.g., 300x600)</p>
+        </div>
+
+        <!-- Popular in this Category -->
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="font-bold text-lg mb-4">Most Popular</h3>
+          <ul class="space-y-3">
+            <li><a href="forward-kinematics.html" class="text-blue-600 hover:underline">Kinematics (SUVAT)</a></li>
+            <li><a href="molecular-weight.html" class="text-blue-600 hover:underline">Molecular Weight Calculator</a></li>
+            <li><a href="orbital-period.html" class="text-blue-600 hover:underline">Orbital Period Calculator</a></li>
+            <li><a href="dew-point.html" class="text-blue-600 hover:underline">Dew Point</a></li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+  </div>
+</main>
+
+
+<footer class="bg-white border-t mt-12">
+  <div class="container mx-auto px-6 py-8 text-center text-gray-600">
+    <p>&copy; 2025 CalcDomain. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+<script>
+  document.getElementById('mobile-menu-toggle')?.addEventListener('click', ()=>{
+    document.getElementById('mobile-menu')?.classList.toggle('hidden');
+  });
+</script>
+<script defer src="/assets/js/mobile-menu.js"></script>
+<script defer src="/assets/js/page-enhancements.js"></script>
+
+</body>
+</html>

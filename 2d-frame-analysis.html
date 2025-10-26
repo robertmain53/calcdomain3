@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en"><head> 
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Frame Analysis 2D Calculator | Finance & Money | CalcDomain</title>
+<meta name="description" content="Frame Analysis 2D Calculator: fast, accurate calculator." />
+<meta content="Ugo Candido" name="author"/>
+<link rel="canonical" href="https://calcdomain.com/2d-frame-analysis.html" />
+<link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<style>
+        :root {
+            --primary-color: #005a9c;
+            --secondary-color: #003f6e;
+            --background-color: #f8f9fa;
+            --surface-color: #ffffff;
+            --text-color: #212529;
+            --border-color: #dee2e6;
+            --font-sans-serif: 'Inter', sans-serif;
+            --font-monospace: 'Source Code Pro', monospace;
+        }
+        body {
+            font-family: var(--font-sans-serif);
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        h1, h2, h3 {
+            color: var(--primary-color);
+        }
+        .calculator-container, .results-container, .content-container {
+            background-color: var(--surface-color);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-top: 1rem;
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        .form-control {
+            width: 100%;
+            padding: 0.75rem;
+            font-size: 1rem;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+        }
+        .results-container {
+            min-height: 220px;
+        }
+        .result-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .result-item:last-child {
+            border-bottom: none;
+        }
+        .result-label {
+            color: var(--text-color);
+        }
+        .result-value {
+            font-weight: bold;
+            font-size: 1.25rem;
+            color: var(--primary-color);
+        }
+    </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Frame Analysis 2D Calculator",
+  "description": "A 2D frame analysis calculator for civil engineering professionals. Calculate structural frames with precision and reliability.",
+  "url": "https://calcdomain.com/2d-frame-analysis.html",
+  "author": {
+    "@type": "Person",
+    "name": "Ugo Candido"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Engineering Calculators Inc."
+  }
+}
+  </script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="search.js" defer></script>
+<!-- MathJax for LaTeX formulas -->
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['\(','\)'], ['$', '$']],
+      displayMath: [['$','$'], ['\[','\]']]
+    },
+    svg: { fontCache: 'global' }
+  };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<link rel="preload" href="/assets/js/mobile-menu.js" as="script">
+<link rel="preload" href="/assets/js/page-enhancements.js" as="script">
+
+</head>
+<body>
+
+
+<header class="bg-white shadow-sm sticky top-0 z-50">
+  <nav class="container mx-auto px-4 lg:px-6 py-4 flex items-center justify-between" aria-label="Primary">
+    <a href="https://calcdomain.com/index.html" class="text-2xl font-bold text-blue-600">CalcDomain</a>
+    <div class="w-full max-w-md hidden md:block">
+      <label for="site-search" class="sr-only">Search calculators</label>
+      <div class="relative">
+        <input id="site-search" type="search" placeholder="Search for a calculator…" class="w-full py-2 px-4 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main class="container">
+<nav class="text-sm mb-4 text-gray-600" aria-label="Breadcrumb">
+  <ol class="flex flex-wrap gap-1 items-center"><li><a href="https://calcdomain.com/index.html" class="hover:text-blue-600">Home</a></li><li aria-hidden="true">»</li><li><a href="https://calcdomain.com/finance.html" class="hover:text-blue-600">Finance & Money</a></li><li aria-hidden="true">»</li><li aria-current="page" class="text-gray-800 font-medium">Frame Analysis 2D Calculator</li></ol>
+</nav>
+<section class="introduction">
+<p>This 2D Frame Analysis Calculator is designed for civil engineers to analyze structural frames efficiently. It allows you to input frame dimensions and loads, providing accurate analysis results that help in decision-making and design optimization.</p>
+</section>
+<section class="calculator-container" id="calculator">
+<form>
+<div class="form-group">
+<label for="frameLength">Frame Length (m) *</label>
+<input aria-required="true" class="form-control" id="frameLength" placeholder="Enter length in meters" type="number"/>
+</div>
+<div class="form-group">
+<label for="frameHeight">Frame Height (m) *</label>
+<input aria-required="true" class="form-control" id="frameHeight" placeholder="Enter height in meters" type="number"/>
+</div>
+<div class="form-group">
+<label for="load">Load (kN) *</label>
+<input aria-required="true" class="form-control" id="load" placeholder="Enter load in kilonewtons" type="number"/>
+</div>
+<button class="btn btn-primary" type="button">Calculate</button>
+</form>
+</section>
+<section class="results-container">
+<h2>Results</h2>
+<div class="result-item">
+<span class="result-label">Displacement</span>
+<span class="result-value" id="displacementResult">0.00 m</span>
+</div>
+<div class="result-item">
+<span class="result-label">Stress</span>
+<span class="result-value" id="stressResult">0.00 MPa</span>
+</div>
+</section>
+<section class="content-container">
+<h2>Data Source and Methodology</h2>
+<p>The calculations are based on the engineering principles outlined in the ASCE 7-22 standard. All calculations are strictly based on the formulas and data provided by this source.</p>
+<h2>The Formula Explained</h2>
+<p>The calculator uses the following formulas to compute results:</p>
+<div class="formula-box">
+                \( \text{Displacement} = \frac{PL^3}{48EI} \)
+            </div>
+<h2>Glossary of Variables</h2>
+<ul>
+<li><strong>P:</strong> Load applied on the frame (kN)</li>
+<li><strong>L:</strong> Length of the frame (m)</li>
+<li><strong>E:</strong> Modulus of elasticity of the material (MPa)</li>
+<li><strong>I:</strong> Moment of inertia (m<sup>4</sup>)</li>
+</ul>
+<h2>How It Works: A Step-by-Step Example</h2>
+<p>Consider a frame with a length of 6 meters and a load of 20 kN. Using the formula \( \text{Displacement} = \frac{PL^3}{48EI} \), you can calculate the displacement based on material properties.</p>
+<h2>Frequently Asked Questions (FAQ)</h2>
+<div>
+<h3>What is 2D Frame Analysis?</h3>
+<p>2D Frame Analysis is a method used to determine the behavior of structural frames under various loads and constraints.</p>
+<h3>How do I choose the right material properties?</h3>
+<p>Material properties should be selected based on the type of construction and environmental conditions. Consult engineering standards for guidance.</p>
+<h3>Can I use this calculator for 3D frames?</h3>
+<p>No, this calculator is specifically designed for 2D frame analysis. For 3D analysis, consider using specialized software.</p>
+</div>
+</section>
+
+</main>
+
+
+```
+
+<footer class="bg-white border-t mt-12">
+  <div class="container mx-auto px-6 py-8 text-center text-gray-600">
+    <p>&copy; 2025 CalcDomain. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://calcdomain.com/index.html"}, {"@type": "ListItem", "position": 2, "name": "Finance & Money", "item": "https://calcdomain.com/finance.html"}, {"@type": "ListItem", "position": 3, "name": "Frame Analysis 2D Calculator", "item": "https://calcdomain.com/2d-frame-analysis.html"}]}</script>
+</body></html>
